@@ -71,6 +71,15 @@ const SOURCES = [
     symbol: '£',
     endpoint: 'https://uk.dyucycle.com/products.json?limit=250',
     baseUrl: 'https://uk.dyucycle.com/products/'
+  },
+  {
+    name: 'PedalGo UK',
+    retailer: 'PedalGo UK',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://pedalgo.co.uk/products.json?limit=250',
+    baseUrl: 'https://pedalgo.co.uk/products/'
   }
 ];
 

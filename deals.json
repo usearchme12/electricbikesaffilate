@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-16 14:32:02",
-    "total_deals": 28,
+    "last_updated": "2026-08-16 14:32:47",
+    "total_deals": 30,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -10,7 +10,8 @@
       "Tenways",
       "Velotric",
       "Heybike UK",
-      "DYU Cycle UK"
+      "DYU Cycle UK",
+      "PedalGo UK"
     ],
     "categories": [
       "All",
@@ -408,6 +409,30 @@
       "badge_text": "SAVE £200 (27% OFF)"
     },
     {
+      "id": "pedalgo_uk_10154801561864",
+      "title": "Amcargobikes - Ultimate Curve Electric",
+      "brand": "Amcargobikes",
+      "retailer": "PedalGo UK",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Cargo & Fat Tyre",
+      "dealBucket": "🔥 Mega Deal",
+      "dealScore": 19.9,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 3100,
+      "sale_price": 2699,
+      "savings_amount": 401,
+      "discount_percentage": 13,
+      "image": "https://cdn.shopify.com/s/files/1/0911/9727/6424/files/Screenshot2025-04-05at00.01.32.jpg?v=1750519070",
+      "url": "https://pedalgo.co.uk/products/electric-cargo-bike-ultimate-curve",
+      "badge_text": "SAVE £401 (13% OFF)"
+    },
+    {
       "id": "pure_electric_14932006240632",
       "title": "Escape Pro (Previous Gen)",
       "brand": "Pure Electric",
@@ -574,6 +599,30 @@
       "image": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/S1_SunriseOrange_rightside_L_1_1.png?v=1712653090",
       "url": "https://www.velotricbike.com/products/velotric-summit-1",
       "badge_text": "SAVE $200 (10% OFF)"
+    },
+    {
+      "id": "pedalgo_uk_10154645389576",
+      "title": "Amcargobikes Deluxe - Electric Cargo Bike",
+      "brand": "Amcargobikes",
+      "retailer": "PedalGo UK",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Cargo & Fat Tyre",
+      "dealBucket": "Standard Deal",
+      "dealScore": 11.6,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 1999,
+      "sale_price": 1800,
+      "savings_amount": 199,
+      "discount_percentage": 10,
+      "image": "https://cdn.shopify.com/s/files/1/0911/9727/6424/files/Screenshot_2025-04-04_at_19.06.52.jpg?v=1749591584",
+      "url": "https://pedalgo.co.uk/products/amcargobikes-electric-cargo-bike-deluxe",
+      "badge_text": "SAVE £199 (10% OFF)"
     },
     {
       "id": "tenways_14923430789492",

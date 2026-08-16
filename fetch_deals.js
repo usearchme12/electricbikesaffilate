@@ -45,33 +45,6 @@ const SOURCES = [
     baseUrl: 'https://www.pureelectric.com/products/'
   },
   {
-    name: 'Tenways',
-    retailer: 'Tenways Global',
-    country: 'EU/UK',
-    currency: 'GBP',
-    symbol: '£',
-    endpoint: 'https://www.tenways.com/products.json?limit=250',
-    baseUrl: 'https://www.tenways.com/products/'
-  },
-  {
-    name: 'Cyrusher UK',
-    retailer: 'Cyrusher UK',
-    country: 'UK',
-    currency: 'GBP',
-    symbol: '£',
-    endpoint: 'https://www.cyrusher.co.uk/products.json?limit=250',
-    baseUrl: 'https://www.cyrusher.co.uk/products/'
-  },
-  {
-    name: 'Eovolt UK',
-    retailer: 'Eovolt UK',
-    country: 'UK',
-    currency: 'GBP',
-    symbol: '£',
-    endpoint: 'https://eovolt.co.uk/products.json?limit=250',
-    baseUrl: 'https://eovolt.co.uk/products/'
-  },
-  {
     name: 'Heybike UK',
     retailer: 'Heybike UK',
     country: 'UK',

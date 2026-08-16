@@ -1,14 +1,15 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-16 13:59:08",
-    "total_deals": 24,
+    "last_updated": "2026-08-16 14:29:05",
+    "total_deals": 25,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
       "Pure Electric",
       "Tenways",
-      "Velotric"
+      "Velotric",
+      "Heybike UK"
     ],
     "categories": [
       "All",
@@ -92,6 +93,30 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/P275SE_01_7f24b64d-face-433f-9bcc-1f87be91b8c3.jpg?v=1767074661",
       "url": "https://engwe-bikes-uk.com/products/engwe-p275-se",
       "badge_text": "SAVE £700 (47% OFF)"
+    },
+    {
+      "id": "heybike_uk_8370053808443",
+      "title": "EC 1 Commuter E-Bike",
+      "brand": "Heybike UK",
+      "retailer": "Heybike UK",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Commuter",
+      "dealBucket": "🔥 Mega Deal",
+      "dealScore": 37.5,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 1699,
+      "sale_price": 1099,
+      "savings_amount": 600,
+      "discount_percentage": 35,
+      "image": "https://cdn.shopify.com/s/files/1/0730/5792/7483/files/EC1_7ef5773e-c729-4c47-a99b-39bc78075802.png?v=1751970130",
+      "url": "https://heybike.co.uk/products/ec-1",
+      "badge_text": "SAVE £600 (35% OFF)"
     },
     {
       "id": "e_bikeshop_co_uk_15351339581824",

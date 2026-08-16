@@ -53,6 +53,15 @@ const SOURCES = [
     symbol: '$',
     endpoint: 'https://www.velotricbike.com/products.json?limit=250',
     baseUrl: 'https://www.velotricbike.com/products/'
+  },
+  {
+    name: 'Heybike UK',
+    retailer: 'Heybike UK',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://heybike.co.uk/products.json?limit=250',
+    baseUrl: 'https://heybike.co.uk/products/'
   }
 ];
 

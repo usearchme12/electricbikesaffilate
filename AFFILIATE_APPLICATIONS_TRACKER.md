@@ -28,20 +28,21 @@
 
 ---
 
-## ⚡ Direct Store Feeds Active in Aggregator
+## ⚡ Direct Store Feeds Active in Aggregator (100% UK GBP £)
 
-These 8 stores are scanned automatically every morning at 06:00 UTC:
+These 9 stores are scanned automatically every morning at 06:00 UTC:
 
-* **E-BikeShop UK:** 5 deals (Scott, Orbea, Haibike)
+* **Cyrusher UK:** 33 deals (Sonder Lite, Loop 2.0, Ranger, Trax e-bikes)
 * **Pure Electric:** 7 deals (Urban e-bikes & scooters)
-* **Velotric:** 6 deals (Commuters & step-thrus)
+* **E-BikeShop UK:** 5 deals (Haibike, Scott, Orbea)
 * **Engwe UK:** 5 deals (O20 Boost, Zip, P275 SE)
 * **DYU Cycle UK:** 3 deals (C2, C3 folding bikes)
 * **PedalGo UK:** 2 deals (Save up to £769)
 * **Heybike UK:** 1 deal (Cargo / city e-bikes)
 * **Tenways:** 1 deal (City belt-drive)
+* **Eovolt UK:** (Folding e-bikes)
 
-**Total Active Verified Deals:** 30 live bikes indexed
+**Total Active Verified UK Deals:** 57 live bikes indexed (100% in GBP £)
 
 ---
 

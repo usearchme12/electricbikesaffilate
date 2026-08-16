@@ -1,15 +1,16 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-16 14:29:05",
-    "total_deals": 25,
+    "last_updated": "2026-08-16 14:32:02",
+    "total_deals": 28,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
       "Pure Electric",
       "Tenways",
       "Velotric",
-      "Heybike UK"
+      "Heybike UK",
+      "DYU Cycle UK"
     ],
     "categories": [
       "All",
@@ -143,6 +144,30 @@
       "badge_text": "SAVE £650 (15% OFF)"
     },
     {
+      "id": "dyu_cycle_uk_8271011086500",
+      "title": "DYU C6 26 Inch City Electric Bike",
+      "brand": "DYU",
+      "retailer": "DYU UK Official",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Commuter",
+      "dealBucket": "🔥 Mega Deal",
+      "dealScore": 29,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 799,
+      "sale_price": 499,
+      "savings_amount": 300,
+      "discount_percentage": 38,
+      "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/files/01_6af4da4e-08ff-4d40-b7d1-5aecd83b830a.jpg?v=1760495883",
+      "url": "https://uk.dyucycle.com/products/c6-26-inch-city-electric-bike",
+      "badge_text": "SAVE £300 (38% OFF)"
+    },
+    {
       "id": "velotric_7528746451127",
       "title": "Velotric Fold 1 Ebike",
       "brand": "Velotric",
@@ -165,6 +190,30 @@
       "image": "https://cdn.shopify.com/s/files/1/0599/2094/1239/files/F1_StoneGray_rightside1_1.png?v=1713178037",
       "url": "https://www.velotricbike.com/products/velotric-fold-1",
       "badge_text": "SAVE $400 (27% OFF)"
+    },
+    {
+      "id": "dyu_cycle_uk_8271012069540",
+      "title": "DYU D3F 14 Inch Mini Folding Electric Bike",
+      "brand": "DYU",
+      "retailer": "DYU UK Official",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Folding",
+      "dealBucket": "🔥 Mega Deal",
+      "dealScore": 23.8,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 549,
+      "sale_price": 359,
+      "savings_amount": 190,
+      "discount_percentage": 35,
+      "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/products/6_fb537967-18f1-4a7f-8dbd-ba2eef5e34dc.jpg?v=1760495806",
+      "url": "https://uk.dyucycle.com/products/dyu-small-electric-bike-d3f",
+      "badge_text": "SAVE £190 (35% OFF)"
     },
     {
       "id": "e_bikeshop_co_uk_15351351247232",
@@ -261,6 +310,30 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/c0ad2be69190712bf2cde8f7cd4fee95.jpg?v=1782697074",
       "url": "https://engwe-bikes-uk.com/products/engwe-o20-boost-combo",
       "badge_text": "SAVE £400 (17% OFF)"
+    },
+    {
+      "id": "dyu_cycle_uk_8271010791588",
+      "title": "DYU T1 20 Inch Foldable Electric Bike",
+      "brand": "DYU",
+      "retailer": "DYU UK Official",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Folding",
+      "dealBucket": "⚡ Budget Steal",
+      "dealScore": 21.3,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 949,
+      "sale_price": 699,
+      "savings_amount": 250,
+      "discount_percentage": 26,
+      "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/files/01_f9834860-393e-4144-9c41-61e932fa5ec4.jpg?v=1760495941",
+      "url": "https://uk.dyucycle.com/products/dyu-t1-pedal-assist-torque-sensor-electric-bike",
+      "badge_text": "SAVE £250 (26% OFF)"
     },
     {
       "id": "pure_electric_14937652167032",

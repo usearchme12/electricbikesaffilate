@@ -62,6 +62,15 @@ const SOURCES = [
     symbol: '£',
     endpoint: 'https://heybike.co.uk/products.json?limit=250',
     baseUrl: 'https://heybike.co.uk/products/'
+  },
+  {
+    name: 'DYU Cycle UK',
+    retailer: 'DYU UK Official',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://uk.dyucycle.com/products.json?limit=250',
+    baseUrl: 'https://uk.dyucycle.com/products/'
   }
 ];
 
@@ -74,7 +83,7 @@ const ACCESSORY_WORDS = [
 ];
 
 function isActualEBike(product, price) {
-  if (price < 350) return false;
+  if (price < 300) return false;
   const title = (product.title || '').toLowerCase();
   const type = (product.product_type || '').toLowerCase();
 
@@ -133,7 +142,7 @@ async function fetchSourceDeals(source) {
       if (!isActualEBike(p, price)) continue;
 
       // Check if there is an active discount
-      if (comparePrice > price && price >= 350) {
+      if (comparePrice > price && price >= 300) {
         const savings = Math.round(comparePrice - price);
         const discountPct = Math.round((savings / comparePrice) * 100);
 

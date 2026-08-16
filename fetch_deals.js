@@ -54,13 +54,22 @@ const SOURCES = [
     baseUrl: 'https://www.tenways.com/products/'
   },
   {
-    name: 'Velotric',
-    retailer: 'Velotric Direct',
-    country: 'US/Global',
-    currency: 'USD',
-    symbol: '$',
-    endpoint: 'https://www.velotricbike.com/products.json?limit=250',
-    baseUrl: 'https://www.velotricbike.com/products/'
+    name: 'Cyrusher UK',
+    retailer: 'Cyrusher UK',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://www.cyrusher.co.uk/products.json?limit=250',
+    baseUrl: 'https://www.cyrusher.co.uk/products/'
+  },
+  {
+    name: 'Eovolt UK',
+    retailer: 'Eovolt UK',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://eovolt.co.uk/products.json?limit=250',
+    baseUrl: 'https://eovolt.co.uk/products/'
   },
   {
     name: 'Heybike UK',

@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Reight Good Bikes - Top 10 E-Bike Deals
+ * Plugin Name: Reight Good Bikes - E-Bike Deals Finder
  * Plugin URI: https://reightgoodbikes.co.uk/
- * Description: Embeds an interactive, 100% native Top 10 UK Electric Bike Deals & Clearance Offers page via shortcode [ebike_deal_finder]. Links directly to external offers on E-BikeShop UK and Amazon. Zero iframes.
- * Version: 1.2.0
+ * Description: Embeds an interactive, multi-source UK Electric Bike Deals & Clearance Offers page via shortcode [ebike_deals]. Automatically syncs with the live cloud aggregator. Zero iframe layout, 100% mobile-optimized.
+ * Version: 2.0.0
  * Author: Reight Good Bikes
  * Text Domain: reight-deals
  */
@@ -12,12 +12,13 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-function rgb_register_deal_finder_shortcode() {
+function rgb_register_deal_finder_shortcode($atts) {
     ob_start();
     ?>
     <div id="rgb-deal-finder-root" class="rgb-deal-finder-wrapper">
       <style>
         .rgb-deal-finder-wrapper {
+          --rgb-bg: #090d16;
           --rgb-card-bg: #131b2e;
           --rgb-border: #23314f;
           --rgb-primary: #f59e0b;
@@ -27,40 +28,41 @@ function rgb_register_deal_finder_shortcode() {
           --rgb-red: #ef4444;
           --rgb-text: #f8fafc;
           --rgb-muted: #94a3b8;
-          font-family: 'Inter', system-ui, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
           color: var(--rgb-text);
-          margin: 2rem 0;
+          margin: 1.5rem 0;
+          line-height: 1.5;
         }
 
         .rgb-deal-finder-wrapper * { box-sizing: border-box; }
 
-        .rgb-hero {
+        .rgb-header {
           text-align: center;
-          padding: 2rem 1rem;
+          padding: 1.5rem 1rem 2rem;
         }
-        .rgb-hero-badge {
+        .rgb-badge {
           display: inline-block;
           background: rgba(245, 158, 11, 0.15);
-          border: 1px solid rgba(245, 158, 11, 0.3);
+          border: 1px solid rgba(245, 158, 11, 0.35);
           color: var(--rgb-primary);
           padding: 0.35rem 0.9rem;
           border-radius: 9999px;
-          font-size: 0.8rem;
-          font-weight: 700;
+          font-size: 0.78rem;
+          font-weight: 800;
           margin-bottom: 0.75rem;
           text-transform: uppercase;
         }
-        .rgb-hero h2 {
-          font-size: clamp(1.8rem, 4vw, 2.4rem);
+        .rgb-header h2 {
+          font-size: clamp(1.6rem, 4vw, 2.2rem);
           font-weight: 800;
-          color: #fff;
+          color: #ffffff;
           margin-bottom: 0.5rem;
         }
-        .rgb-hero p {
+        .rgb-header p {
           color: var(--rgb-muted);
-          font-size: 1rem;
+          font-size: 0.95rem;
           max-width: 600px;
-          margin: 0 auto 1.5rem;
+          margin: 0 auto;
         }
 
         .rgb-filter-bar {
@@ -70,35 +72,65 @@ function rgb_register_deal_finder_shortcode() {
           padding: 1rem 1.25rem;
           margin-bottom: 2rem;
           display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 1rem;
+          flex-direction: column;
+          gap: 0.9rem;
+        }
+
+        .rgb-search-row {
+          display: flex;
+          gap: 0.75rem;
           flex-wrap: wrap;
         }
-        .rgb-pills { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+        .rgb-search-input {
+          flex: 1;
+          min-width: 220px;
+          background: #090d16;
+          border: 1px solid var(--rgb-border);
+          color: #fff;
+          padding: 0.65rem 1rem;
+          border-radius: 8px;
+          font-size: 0.9rem;
+          outline: none;
+        }
+        .rgb-search-input:focus { border-color: var(--rgb-primary); }
+
+        .rgb-dropdown {
+          background: #090d16;
+          border: 1px solid var(--rgb-border);
+          color: #fff;
+          padding: 0.65rem 0.9rem;
+          border-radius: 8px;
+          font-size: 0.85rem;
+          outline: none;
+          cursor: pointer;
+        }
+
+        .rgb-pills-row {
+          display: flex;
+          gap: 0.4rem;
+          flex-wrap: wrap;
+          align-items: center;
+        }
         .rgb-pill {
           background: #090d16;
           border: 1px solid var(--rgb-border);
           color: var(--rgb-muted);
-          padding: 0.4rem 0.8rem;
+          padding: 0.35rem 0.75rem;
           border-radius: 6px;
           font-size: 0.8rem;
           font-weight: 600;
           cursor: pointer;
-          transition: all 0.2s;
+          transition: all 0.15s;
         }
         .rgb-pill:hover { background: #1e293b; color: #fff; }
         .rgb-pill.active { background: var(--rgb-primary); border-color: var(--rgb-primary); color: #000; font-weight: 800; }
+        .rgb-pill.mega.active { background: var(--rgb-red); border-color: var(--rgb-red); color: #fff; }
 
-        .rgb-sort {
-          background: #090d16;
-          border: 1px solid var(--rgb-border);
-          color: #fff;
-          padding: 0.5rem 0.9rem;
-          border-radius: 6px;
-          font-size: 0.8rem;
-          outline: none;
-          cursor: pointer;
+        .rgb-status-meta {
+          font-size: 0.82rem;
+          color: var(--rgb-muted);
+          margin-bottom: 1rem;
+          font-weight: 600;
         }
 
         .rgb-grid {
@@ -126,7 +158,7 @@ function rgb_register_deal_finder_shortcode() {
           left: 0.75rem;
           background: var(--rgb-red);
           color: #fff;
-          font-size: 0.7rem;
+          font-size: 0.72rem;
           font-weight: 800;
           padding: 0.25rem 0.55rem;
           border-radius: 4px;
@@ -134,12 +166,15 @@ function rgb_register_deal_finder_shortcode() {
           z-index: 2;
         }
 
-        .rgb-card-img { width: 100%; height: 210px; object-fit: cover; background: #000; }
+        .rgb-card-img-wrap { width: 100%; height: 210px; background: #000; overflow: hidden; }
+        .rgb-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.2s; }
+        .rgb-card:hover .rgb-card-img { transform: scale(1.04); }
+
         .rgb-card-body { padding: 1.25rem; display: flex; flex-direction: column; flex: 1; }
 
         .rgb-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; }
-        .rgb-retailer { font-size: 0.75rem; font-weight: 700; color: var(--rgb-blue); text-transform: uppercase; }
-        .rgb-legal { font-size: 0.75rem; font-weight: 700; color: var(--rgb-neon); }
+        .rgb-retailer { font-size: 0.75rem; font-weight: 800; color: var(--rgb-blue); text-transform: uppercase; }
+        .rgb-score { font-size: 0.72rem; font-weight: 800; color: var(--rgb-primary); background: rgba(245,158,11,0.1); padding: 0.15rem 0.4rem; border-radius: 4px; }
 
         .rgb-card-title {
           font-size: 1.05rem;
@@ -178,15 +213,15 @@ function rgb_register_deal_finder_shortcode() {
           margin-bottom: 0.9rem;
         }
         .rgb-sale-price { font-size: 1.55rem; font-weight: 800; color: var(--rgb-primary); }
-        .rgb-rrp { font-size: 0.85rem; color: var(--rgb-muted); text-decoration: line-through; }
-        .rgb-savings { font-size: 0.75rem; font-weight: 700; color: var(--rgb-neon); }
+        .rgb-rrp { font-size: 0.85rem; color: var(--rgb-muted); text-decoration: line-through; margin-left: 0.3rem; }
+        .rgb-savings { font-size: 0.78rem; font-weight: 800; color: var(--rgb-neon); }
 
         .rgb-btn {
           display: block;
           width: 100%;
           text-align: center;
           background: var(--rgb-primary);
-          color: #000;
+          color: #000 !important;
           font-weight: 800;
           font-size: 0.9rem;
           padding: 0.75rem 1rem;
@@ -194,29 +229,39 @@ function rgb_register_deal_finder_shortcode() {
           text-decoration: none;
           transition: background 0.2s;
         }
-        .rgb-btn:hover { background: var(--rgb-primary-hover); color: #000; }
+        .rgb-btn:hover { background: var(--rgb-primary-hover); color: #000 !important; }
       </style>
 
-      <div class="rgb-hero">
-        <span class="rgb-hero-badge">🔥 Hand-Curated Clearance</span>
-        <h2>Top 10 UK Electric Bike Deals & Discounts</h2>
-        <p>Verified high-discount clearance offers from E-BikeShop.co.uk and Amazon UK.</p>
+      <div class="rgb-header">
+        <span class="rgb-badge">⚡ Live Multi-Source E-Bike Deals</span>
+        <h2>Top Electric Bike Discounts & Deals</h2>
+        <p>Real-time price cuts from verified UK e-bike specialists and direct brands.</p>
       </div>
 
       <div class="rgb-filter-bar">
-        <div class="rgb-pills">
-          <button class="rgb-pill active" onclick="rgbFilter('all', this)">All Top 10</button>
-          <button class="rgb-pill" onclick="rgbFilter('Mountain', this)">Mountain</button>
-          <button class="rgb-pill" onclick="rgbFilter('Commuter', this)">Commuter</button>
-          <button class="rgb-pill" onclick="rgbFilter('Folding', this)">Folding</button>
+        <div class="rgb-search-row">
+          <input type="text" id="rgbSearchInput" class="rgb-search-input" placeholder="🔍 Search e-bikes, brands, Bosch motors, folding..." oninput="rgbApplyFilters()">
+          
+          <select id="rgbSortSelect" class="rgb-dropdown" onchange="rgbApplyFilters()">
+            <option value="dealScore">🏆 Best Deal Score</option>
+            <option value="discount">🔥 Highest % Discount</option>
+            <option value="savings">💰 Biggest Cash Savings (£)</option>
+            <option value="price-asc">🏷️ Lowest Price</option>
+            <option value="price-desc">💎 Highest Price</option>
+          </select>
         </div>
 
-        <select id="rgbSortSelect" class="rgb-sort" onchange="rgbRender()">
-          <option value="discount">🔥 Highest % Discount</option>
-          <option value="savings">💰 Biggest £ Savings</option>
-          <option value="price-asc">🏷️ Lowest Price</option>
-        </select>
+        <div class="rgb-pills-row">
+          <button class="rgb-pill active" data-cat="all" onclick="rgbFilter('all', this)">All Deals</button>
+          <button class="rgb-pill mega" data-cat="mega" onclick="rgbFilter('mega', this)">🔥 Mega Deals (30%+)</button>
+          <button class="rgb-pill" data-cat="budget" onclick="rgbFilter('budget', this)">⚡ Under £1,000</button>
+          <button class="rgb-pill" data-cat="Mountain" onclick="rgbFilter('Mountain', this)">Mountain</button>
+          <button class="rgb-pill" data-cat="Commuter" onclick="rgbFilter('Commuter', this)">Commuter</button>
+          <button class="rgb-pill" data-cat="Folding" onclick="rgbFilter('Folding', this)">Folding</button>
+        </div>
       </div>
+
+      <div class="rgb-status-meta" id="rgbStatusMeta">Loading live deals feed...</div>
 
       <div class="rgb-grid" id="rgbDealsContainer">
         <!-- Cards inserted by script -->
@@ -229,13 +274,23 @@ function rgb_register_deal_finder_shortcode() {
         let curCat = 'all';
 
         async function fetchTopDeals() {
-          try {
-            const res = await fetch('<?php echo plugins_url('deals.json', __FILE__); ?>?v=' + Date.now());
-            const data = await res.json();
-            dealsList = data.deals || [];
-            rgbRender();
-          } catch(e) {
-            console.error('Error loading deals:', e);
+          const feedUrls = [
+            'https://raw.githubusercontent.com/usearchme12/electricbikesaffilate/main/deals.json?v=' + Date.now(),
+            '<?php echo plugins_url('deals.json', __FILE__); ?>?v=' + Date.now()
+          ];
+
+          for (const url of feedUrls) {
+            try {
+              const res = await fetch(url);
+              if (res.ok) {
+                const data = await res.json();
+                dealsList = data.deals || [];
+                rgbApplyFilters();
+                return;
+              }
+            } catch(e) {
+              console.warn('Feed fetch attempt failed:', url, e);
+            }
           }
         }
 
@@ -243,49 +298,71 @@ function rgb_register_deal_finder_shortcode() {
           curCat = cat;
           document.querySelectorAll('.rgb-pill').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-          rgbRender();
+          rgbApplyFilters();
         };
 
-        window.rgbRender = function() {
-          const sortMode = document.getElementById('rgbSortSelect').value;
+        window.rgbApplyFilters = function() {
+          const search = (document.getElementById('rgbSearchInput')?.value || '').trim().toLowerCase();
+          const sortMode = document.getElementById('rgbSortSelect')?.value || 'dealScore';
           const container = document.getElementById('rgbDealsContainer');
 
-          let filtered = dealsList.filter(d => curCat === 'all' || d.category === curCat);
+          let filtered = dealsList.filter(d => {
+            if (search) {
+              const title = (d.title || '').toLowerCase();
+              const brand = (d.brand || '').toLowerCase();
+              const ret = (d.retailer || '').toLowerCase();
+              if (!title.includes(search) && !brand.includes(search) && !ret.includes(search)) return false;
+            }
+            if (curCat === 'mega') return d.discount_percentage >= 30 || d.savings_amount >= 400;
+            if (curCat === 'budget') return d.sale_price <= 1000;
+            if (curCat !== 'all' && d.category !== curCat) return false;
+            return true;
+          });
 
           filtered.sort((a, b) => {
+            if (sortMode === 'dealScore') return (b.dealScore || 0) - (a.dealScore || 0);
             if (sortMode === 'discount') return b.discount_percentage - a.discount_percentage;
             if (sortMode === 'savings') return b.savings_amount - a.savings_amount;
             if (sortMode === 'price-asc') return a.sale_price - b.sale_price;
+            if (sortMode === 'price-desc') return b.sale_price - a.sale_price;
             return 0;
           });
 
-          container.innerHTML = filtered.map(d => `
-            <article class="rgb-card">
-              <div class="rgb-badge-discount">SAVE £${Math.round(d.savings_amount)} (${d.discount_percentage}% OFF)</div>
-              <img src="${d.image}" alt="${d.title}" class="rgb-card-img" loading="lazy">
-              <div class="rgb-card-body">
-                <div class="rgb-row">
-                  <span class="rgb-retailer">${d.retailer}</span>
-                  <span class="rgb-legal">✅ 100% UK Legal</span>
+          document.getElementById('rgbStatusMeta').innerText = 'Showing ' + filtered.length + ' verified deals (Auto-updated daily)';
+
+          container.innerHTML = filtered.map(d => {
+            const sym = d.symbol || '£';
+            const savings = Math.round(d.savings_amount).toLocaleString();
+            return `
+              <article class="rgb-card">
+                <div class="rgb-badge-discount">SAVE ${sym}${savings} (${d.discount_percentage}% OFF)</div>
+                <div class="rgb-card-img-wrap">
+                  <img src="${d.image}" alt="${d.title}" class="rgb-card-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600'">
                 </div>
-                <h3 class="rgb-card-title">${d.title}</h3>
-                <div class="rgb-specs">
-                  <div><span class="rgb-spec-lbl">Motor</span><div class="rgb-spec-val">${d.motor_power}</div></div>
-                  <div><span class="rgb-spec-lbl">Battery</span><div class="rgb-spec-val">${d.battery}</div></div>
-                </div>
-                <div class="rgb-price-row">
-                  <div>
-                    <div class="rgb-sale-price">£${d.sale_price.toLocaleString('en-GB', {minimumFractionDigits: 2})}</div>
-                    <span class="rgb-rrp">Was £${d.rrp.toLocaleString('en-GB', {minimumFractionDigits: 2})}</span>
+                <div class="rgb-card-body">
+                  <div class="rgb-row">
+                    <span class="rgb-retailer">${d.retailer}</span>
+                    <span class="rgb-score">Score: ${d.dealScore || 85}</span>
                   </div>
-                  <span class="rgb-savings">Save £${Math.round(d.savings_amount)}</span>
+                  <h3 class="rgb-card-title">${d.title}</h3>
+                  <div class="rgb-specs">
+                    <div><span class="rgb-spec-lbl">Category</span><div class="rgb-spec-val">${d.category}</div></div>
+                    <div><span class="rgb-spec-lbl">Motor</span><div class="rgb-spec-val">${d.motor_power}</div></div>
+                  </div>
+                  <div class="rgb-price-row">
+                    <div>
+                      <div class="rgb-sale-price">${sym}${d.sale_price.toLocaleString('en-GB', {minimumFractionDigits: 2})}</div>
+                      ${d.rrp ? `<span class="rgb-rrp">Was ${sym}${d.rrp.toLocaleString('en-GB', {minimumFractionDigits: 2})}</span>` : ''}
+                    </div>
+                    <span class="rgb-savings">Save ${sym}${savings}</span>
+                  </div>
+                  <a href="${d.url}" target="_blank" rel="nofollow noopener" class="rgb-btn">
+                    👉 View Deal at ${d.retailer} ➔
+                  </a>
                 </div>
-                <a href="${d.url}" target="_blank" rel="nofollow noopener" class="rgb-btn">
-                  👉 View Deal at ${d.retailer} ➔
-                </a>
-              </div>
-            </article>
-          `).join('');
+              </article>
+            `;
+          }).join('');
         };
 
         fetchTopDeals();
@@ -295,4 +372,5 @@ function rgb_register_deal_finder_shortcode() {
     return ob_get_clean();
 }
 
+add_shortcode('ebike_deals', 'rgb_register_deal_finder_shortcode');
 add_shortcode('ebike_deal_finder', 'rgb_register_deal_finder_shortcode');

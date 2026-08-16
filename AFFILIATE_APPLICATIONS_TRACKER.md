@@ -1,45 +1,51 @@
-# 📋 Affiliate Applications & Store Tracker
+# 📋 Affiliate Accounts & Applications Master Tracker
 
-**Your Official Awin Publisher ID:** `3040709` (Account: Electric biek and scooter shop)
-
-This file logs all affiliate programs you have applied to, their network, application status, and how they connect to your Deals Engine.
+**Project:** Reight Good Bikes - E-Bike Deals Engine  
+**Last Updated:** 2026-08-16  
 
 ---
 
-## ⏳ Active Applications (Applied on Awin)
+## 🔑 Your Affiliate Network Accounts
 
-| Retailer / Brand | Website | Network | Status | Deals Ingested? | What to do once approved |
+| Network | Account Name / Property | Your Publisher / Partner ID | Status | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **Awin** | Electric biek and scooter shop | **`3040709`** | ✅ Active Account | Primary UK cycling network (Tredz, Ribble, etc.) |
+| **Impact.com** | Reight Good Bikes | *Pending Signup / Approval* | ⏳ Registered | Primary DTC network (Engwe, Canyon, etc.) |
+
+---
+
+## 🚴 Active Store Applications
+
+| # | Brand / Retailer | Website | Network | Status | Integration in Deal Finder |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1. Leisure Lakes Bikes** | [leisurelakesbikes.com](https://www.leisurelakesbikes.com/) | **Awin** | ⏳ **Applied (Pending)** | Waiting for Awin CSV feed | Copy Awin CSV Feed URL from *Toolbox → Create-a-Feed* |
-| **2. Tredz** | [tredz.co.uk](https://www.tredz.co.uk/) | **Awin** *(ID: 1980)* | ⏳ **Applied (Pending)** | Waiting for Awin CSV feed | Huge catalog (Specialized, Cube, Giant, Cannondale) |
-| **3. Ribble Cycles** | [ribblecycles.co.uk](https://www.ribblecycles.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | Waiting for Awin CSV feed | Copy Ribble Awin CSV Feed URL for Hybrid AL e, CGR AL e |
-| **4. Heybike UK** | [heybike.co.uk](https://heybike.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
-| **5. DYU Cycle UK** | [uk.dyucycle.com](https://uk.dyucycle.com/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
-| **6. PedalGo UK** | [pedalgo.co.uk](https://pedalgo.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
+| **1** | **Engwe UK / Global** | [engwe-bikes-uk.com](https://engwe-bikes-uk.com/) | **Impact.com** (`engwecom.brand`) | ⏳ Applied / Pending | ✅ **Live Feed Active** (5 deals) |
+| **2** | **Tredz** | [tredz.co.uk](https://www.tredz.co.uk/) | **Awin** *(ID: 1980)* | ⏳ Applied (Pending) | Waiting for Awin CSV feed |
+| **3** | **Ribble Cycles** | [ribblecycles.co.uk](https://www.ribblecycles.co.uk/) | **Awin** | ⏳ Applied (Pending) | Waiting for Awin CSV feed |
+| **4** | **Leisure Lakes Bikes** | [leisurelakesbikes.com](https://www.leisurelakesbikes.com/) | **Awin** | ⏳ Applied (Pending) | Waiting for Awin CSV feed |
+| **5** | **Heybike UK** | [heybike.co.uk](https://heybike.co.uk/) | **Awin** | ⏳ Applied (Pending) | ✅ **Live Feed Active** (1 deal) |
+| **6** | **DYU Cycle UK** | [uk.dyucycle.com](https://uk.dyucycle.com/) | **Awin** | ⏳ Applied (Pending) | ✅ **Live Feed Active** (3 deals) |
+| **7** | **PedalGo UK** | [pedalgo.co.uk](https://pedalgo.co.uk/) | **Awin** | ⏳ Applied (Pending) | ✅ **Live Feed Active** (2 deals) |
 
 ---
 
-## ✅ Direct Brand Feeds Currently Scanned
+## ⚡ Direct Store Feeds Active in Aggregator
 
-These stores are already live in your aggregator (`fetch_deals.js`) and updating daily:
+These 8 stores are scanned automatically every morning at 06:00 UTC:
 
-| Store Name | Website | Feed Type | Current Deals Found |
-| :--- | :--- | :--- | :--- |
-| **E-BikeShop UK** | `e-bikeshop.co.uk` | Shopify JSON | 5 deals (Scott, Orbea, Haibike) |
-| **Pure Electric** | `pureelectric.com` | Shopify JSON | 7 deals |
-| **Velotric** | `velotricbike.com` | Shopify JSON | 6 deals |
-| **Engwe UK** | `engwe-bikes-uk.com` | Shopify JSON | 5 deals |
-| **DYU Cycle UK** | `uk.dyucycle.com` | Shopify JSON | 3 deals |
-| **PedalGo UK** | `pedalgo.co.uk` | Shopify JSON | 2 deals |
-| **Heybike UK** | `heybike.co.uk` | Shopify JSON | 1 deal |
-| **Tenways** | `tenways.com` | Shopify JSON | 1 deal |
+* **E-BikeShop UK:** 5 deals (Scott, Orbea, Haibike)
+* **Pure Electric:** 7 deals (Urban e-bikes & scooters)
+* **Velotric:** 6 deals (Commuters & step-thrus)
+* **Engwe UK:** 5 deals (O20 Boost, Zip, P275 SE)
+* **DYU Cycle UK:** 3 deals (C2, C3 folding bikes)
+* **PedalGo UK:** 2 deals (Save up to £769)
+* **Heybike UK:** 1 deal (Cargo / city e-bikes)
+* **Tenways:** 1 deal (City belt-drive)
 
-**Total Active Deals:** 30 live discounted e-bikes
+**Total Active Verified Deals:** 30 live bikes indexed
 
 ---
 
-## 🎯 Quick Instructions for When Awin Approves You:
+## 📝 What to Do When Approvals Arrive:
 
-1. Look in top-right of your Awin dashboard for your **6 or 7-digit Publisher ID** (e.g. `1234567`).
-2. Paste that ID into `fetch_deals.js` under the Awin wrapper rule.
-3. Every single link across Leisure Lakes, Heybike, DYU, and PedalGo will automatically track commissions to your account!
+1. **Awin Approvals:** Your Awin ID (`3040709`) is **already configured** in `fetch_deals.js`. Once a merchant approves you, their links will track commissions automatically!
+2. **Impact.com (Engwe):** Once approved on Impact, copy your Engwe tracking link/ID, paste it in `fetch_deals.js`, and all Engwe sales will pay directly into your Impact account.

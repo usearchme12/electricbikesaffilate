@@ -55,11 +55,11 @@ function rgb_register_deal_finder_shortcode($atts) {
         .rgb-header h2 {
           font-size: clamp(1.6rem, 4vw, 2.2rem);
           font-weight: 800;
-          color: #ffffff;
+          color: #0f172a;
           margin-bottom: 0.5rem;
         }
         .rgb-header p {
-          color: var(--rgb-muted);
+          color: #64748b;
           font-size: 0.95rem;
           max-width: 600px;
           margin: 0 auto;
@@ -127,8 +127,8 @@ function rgb_register_deal_finder_shortcode($atts) {
         .rgb-pill.mega.active { background: var(--rgb-red); border-color: var(--rgb-red); color: #fff; }
 
         .rgb-status-meta {
-          font-size: 0.82rem;
-          color: var(--rgb-muted);
+          font-size: 0.85rem;
+          color: #64748b;
           margin-bottom: 1rem;
           font-weight: 600;
         }

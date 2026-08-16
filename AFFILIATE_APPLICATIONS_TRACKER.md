@@ -9,9 +9,10 @@ This file logs all affiliate programs you have applied to, their network, applic
 | Retailer / Brand | Website | Network | Status | Deals Ingested? | What to do once approved |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1. Leisure Lakes Bikes** | [leisurelakesbikes.com](https://www.leisurelakesbikes.com/) | **Awin** | ⏳ **Applied (Pending)** | Waiting for Awin CSV feed | Copy Awin CSV Feed URL from *Toolbox → Create-a-Feed* |
-| **2. Heybike UK** | [heybike.co.uk](https://heybike.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
-| **3. DYU Cycle UK** | [uk.dyucycle.com](https://uk.dyucycle.com/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
-| **4. PedalGo UK** | [pedalgo.co.uk](https://pedalgo.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
+| **2. Ribble Cycles** | [ribblecycles.co.uk](https://www.ribblecycles.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | Waiting for Awin CSV feed | Copy Ribble Awin CSV Feed URL for Hybrid AL e, CGR AL e clearance |
+| **3. Heybike UK** | [heybike.co.uk](https://heybike.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
+| **4. DYU Cycle UK** | [uk.dyucycle.com](https://uk.dyucycle.com/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
+| **5. PedalGo UK** | [pedalgo.co.uk](https://pedalgo.co.uk/) | **Awin** | ⏳ **Applied (Pending)** | ✅ **Yes (Live)** | Add Awin Publisher ID to `fetch_deals.js` |
 
 ---
 

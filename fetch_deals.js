@@ -8,6 +8,14 @@ const path = require('path');
 
 const DEALS_FILE = path.join(__dirname, 'deals.json');
 
+// Your Official Awin Publisher ID
+const AWIN_PUBLISHER_ID = '3040709';
+
+function buildAwinLink(rawUrl, awinMid) {
+  if (!awinMid || !AWIN_PUBLISHER_ID) return rawUrl;
+  return `https://www.awin1.com/cread.php?awinmid=${awinMid}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(rawUrl)}`;
+}
+
 const SOURCES = [
   {
     name: 'E-BikeShop.co.uk',
@@ -171,6 +179,13 @@ async function fetchSourceDeals(source) {
         else if (price <= 900) dealBucket = '⚡ Budget Steal';
         else if (price >= 2500) dealBucket = '💎 Premium Drop';
 
+        let finalUrl = `${source.baseUrl}${p.handle}`;
+        if (source.awinMid) {
+          finalUrl = buildAwinLink(finalUrl, source.awinMid);
+        } else if (source.affiliateParam) {
+          finalUrl = `${finalUrl}${source.affiliateParam}`;
+        }
+
         deals.push({
           id: `${source.name.toLowerCase().replace(/[^a-z0-9]/g, '_')}_${p.id}`,
           title: title,
@@ -192,7 +207,7 @@ async function fetchSourceDeals(source) {
           savings_amount: savings,
           discount_percentage: discountPct,
           image: image,
-          url: `${source.baseUrl}${p.handle}`,
+          url: finalUrl,
           badge_text: `SAVE ${source.symbol}${savings} (${discountPct}% OFF)`
         });
       }

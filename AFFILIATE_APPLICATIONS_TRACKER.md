@@ -1,5 +1,7 @@
 # 📋 Affiliate Applications & Store Tracker
 
+**Your Official Awin Publisher ID:** `3040709` (Account: Electric biek and scooter shop)
+
 This file logs all affiliate programs you have applied to, their network, application status, and how they connect to your Deals Engine.
 
 ---

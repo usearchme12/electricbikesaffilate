@@ -127,26 +127,30 @@ const SOURCES = [
 ];
 
 const ACCESSORY_WORDS = [
-  'battery', 'charger', 'lock', 'helmet', 'tracker', 'rack', 'bag', 
-  'tyre', 'tire', 'brake', 'crank', 'bracket', 'pedal', 'adapter', 
+  'battery', 'batteries', 'charger', 'lock', 'helmet', 'tracker', 'rack', 'bag', 'bags',
+  'tyre', 'tire', 'brake', 'brakes', 'crank', 'bracket', 'pedal', 'pedals', 'adapter', 
   'display', 'sensor', 'extension', 'combo rear', 'cover', 'plate',
   'pump', 'chainring', 'pannier', 'mirror', 'bell', 'kickstand',
-  'mudguard', 'grip', 'light', 'basket'
+  'mudguard', 'grip', 'grips', 'light', 'lights', 'basket', 'controller',
+  'wheel', 'wheels', 'fender', 'fenders', 'seat', 'saddle', 'trailer',
+  'throttle', 'motor', 'pre-sale', 'inner tube', 'handlebar', 'stand', 'cable'
 ];
 
 function isActualEBike(product, price) {
-  if (price < 300) return false;
+  if (price < 350) return false;
   const title = (product.title || '').toLowerCase();
   const type = (product.product_type || '').toLowerCase();
+  const handle = (product.handle || '').toLowerCase();
 
+  // If ANY accessory word matches anywhere in title/type/handle, reject immediately
   for (const word of ACCESSORY_WORDS) {
-    if (title.includes(word) && !title.includes('bike') && !title.includes('ebike')) {
+    if (title.includes(word) || type.includes(word) || handle.includes(word)) {
       return false;
     }
   }
 
-  const bikeKeywords = ['bike', 'e-bike', 'ebike', 'cycle', 'step-thru', 'step-over', 'folding', 'mtb', 'ride', 'boost', 'eride', 'diem', 'scooter'];
-  return bikeKeywords.some(k => title.includes(k) || type.includes(k));
+  const bikeKeywords = ['bike', 'e-bike', 'ebike', 'cycle', 'step-thru', 'step-through', 'step-over', 'folding', 'mtb', 'ride', 'boost', 'eride', 'diem', 'scooter', 'haibike', 'cube', 'scott', 'orbea'];
+  return bikeKeywords.some(k => title.includes(k) || type.includes(k) || handle.includes(k));
 }
 
 function detectCategory(title, type) {

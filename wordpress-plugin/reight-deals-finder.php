@@ -3,7 +3,7 @@
  * Plugin Name: Reight Good Bikes - E-Bike Deals Finder
  * Plugin URI: https://reightgoodbikes.co.uk/
  * Description: Embeds an interactive, multi-source UK Electric Bike Deals & Clearance Offers page via shortcode [ebike_deals]. Automatically syncs with the live cloud aggregator. Zero iframe layout, 100% mobile-optimized.
- * Version: 2.0.0
+ * Version: 2.2.0
  * Author: Reight Good Bikes
  * Text Domain: reight-deals
  */
@@ -11,6 +11,39 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
+
+// Impact.com Publisher ID
+define('RGB_IMPACT_PUBLISHER_ID', 'P-A7627881-cae8-4568-9e08-026bbcec06071');
+
+/**
+ * Output the Impact.com Universal Tracking Tag (UTT) in <head> on every page.
+ * Required for commission tracking across all affiliate links.
+ */
+function rgb_impact_tracking_tag() {
+    ?>
+    <!-- Impact.com Universal Tracking Tag | Reight Good Bikes | <?php echo RGB_IMPACT_PUBLISHER_ID; ?> -->
+    <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/<?php echo RGB_IMPACT_PUBLISHER_ID; ?>1.js','script','impactStat',document,window);impactStat('trackImpression');</script>
+    <?php
+}
+add_action('wp_head', 'rgb_impact_tracking_tag');
+
+/**
+ * Output noindex meta tag ONLY on pages containing the [ebike_deals] shortcode.
+ * Prevents Google from indexing the deals aggregator page while keeping
+ * the rest of the site fully crawlable.
+ */
+function rgb_noindex_deals_page() {
+    global $post;
+    if (
+        is_singular() &&
+        $post &&
+        ( has_shortcode($post->post_content, 'ebike_deals') ||
+          has_shortcode($post->post_content, 'ebike_deal_finder') )
+    ) {
+        echo '<meta name="robots" content="noindex, follow">' . "\n";
+    }
+}
+add_action('wp_head', 'rgb_noindex_deals_page');
 
 function rgb_register_deal_finder_shortcode($atts) {
     ob_start();
@@ -356,7 +389,7 @@ function rgb_register_deal_finder_shortcode($atts) {
                     </div>
                     <span class="rgb-savings">Save ${sym}${savings}</span>
                   </div>
-                  <a href="${d.url}" target="_blank" rel="nofollow noopener" class="rgb-btn">
+                  <a href="${d.url}" target="_blank" rel="nofollow sponsored noopener" class="rgb-btn">
                     👉 View Deal at ${d.retailer} ➔
                   </a>
                 </div>

@@ -10,7 +10,7 @@
 | Network | Account Name / Property | Your Publisher / Partner ID | Status | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | **Awin** | Electric biek and scooter shop | **`3040709`** | ✅ Active Account | Primary UK cycling network (Tredz, Ribble, etc.) |
-| **Impact.com** | Reight Good Bikes | *Pending Signup / Approval* | ⏳ Registered | Primary DTC network (Engwe, Canyon, etc.) |
+| **Impact.com** | Reight Good Bikes | **`P-A7627881-cae8-4568-9e08-026bbcec06071`** | ✅ UTT Tag Live (v2.1.0 plugin) | UTT added to wp_head — tracks all pages |
 
 ---
 

@@ -16,6 +16,12 @@ function buildAwinLink(rawUrl, awinMid) {
   return `https://www.awin1.com/cread.php?awinmid=${awinMid}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(rawUrl)}`;
 }
 
+// Impact.com Affiliate Deep Links
+// NOTE: Engwe does not support Impact deep linking — all clicks go via the
+// homepage tracking link which sets the affiliate cookie. Commission still
+// fires on any purchase made after landing.
+const ENGWE_AFFILIATE_BASE = 'https://engwecom.pxf.io/c/7627881/2782992/30352';
+
 const SOURCES = [
   {
     name: 'E-BikeShop.co.uk',
@@ -33,7 +39,9 @@ const SOURCES = [
     currency: 'GBP',
     symbol: '£',
     endpoint: 'https://engwe-bikes-uk.com/products.json?limit=250',
-    baseUrl: 'https://engwe-bikes-uk.com/products/'
+    baseUrl: 'https://engwe-bikes-uk.com/products/',
+    // ⚠️ No affiliate tracking — Impact doesn't support deep linking for Engwe
+    // Linking direct to product until a proper solution is available
   },
   {
     name: 'Pure Electric',
@@ -70,6 +78,51 @@ const SOURCES = [
     symbol: '£',
     endpoint: 'https://pedalgo.co.uk/products.json?limit=250',
     baseUrl: 'https://pedalgo.co.uk/products/'
+  },
+  {
+    name: 'Fiido UK',
+    retailer: 'Fiido UK Official',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://uk.fiido.com/products.json?limit=250',
+    baseUrl: 'https://uk.fiido.com/products/'
+  },
+  {
+    name: 'Eskute UK',
+    retailer: 'Eskute UK Official',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://www.eskute.co.uk/products.json?limit=250',
+    baseUrl: 'https://www.eskute.co.uk/products/'
+  },
+  {
+    name: 'Cyrusher UK',
+    retailer: 'Cyrusher UK',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://www.cyrusher.co.uk/products.json?limit=250',
+    baseUrl: 'https://www.cyrusher.co.uk/products/'
+  },
+  {
+    name: 'Eovolt UK',
+    retailer: 'Eovolt UK',
+    country: 'UK',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://eovolt.co.uk/products.json?limit=250',
+    baseUrl: 'https://eovolt.co.uk/products/'
+  },
+  {
+    name: 'Tenways',
+    retailer: 'Tenways Direct',
+    country: 'UK/EU',
+    currency: 'GBP',
+    symbol: '£',
+    endpoint: 'https://www.tenways.com/products.json?limit=250',
+    baseUrl: 'https://www.tenways.com/products/'
   }
 ];
 
@@ -164,6 +217,8 @@ async function fetchSourceDeals(source) {
         let finalUrl = `${source.baseUrl}${p.handle}`;
         if (source.awinMid) {
           finalUrl = buildAwinLink(finalUrl, source.awinMid);
+        } else if (source.affiliateWrapper) {
+          finalUrl = source.affiliateWrapper(finalUrl);
         } else if (source.affiliateParam) {
           finalUrl = `${finalUrl}${source.affiliateParam}`;
         }

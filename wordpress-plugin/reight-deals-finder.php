@@ -308,8 +308,9 @@ function rgb_register_deal_finder_shortcode($atts) {
 
         async function fetchTopDeals() {
           const feedUrls = [
-            'https://raw.githubusercontent.com/usearchme12/electricbikesaffilate/main/deals.json?v=' + Date.now(),
-            '<?php echo plugins_url('deals.json', __FILE__); ?>?v=' + Date.now()
+            'https://cdn.jsdelivr.net/gh/usearchme12/electricbikesaffilate@main/deals.json',
+            'https://raw.githubusercontent.com/usearchme12/electricbikesaffilate/main/deals.json',
+            '<?php echo plugins_url('deals.json', __FILE__); ?>'
           ];
 
           for (const url of feedUrls) {
@@ -317,9 +318,11 @@ function rgb_register_deal_finder_shortcode($atts) {
               const res = await fetch(url);
               if (res.ok) {
                 const data = await res.json();
-                dealsList = data.deals || [];
-                rgbApplyFilters();
-                return;
+                if (data && data.deals && data.deals.length > 0) {
+                  dealsList = data.deals;
+                  rgbApplyFilters();
+                  return;
+                }
               }
             } catch(e) {
               console.warn('Feed fetch attempt failed:', url, e);

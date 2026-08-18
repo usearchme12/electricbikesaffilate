@@ -249,7 +249,9 @@ async function fetchSourceDeals(source) {
           discount_percentage: discountPct,
           image: image,
           url: finalUrl,
-          badge_text: `SAVE ${source.symbol}${savings} (${discountPct}% OFF)`
+          badge_text: `SAVE ${source.symbol}${savings} (${discountPct}% OFF)`,
+          first_seen: p.published_at ? p.published_at.slice(0, 10) : new Date().toISOString().slice(0, 10),
+          is_new: false
         });
       }
     }
@@ -262,12 +264,36 @@ async function fetchSourceDeals(source) {
 
 async function runAggregator() {
   console.log('--- Starting Multi-Source E-Bike Deals Aggregation ---');
+  
+  // Load previous deals to retain first_seen history
+  let prevDealsMap = {};
+  try {
+    if (fs.existsSync(DEALS_FILE)) {
+      const prevData = JSON.parse(fs.readFileSync(DEALS_FILE, 'utf-8'));
+      (prevData.deals || []).forEach(d => {
+        if (d.id) prevDealsMap[d.id] = d.first_seen || d.date_added;
+      });
+    }
+  } catch(e) {}
+
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const twoDaysAgo = new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString().slice(0, 10);
   let allDeals = [];
 
   for (const source of SOURCES) {
     const sourceDeals = await fetchSourceDeals(source);
     allDeals = allDeals.concat(sourceDeals);
   }
+
+  // Assign first_seen and is_new badge
+  allDeals.forEach(d => {
+    if (prevDealsMap[d.id]) {
+      d.first_seen = prevDealsMap[d.id];
+    } else {
+      d.first_seen = todayStr;
+    }
+    d.is_new = (d.first_seen >= twoDaysAgo);
+  });
 
   // Sort overall by highest Deal Score
   allDeals.sort((a, b) => b.dealScore - a.dealScore);
@@ -278,7 +304,7 @@ async function runAggregator() {
       last_updated: new Date().toISOString().replace('T', ' ').slice(0, 19),
       total_deals: allDeals.length,
       sources_scanned: SOURCES.map(s => s.name),
-      categories: ['All', 'Mega Deals', 'Budget Steals', 'Mountain', 'Commuter', 'Folding', 'Cargo & Fat Tyre']
+      categories: ['All', 'Just Added', 'Mega Deals', 'Budget Steals', 'Mountain', 'Commuter', 'Folding', 'Cargo & Fat Tyre']
     },
     deals: allDeals
   };

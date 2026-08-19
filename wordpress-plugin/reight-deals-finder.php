@@ -358,15 +358,16 @@ function rgb_register_deal_finder_shortcode($atts) {
         }
 
         async function fetchTopDeals() {
+          const cb = '?t=' + Math.floor(Date.now() / 60000);
           const feedUrls = [
-            'https://cdn.jsdelivr.net/gh/usearchme12/electricbikesaffilate@main/deals.json',
-            'https://raw.githubusercontent.com/usearchme12/electricbikesaffilate/main/deals.json',
-            '<?php echo plugins_url('deals.json', __FILE__); ?>'
+            'https://raw.githubusercontent.com/usearchme12/electricbikesaffilate/main/deals.json' + cb,
+            'https://cdn.jsdelivr.net/gh/usearchme12/electricbikesaffilate@main/deals.json' + cb,
+            '<?php echo plugins_url('deals.json', __FILE__); ?>' + cb
           ];
 
           for (const url of feedUrls) {
             try {
-              const res = await fetch(url);
+              const res = await fetch(url, { cache: 'no-store' });
               if (res.ok) {
                 const data = await res.json();
                 if (data && data.deals && data.deals.length > 0) {

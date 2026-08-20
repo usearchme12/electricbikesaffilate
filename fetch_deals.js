@@ -282,7 +282,9 @@ async function fetchSourceDeals(source) {
 }
 
 function getCuratedPartnerDeals() {
-  const ribbleBaseTracking = 'https://www.awin1.com/cread.php?awinmid=5923&awinaffid=3040709&campaign=Outlet&clickref=marketplace&ued=';
+  const ribbleBaseTracking = 'https://www.awin1.com/cread.php?awinmid=5923&awinaffid=3040709&campaign=Outlet&clickref=dealspage&ued=';
+  const llbBaseTracking = 'https://www.awin1.com/cread.php?awinmid=6914&awinaffid=3040709&clickref=dealspage&ued=';
+
   return [
     {
       id: 'ribble_cycles_endurance_al_e',
@@ -305,7 +307,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 1300,
       discount_percentage: 36,
       image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-endurance-al-e/'),
       badge_text: 'SAVE £1300 (36% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
@@ -331,7 +333,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 600,
       discount_percentage: 23,
       image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-hybrid-al-e/'),
       badge_text: 'SAVE £600 (23% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
@@ -357,7 +359,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 500,
       discount_percentage: 17,
       image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-cgr-al-e/'),
       badge_text: 'SAVE £500 (17% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
@@ -383,7 +385,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 2401,
       discount_percentage: 38,
       image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600',
-      url: 'https://www.awin1.com/cread.php?awinmid=6914&awinaffid=3040709&clickref=deals-hub&ued=' + encodeURIComponent('https://www.leisurelakesbikes.com/'),
+      url: llbBaseTracking + encodeURIComponent('https://www.leisurelakesbikes.com/bikes/electric-bikes/merida-eone-sixty-7000-full-suspension-electric-mountain-bike-black__384813'),
       badge_text: 'SAVE £2401 (38% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
@@ -409,7 +411,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 1700,
       discount_percentage: 28,
       image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600',
-      url: 'https://www.awin1.com/cread.php?awinmid=6914&awinaffid=3040709&clickref=deals-hub&ued=' + encodeURIComponent('https://www.leisurelakesbikes.com/'),
+      url: llbBaseTracking + encodeURIComponent('https://www.leisurelakesbikes.com/bikes/electric-bikes/mondraker-level-r-electric-mountain-bike-2026-desert-grey__408101'),
       badge_text: 'SAVE £1700 (28% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true

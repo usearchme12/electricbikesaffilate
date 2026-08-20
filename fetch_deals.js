@@ -392,7 +392,7 @@ function getCuratedPartnerDeals() {
     },
     {
       id: 'leisure_lakes_merida_eone_sixty_7000',
-      title: 'Merida eOne-Sixty 7000 Full-Suspension Electric MTB',
+      title: 'Merida eOne-Sixty 7000 Electric Bike (Gold/Silver)',
       brand: 'Merida',
       retailer: 'Leisure Lakes Bikes',
       country: 'UK',
@@ -410,15 +410,15 @@ function getCuratedPartnerDeals() {
       sale_price: 3999,
       savings_amount: 2401,
       discount_percentage: 38,
-      image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600',
-      url: llbBaseTracking + encodeURIComponent('https://www.leisurelakesbikes.com/bikes/electric-bikes/merida-eone-sixty-7000-full-suspension-electric-mountain-bike-black__384813'),
+      image: 'https://www.leisurelakesbikes.com/images/merida-eonesixty-7000-electric-bike-2024-goldsilver.jpg',
+      url: llbBaseTracking + encodeURIComponent('https://www.leisurelakesbikes.com/bikes/electric-bikes/merida-eone-sixty-7000-electric-bike-goldsilver__411417'),
       badge_text: 'SAVE £2401 (38% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
     },
     {
       id: 'leisure_lakes_mondraker_level_r',
-      title: 'Mondraker Level R 2026 Enduro Electric Bike',
+      title: 'Mondraker Level R Electric Bike 2026 (Chili Red/Super Black)',
       brand: 'Mondraker',
       retailer: 'Leisure Lakes Bikes',
       country: 'UK',
@@ -436,8 +436,8 @@ function getCuratedPartnerDeals() {
       sale_price: 4299,
       savings_amount: 1700,
       discount_percentage: 28,
-      image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600',
-      url: llbBaseTracking + encodeURIComponent('https://www.leisurelakesbikes.com/bikes/electric-bikes/mondraker-level-r-electric-mountain-bike-2026-desert-grey__408101'),
+      image: 'https://www.leisurelakesbikes.com/images/products/m/mo/mondraker-level-r-electric-bike-2026.jpg',
+      url: llbBaseTracking + encodeURIComponent('https://www.leisurelakesbikes.com/bikes/electric-bikes/mondraker-level-r-electric-bike-2026-chili-redsuper-black__433857'),
       badge_text: 'SAVE £1700 (28% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true

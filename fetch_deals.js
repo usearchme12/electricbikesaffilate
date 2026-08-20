@@ -13,7 +13,7 @@ const AWIN_PUBLISHER_ID = '3040709';
 
 function buildAwinLink(rawUrl, awinMid) {
   if (!awinMid || !AWIN_PUBLISHER_ID) return rawUrl;
-  return `https://www.awin1.com/cread.php?awinmid=${awinMid}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(rawUrl)}`;
+  return `https://www.awin1.com/cread.php?awinmid=${awinMid}&awinaffid=${AWIN_PUBLISHER_ID}&clickref=dealspage&ued=${encodeURIComponent(rawUrl)}`;
 }
 
 // Impact.com Affiliate Deep Links
@@ -40,8 +40,7 @@ const SOURCES = [
     symbol: '£',
     endpoint: 'https://engwe-bikes-uk.com/products.json?limit=250',
     baseUrl: 'https://engwe-bikes-uk.com/products/',
-    // ⚠️ No affiliate tracking — Impact doesn't support deep linking for Engwe
-    // Linking direct to product until a proper solution is available
+    awinMid: '65774'
   },
   {
     name: 'Pure Electric',

@@ -3,7 +3,7 @@
  * Plugin Name: Reight Good Bikes - E-Bike Deals Finder
  * Plugin URI: https://reightgoodbikes.co.uk/
  * Description: Embeds an interactive, multi-source UK Electric Bike Deals & Clearance Offers page via shortcode [ebike_deals]. Automatically syncs with the live cloud aggregator. Zero iframe layout, 100% mobile-optimized.
- * Version: 2.3.0
+ * Version: 2.4.0
  * Author: Reight Good Bikes
  * Text Domain: reight-deals
  */

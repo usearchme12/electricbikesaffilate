@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-20 06:56:08",
-    "total_deals": 47,
+    "last_updated": "2026-08-20 12:16:46",
+    "total_deals": 43,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -21,10 +21,11 @@
       "Just Added",
       "Mega Deals",
       "Budget Steals",
+      "Fat Tyre",
       "Mountain",
       "Commuter",
       "Folding",
-      "Cargo & Fat Tyre"
+      "Cargo"
     ]
   },
   "deals": [
@@ -51,7 +52,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-Hybe-CF-9-2026-Electric-Bike-Brown.jpg?v=1765810730",
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-hybe-cf-9-2026",
       "badge_text": "SAVE £1950 (30% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -62,7 +63,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Cargo & Fat Tyre",
+      "category": "Cargo",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 70.2,
       "motor_power": "250W Road Legal",
@@ -77,7 +78,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/P275_SE_1.jpg?v=1768809378",
       "url": "https://engwe-bikes-uk.com/products/engwe-p275-se-combo",
       "badge_text": "SAVE £1400 (47% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -103,7 +104,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/P275SE_01_7f24b64d-face-433f-9bcc-1f87be91b8c3.jpg?v=1767074661",
       "url": "https://engwe-bikes-uk.com/products/engwe-p275-se",
       "badge_text": "SAVE £700 (47% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -129,7 +130,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0730/5792/7483/files/EC1_7ef5773e-c729-4c47-a99b-39bc78075802.png?v=1751970130",
       "url": "https://heybike.co.uk/products/ec-1",
       "badge_text": "SAVE £600 (35% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -140,7 +141,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 36.5,
       "motor_power": "250W Road Legal",
@@ -155,7 +156,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-E-Bike-Kommoda3.0-Main-Green-1.jpg?v=1774320844",
       "url": "https://www.cyrusher.co.uk/products/kommoda-2-0",
       "badge_text": "SAVE £600 (33% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -166,7 +167,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 29.7,
       "motor_power": "250W Road Legal",
@@ -181,7 +182,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-kommoda-pro-SUV-E-Bike-Blue-5.jpg?v=1783494579",
       "url": "https://www.cyrusher.co.uk/products/kommoda-pro",
       "badge_text": "SAVE £500 (26% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -207,7 +208,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-AllMtn-4-2026-Electric-Bike-Grey.jpg?v=1765887983",
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-allmtn-4-2026",
       "badge_text": "SAVE £650 (15% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -233,7 +234,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/files/01_6af4da4e-08ff-4d40-b7d1-5aecd83b830a.jpg?v=1760495883",
       "url": "https://uk.dyucycle.com/products/c6-26-inch-city-electric-bike",
       "badge_text": "SAVE £300 (38% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -244,7 +245,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Cargo & Fat Tyre",
+      "category": "Fat Tyre",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 26.7,
       "motor_power": "250W Road Legal",
@@ -259,7 +260,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/1_11af9723-c33a-4926-8e83-d3a198a2091a.jpg?v=1764668047",
       "url": "https://engwe-bikes-uk.com/products/l20-3-0-boost-combo",
       "badge_text": "SAVE £500 (20% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -285,7 +286,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1238469011.jpg?v=1778803545",
       "url": "https://www.pureelectric.com/products/air5-ultra-suspension",
       "badge_text": "SAVE £250 (36% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -296,7 +297,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 25.7,
       "motor_power": "250W Road Legal",
@@ -311,7 +312,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-E-Bike-Trax2.0-Main-Blue-11.jpg?v=1767939260",
       "url": "https://www.cyrusher.co.uk/products/trax-ebike",
       "badge_text": "SAVE £500 (18% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -322,7 +323,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 25.7,
       "motor_power": "250W Road Legal",
@@ -337,7 +338,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher_Ranger_2.0_ebike_Green-11.jpg?v=1767938841",
       "url": "https://www.cyrusher.co.uk/products/ranger-ebike",
       "badge_text": "SAVE £500 (18% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -363,7 +364,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Flex-Emtb-E-Bike-Main-Blue-1.jpg?v=1784899404",
       "url": "https://www.cyrusher.co.uk/products/flex",
       "badge_text": "SAVE £400 (22% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -389,7 +390,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/products/6_fb537967-18f1-4a7f-8dbd-ba2eef5e34dc.jpg?v=1760495806",
       "url": "https://uk.dyucycle.com/products/dyu-small-electric-bike-d3f",
       "badge_text": "SAVE £190 (35% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -415,7 +416,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-AllTrail-4-2026-Electric-Bike-Blue.jpg?v=1765893898",
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-alltrail-4-2026",
       "badge_text": "SAVE £500 (14% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -441,7 +442,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Sonder-Lite-Blue-1.jpg?v=1783347171",
       "url": "https://www.cyrusher.co.uk/products/sonder-lite",
       "badge_text": "SAVE £300 (27% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -467,7 +468,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-platinum-advance-33049019514968.jpg?v=1720747281",
       "url": "https://www.pureelectric.com/products/advance-reboxed-1",
       "badge_text": "SAVE £200 (27% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -478,7 +479,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Cargo & Fat Tyre",
+      "category": "Cargo",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 19.9,
       "motor_power": "250W Road Legal",
@@ -493,7 +494,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0911/9727/6424/files/Screenshot2025-04-05at00.01.32.jpg?v=1750519070",
       "url": "https://pedalgo.co.uk/products/electric-cargo-bike-ultimate-curve",
       "badge_text": "SAVE £401 (13% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -504,7 +505,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Cargo & Fat Tyre",
+      "category": "Fat Tyre",
       "dealBucket": "🔥 Mega Deal",
       "dealScore": 19.8,
       "motor_power": "250W Road Legal",
@@ -519,7 +520,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/2_62ac8446-2ef9-4920-865c-204a7c655e2f.jpg?v=1764668058",
       "url": "https://engwe-bikes-uk.com/products/l20-3-0-pro-combo",
       "badge_text": "SAVE £400 (13% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -545,7 +546,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1238462108.jpg?v=1778800600",
       "url": "https://www.pureelectric.com/products/escape-pro",
       "badge_text": "SAVE £150 (27% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -556,7 +557,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "Standard Deal",
       "dealScore": 18.5,
       "motor_power": "250W Road Legal",
@@ -571,7 +572,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Roam-E-Bike-Blue-001.jpg?v=1762762175",
       "url": "https://www.cyrusher.co.uk/products/roam",
       "badge_text": "SAVE £300 (17% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -582,7 +583,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Cargo & Fat Tyre",
+      "category": "Cargo",
       "dealBucket": "Standard Deal",
       "dealScore": 18.5,
       "motor_power": "250W Road Legal",
@@ -597,7 +598,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/GliderwithBag-3.jpg?v=1764129891",
       "url": "https://www.cyrusher.co.uk/products/glider",
       "badge_text": "SAVE £300 (17% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -608,7 +609,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "Standard Deal",
       "dealScore": 18.5,
       "motor_power": "250W Road Legal",
@@ -623,7 +624,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Rover-E-Bike-Green-001.jpg?v=1762770884",
       "url": "https://www.cyrusher.co.uk/products/rover",
       "badge_text": "SAVE £300 (17% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -634,7 +635,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "Standard Deal",
       "dealScore": 17.8,
       "motor_power": "250W Road Legal",
@@ -649,7 +650,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/L20_3.0_BOOST.jpg?v=1767074871",
       "url": "https://engwe-bikes-uk.com/products/engwe-l20-3-0-boost",
       "badge_text": "SAVE £250 (19% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -675,7 +676,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-pure-x-mclaren-black-1230822866.jpg?v=1775044030",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-black-refurbished",
       "badge_text": "SAVE £200 (22% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -701,7 +702,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1230798400.jpg?v=1775035570",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-papaya-refurbished",
       "badge_text": "SAVE £200 (22% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -712,7 +713,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "Standard Deal",
       "dealScore": 14.2,
       "motor_power": "250W Road Legal",
@@ -727,7 +728,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/EP-23.0boost01.jpg?v=1767084299",
       "url": "https://engwe-bikes-uk.com/products/engwe-ep-2-3-0-boost",
       "badge_text": "SAVE £200 (15% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -738,7 +739,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "Standard Deal",
       "dealScore": 13.2,
       "motor_power": "250W Road Legal",
@@ -753,7 +754,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/L20_3.0_PRO.jpg?v=1767074834",
       "url": "https://engwe-bikes-uk.com/products/engwe-l20-3-0-pro",
       "badge_text": "SAVE £200 (13% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -764,10 +765,10 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Mountain",
       "dealBucket": "⚡ Budget Steal",
       "dealScore": 12.5,
-      "motor_power": "250W Road Legal",
+      "motor_power": "250W-500W High Torque",
       "battery": "400Wh - 750Wh Lithium-Ion",
       "range_miles": "35 - 75 Miles",
       "max_speed": "15.5 mph",
@@ -779,7 +780,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-flex-1238469007.jpg?v=1778803486",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-flex",
       "badge_text": "SAVE £150 (15% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -805,33 +806,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/files/00.png?v=1787043790",
       "url": "https://uk.dyucycle.com/products/a1f-ebike",
       "badge_text": "SAVE £100 (17% OFF)",
-      "first_seen": "2026-08-18",
-      "is_new": true
-    },
-    {
-      "id": "tenways_14923430789492",
-      "title": "TENWAYS AGO X",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 11.7,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 1999,
-      "sale_price": 1799,
-      "savings_amount": 200,
-      "discount_percentage": 10,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/26-green-1_91a6bb82-d699-4ec2-9d2b-693692afc7be.webp?v=1772448584",
-      "url": "https://www.tenways.com/products/ago-x",
-      "badge_text": "SAVE £200 (10% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -842,7 +817,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Cargo & Fat Tyre",
+      "category": "Cargo",
       "dealBucket": "Standard Deal",
       "dealScore": 11.6,
       "motor_power": "250W Road Legal",
@@ -857,7 +832,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0911/9727/6424/files/Screenshot_2025-04-04_at_19.06.52.jpg?v=1749591584",
       "url": "https://pedalgo.co.uk/products/amcargobikes-electric-cargo-bike-deluxe",
       "badge_text": "SAVE £199 (10% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -868,7 +843,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Cargo & Fat Tyre",
+      "category": "Fat Tyre",
       "dealBucket": "Standard Deal",
       "dealScore": 11.2,
       "motor_power": "250W Road Legal",
@@ -883,7 +858,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/c0ad2be69190712bf2cde8f7cd4fee95.jpg?v=1782697074",
       "url": "https://engwe-bikes-uk.com/products/engwe-o20-boost-combo",
       "badge_text": "SAVE £200 (9% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -909,12 +884,12 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-advance-33049038159960.jpg?v=1720750523",
       "url": "https://www.pureelectric.com/products/pure-advance-electric-scooter",
       "badge_text": "SAVE £100 (15% OFF)",
-      "first_seen": "2026-08-19",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
-      "id": "tenways_7919692218517",
-      "title": "TENWAYS AGO T",
+      "id": "tenways_14923430789492",
+      "title": "TENWAYS AGO X",
       "brand": "TENWAYS",
       "retailer": "Tenways Direct",
       "country": "UK/EU",
@@ -922,19 +897,19 @@
       "symbol": "£",
       "category": "Commuter",
       "dealBucket": "Standard Deal",
-      "dealScore": 10.2,
+      "dealScore": 10.8,
       "motor_power": "250W Road Legal",
       "battery": "400Wh - 750Wh Lithium-Ion",
       "range_miles": "35 - 75 Miles",
       "max_speed": "20 mph",
       "is_uk_legal": false,
-      "rrp": 2699,
-      "sale_price": 2499,
-      "savings_amount": 200,
-      "discount_percentage": 7,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/green_cc228123-abb2-4ae0-81f3-c8bd5166eec2.webp?v=1756713072",
-      "url": "https://www.tenways.com/products/ago-t",
-      "badge_text": "SAVE £200 (7% OFF)",
+      "rrp": 1748,
+      "sale_price": 1573,
+      "savings_amount": 175,
+      "discount_percentage": 10,
+      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/26-green-1_91a6bb82-d699-4ec2-9d2b-693692afc7be.webp?v=1772448584",
+      "url": "https://www.tenways.com/products/ago-x",
+      "badge_text": "SAVE £175 (10% OFF)",
       "first_seen": "2026-08-20",
       "is_new": true
     },
@@ -961,7 +936,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-chrome-pure-x-mclaren-chrome-1182624359.jpg?v=1754076717",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-chrome-reboxed",
       "badge_text": "SAVE £100 (13% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -987,7 +962,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Loop-City-Folding-E-Bike-Main-Black-07.jpg?v=1784881157",
       "url": "https://www.cyrusher.co.uk/products/loop",
       "badge_text": "SAVE £100 (13% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -1013,7 +988,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805436.jpg?v=1781711378",
       "url": "https://www.pureelectric.com/products/air-6-ultra-max-suspension",
       "badge_text": "SAVE £75 (12% OFF)",
-      "first_seen": "2026-08-19",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -1024,7 +999,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "Standard Deal",
       "dealScore": 7.3,
       "motor_power": "250W Road Legal",
@@ -1038,32 +1013,6 @@
       "discount_percentage": 8,
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/2053.png?v=1779963383",
       "url": "https://engwe-bikes-uk.com/products/engwe-o20-boost",
-      "badge_text": "SAVE £100 (8% OFF)",
-      "first_seen": "2026-08-18",
-      "is_new": true
-    },
-    {
-      "id": "tenways_14735051161972",
-      "title": "TENWAYS CGO600",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 7.3,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 1299,
-      "sale_price": 1199,
-      "savings_amount": 100,
-      "discount_percentage": 8,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/Greygreen-1.webp?v=1758781276",
-      "url": "https://www.tenways.com/products/cgo600",
       "badge_text": "SAVE £100 (8% OFF)",
       "first_seen": "2026-08-20",
       "is_new": true
@@ -1091,7 +1040,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805481.jpg?v=1781712730",
       "url": "https://www.pureelectric.com/products/air-6-pro-suspension",
       "badge_text": "SAVE £50 (11% OFF)",
-      "first_seen": "2026-08-19",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -1117,7 +1066,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805413.jpg?v=1781710694",
       "url": "https://www.pureelectric.com/products/escape-pro-suspension",
       "badge_text": "SAVE £50 (10% OFF)",
-      "first_seen": "2026-08-19",
+      "first_seen": "2026-08-20",
       "is_new": true
     },
     {
@@ -1143,32 +1092,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0814/1232/5677/files/11-sunstone-yellow-m.webp?v=1751938354",
       "url": "https://uk.fiido.com/products/fiido-nomads-trekking-e-bike",
       "badge_text": "SAVE £92 (7% OFF)",
-      "first_seen": "2026-08-18",
-      "is_new": true
-    },
-    {
-      "id": "tenways_8195597664405",
-      "title": "TENWAYS CGO600 Pro | Plus",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 6.3,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 1799,
-      "sale_price": 1699,
-      "savings_amount": 100,
-      "discount_percentage": 6,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/willow_mist-1.webp?v=1775096126",
-      "url": "https://www.tenways.com/products/cgo600-pro",
-      "badge_text": "SAVE £100 (6% OFF)",
       "first_seen": "2026-08-20",
       "is_new": true
     },
@@ -1195,32 +1118,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805459.jpg?v=1781712072",
       "url": "https://www.pureelectric.com/products/air-6-ultra-suspension",
       "badge_text": "SAVE £50 (9% OFF)",
-      "first_seen": "2026-08-19",
-      "is_new": true
-    },
-    {
-      "id": "tenways_8195598188693",
-      "title": "TENWAYS CGO800S | Plus",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 5.8,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 1899,
-      "sale_price": 1799,
-      "savings_amount": 100,
-      "discount_percentage": 5,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/black1_4e3b1313-fd14-437e-b06e-727f2cba66bd.webp?v=1759287427",
-      "url": "https://www.tenways.com/products/cgo800s",
-      "badge_text": "SAVE £100 (5% OFF)",
       "first_seen": "2026-08-20",
       "is_new": true
     },
@@ -1232,7 +1129,7 @@
       "country": "UK",
       "currency": "GBP",
       "symbol": "£",
-      "category": "Commuter",
+      "category": "Fat Tyre",
       "dealBucket": "⚡ Budget Steal",
       "dealScore": 4.2,
       "motor_power": "250W Road Legal",
@@ -1247,7 +1144,7 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/2_f7000d51-73b1-442e-9190-8c7e25f9bf48.jpg?v=1767074687",
       "url": "https://engwe-bikes-uk.com/products/engwe-ep-2-boost",
       "badge_text": "SAVE £50 (5% OFF)",
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-08-20",
       "is_new": true
     }
   ]

@@ -155,15 +155,34 @@ function isActualEBike(product, price) {
 
 function detectCategory(title, type) {
   const text = `${title} ${type}`.toLowerCase();
-  if (text.includes('fold') || text.includes('compact') || text.includes('vektron') || text.includes('tern') || text.includes('zip')) {
+  
+  // 1. Fat Tyre & All-Terrain models & keywords (4.0" / 3.0" wide tyres)
+  const fatKeywords = [
+    'fat', 'fat tyre', 'fat tire', 'fat-tire', 'fat-tyre', 'fatbike',
+    'kommoda', 'ranger', 'rover', 'trax', 'roam', 'kuattro', 'ovia', 'xf650', 'xf800', 'xf900',
+    'ep-2', 'ep2', 'engine pro', 'engine x', 'l20', 'm20', 'o20', 'e26', 'x26', 'x24', 'x20',
+    'mars', 'tyson', 'brawn', 'hero', 'horizon', 'explorer', 'titan', 'm1 pro',
+    'all-terrain', 'all terrain', '4.0', '4-inch', '20x4', '26x4', '20*4', '26*4'
+  ];
+  if (fatKeywords.some(k => text.includes(k))) {
+    return 'Fat Tyre';
+  }
+
+  // 2. Cargo
+  if (text.includes('cargo') || text.includes('glider') || text.includes('hauler') || text.includes('amcargobikes') || text.includes('curve') || text.includes('combo')) {
+    return 'Cargo';
+  }
+
+  // 3. Folding
+  if (text.includes('fold') || text.includes('compact') || text.includes('vektron') || text.includes('tern') || text.includes('zip') || text.includes('sonder') || text.includes('loop') || text.includes('d3f') || text.includes('a1f')) {
     return 'Folding';
   }
-  if (text.includes('mountain') || text.includes('mtb') || text.includes('fs') || text.includes('wild') || text.includes('trail') || text.includes('ams') || text.includes('haibike') || text.includes('hybe')) {
+
+  // 4. Mountain
+  if (text.includes('mountain') || text.includes('mtb') || text.includes('fs') || text.includes('wild') || text.includes('trail') || text.includes('ams') || text.includes('haibike') || text.includes('hybe') || text.includes('allmtn') || text.includes('alltrail') || text.includes('flex')) {
     return 'Mountain';
   }
-  if (text.includes('cargo') || text.includes('fat') || text.includes('beast') || text.includes('hauler') || text.includes('combo')) {
-    return 'Cargo & Fat Tyre';
-  }
+
   return 'Commuter';
 }
 
@@ -304,7 +323,7 @@ async function runAggregator() {
       last_updated: new Date().toISOString().replace('T', ' ').slice(0, 19),
       total_deals: allDeals.length,
       sources_scanned: SOURCES.map(s => s.name),
-      categories: ['All', 'Just Added', 'Mega Deals', 'Budget Steals', 'Mountain', 'Commuter', 'Folding', 'Cargo & Fat Tyre']
+      categories: ['All', 'Just Added', 'Mega Deals', 'Budget Steals', 'Fat Tyre', 'Mountain', 'Commuter', 'Folding', 'Cargo']
     },
     deals: allDeals
   };

@@ -362,7 +362,7 @@
     .card-title {
       font-size: 1.05rem;
       font-weight: 700;
-      color: #fff;
+      color: #ffffff !important;
       line-height: 1.35;
       margin-bottom: 0.9rem;
       display: -webkit-box;
@@ -517,10 +517,11 @@
           <button class="pill-btn active" data-cat="all" onclick="setCategory('all', this)">All Deals</button>
           <button class="pill-btn mega" data-cat="mega" onclick="setCategory('mega', this)">🔥 Mega Deals (30%+)</button>
           <button class="pill-btn" data-cat="budget" onclick="setCategory('budget', this)">⚡ Under £1,000</button>
+          <button class="pill-btn" data-cat="Fat Tyre" onclick="setCategory('Fat Tyre', this)">🛞 Fat Tyre</button>
           <button class="pill-btn" data-cat="Mountain" onclick="setCategory('Mountain', this)">Mountain (e-MTB)</button>
           <button class="pill-btn" data-cat="Commuter" onclick="setCategory('Commuter', this)">City & Commuter</button>
           <button class="pill-btn" data-cat="Folding" onclick="setCategory('Folding', this)">Folding</button>
-          <button class="pill-btn" data-cat="Cargo & Fat Tyre" onclick="setCategory('Cargo & Fat Tyre', this)">Cargo & Fat Tyre</button>
+          <button class="pill-btn" data-cat="Cargo" onclick="setCategory('Cargo', this)">Cargo</button>
         </div>
       </div>
 
@@ -633,6 +634,12 @@
         // Category filter
         if (curCategory === 'mega') return d.discount_percentage >= 30 || d.savings_amount >= 400;
         if (curCategory === 'budget') return d.sale_price <= 1000;
+        if (curCategory === 'Fat Tyre') {
+          if (d.category === 'Fat Tyre' || d.category === 'Cargo & Fat Tyre') return true;
+          const t = (d.title + ' ' + (d.brand || '')).toLowerCase();
+          const fatKws = ['fat', 'kommoda', 'ranger', 'rover', 'trax', 'roam', 'kuattro', 'ovia', 'ep-2', 'engine pro', 'l20', 'm20', 'o20', 'e26', 'mars', 'tyson', 'brawn', 'hero', 'all-terrain', '4.0'];
+          return fatKws.some(k => t.includes(k));
+        }
         if (curCategory !== 'all' && d.category !== curCategory) return false;
 
         return true;

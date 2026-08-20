@@ -88,3 +88,19 @@ node serve.js
 The repository is configured to run automatically via GitHub Actions:
 * **Schedule:** Every day at **06:00 UTC** and **18:00 UTC**.
 * **Manual Refresh:** Go to the **Actions** tab on GitHub $\rightarrow$ click **"Daily Multi-Source E-Bike Deals Refresh"** $\rightarrow$ click **"Run workflow"**.
+
+---
+
+## 📝 Release Notes & Recent Changelog
+
+### Version 2.4.0 (Latest)
+* **🎨 Fixed Theme Heading Overrides & Contrast**:
+  * Added high-specificity CSS rules with `!important` across `#rgb-deal-finder-root .rgb-card-title`, headings, specs, and price rows.
+  * Ensures bright white text on dark cards regardless of WordPress theme global `h3` styling.
+* **🛞 Added Dedicated "Fat Tyre" Filter Tab & Auto-Detection Engine**:
+  * Added `🛞 Fat Tyre` button to the primary filter pills bar in both the WordPress plugin and standalone dashboard.
+  * **Model Recognition**: Automatically identifies popular fat tyre platforms including Cyrusher (*Kommoda 3.0, Kommoda Pro, Trax, Ranger, Rover, Roam, Ovia, Kuattro*), Engwe (*EP-2, EP-2 Boost/Pro, L20, L20 Boost/Pro, O20, M20, Engine Pro*), Heybike (*Mars, Tyson, Hero, Explorer, Horizon, Brawn*), and Fiido (*Titan, M1 Pro*).
+  * **Spec Matching**: Detects tyre dimensions and keywords (`fat`, `fat tyre`, `all-terrain`, `4.0"`, `20x4`, `26x4`).
+  * **Resilient Multi-Filter**: Fat tyre bikes with step-through or folding frames now appear under both relevant categories and the Fat Tyre tab.
+* **📦 Updated Plugin Zip Distributions**: Rebuilt `reight-deals-finder.zip` and `wordpress-plugin.zip` for instant deployment.
+

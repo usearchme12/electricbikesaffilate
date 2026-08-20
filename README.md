@@ -91,6 +91,63 @@ The repository is configured to run automatically via GitHub Actions:
 
 ---
 
+## 🔗 Affiliate Deep-Linking Architecture & Retailer Guide
+
+### Core Tracking Architecture (Awin Network)
+All Awin-monetized retailers use your registered Publisher ID: **`3040709`**.
+Links are dynamically constructed using the standard Awin redirect wrapper:
+```text
+https://www.awin1.com/cread.php?awinmid=[MERCHANT_ID]&awinaffid=3040709&clickref=dealspage&ued=[ENCODED_DESTINATION_URL]
+```
+
+---
+
+### ⚠️ Retailer-by-Retailer URL Rules & 404 Prevention
+
+To avoid 404 errors, wrong landing pages, or losing user intent, follow these specific retailer rules:
+
+#### 1. 🇬🇧 **Ribble Cycles** (Awin MID: `5923`)
+* **The 404 / Wrong Page Issue:**
+  * Ribble runs on a custom Magento platform with strict routing. 
+  * Passing legacy model slugs (e.g. `/ribble-endurance-al-e/` or `/ribble-hybrid-al-e/`) returns an immediate **404 Not Found**.
+  * Passing top-level model overview pages (e.g. `/allroad-sl-r-e/`) lands the user on a 3D marketing showroom rather than a direct bike purchase page with a "Buy Now" / "Choose Size" button.
+* **The Required Alteration:**
+  * Always use the exact **`/build-v2/`** direct-purchase sub-route with the colour and groupset slug:
+    ```text
+    https://www.ribblecycles.co.uk/ribble-allroad-sl-r-e-pro/build-v2/?colour=midnight-blue
+    https://www.ribblecycles.co.uk/ribble-allroad-e-al-105/build-v2/?colour=midnight-metallic-blue
+    https://www.ribblecycles.co.uk/ribble-cgr-e-al-105-v3/build-v2/?colour=black
+    https://www.ribblecycles.co.uk/ribble-cgr-e-carbon-x-105-di2-v3/build-v2/?colour=champagne-green
+    ```
+
+#### 2. ⚡ **Leisure Lakes Bikes** (Awin MID: `6914`)
+* **The 404 / Wrong Item Issue:**
+  * Leisure Lakes Bikes appends a unique numeric product ID at the end of every URL (e.g., `__411417` or `__433857`).
+  * If you guess the URL or use a generic search snippet, an incorrect ID will either 404 or redirect to an unrelated accessory (such as a CamelBak backpack or helmet).
+* **The Required Alteration:**
+  * Always copy the exact live product URL including the trailing `__[product_id]` suffix directly from their live electric bikes catalog:
+    ```text
+    https://www.leisurelakesbikes.com/bikes/electric-bikes/merida-eone-sixty-7000-electric-bike-goldsilver__411417
+    https://www.leisurelakesbikes.com/bikes/electric-bikes/mondraker-level-r-electric-bike-2026-chili-redsuper-black__433857
+    ```
+
+#### 3. 🚴 **Engwe UK** (Awin MID: `65774`)
+* **The Homepage Redirect Issue:**
+  * Static Awin shortlinks (e.g. `tidd.ly` links) only point to the store homepage (`uk.engwe.com/`).
+  * If used for every deal card, users clicking on an *L20 3.0 Boost* or *EP-2 Pro* are dumped on the homepage rather than the specific bike page.
+* **The Required Alteration:**
+  * In `fetch_deals.js`, we dynamically append the individual product handle (`/products/engwe-[model-slug]`) into the `&ued=` parameter of the Awin link so that every deal card deep-links to that exact bike:
+    ```text
+    https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-l20-3-0-boost
+    ```
+
+#### 4. 🛞 **Pedal Go UK** (Awin MID: `114770`)
+* **Stock & Inventory Filtering:**
+  * Pedal Go offers high-commission e-cargo bikes (11.11% commission).
+  * Our automated aggregator scans `https://pedalgo.co.uk/products.json` and verifies `available: true` across all variants before adding them to the feed, preventing out-of-stock bikes (like Emotorad) from cluttering the deals board.
+
+---
+
 ## 📝 Release Notes & Recent Changelog
 
 ### Version 2.4.0 (Latest)
@@ -102,5 +159,8 @@ The repository is configured to run automatically via GitHub Actions:
   * **Model Recognition**: Automatically identifies popular fat tyre platforms including Cyrusher (*Kommoda 3.0, Kommoda Pro, Trax, Ranger, Rover, Roam, Ovia, Kuattro*), Engwe (*EP-2, EP-2 Boost/Pro, L20, L20 Boost/Pro, O20, M20, Engine Pro*), Heybike (*Mars, Tyson, Hero, Explorer, Horizon, Brawn*), and Fiido (*Titan, M1 Pro*).
   * **Spec Matching**: Detects tyre dimensions and keywords (`fat`, `fat tyre`, `all-terrain`, `4.0"`, `20x4`, `26x4`).
   * **Resilient Multi-Filter**: Fat tyre bikes with step-through or folding frames now appear under both relevant categories and the Fat Tyre tab.
+* **🔗 Full Direct-Purchase Deep Linking Across All 4 Approved Awin Networks**:
+  * Integrated verified direct product / build URLs for **Engwe UK** (`MID: 65774`), **Ribble Cycles** (`MID: 5923`), **Leisure Lakes Bikes** (`MID: 6914`), and **Pedal Go UK** (`MID: 114770`).
 * **📦 Updated Plugin Zip Distributions**: Rebuilt `reight-deals-finder.zip` and `wordpress-plugin.zip` for instant deployment.
+
 

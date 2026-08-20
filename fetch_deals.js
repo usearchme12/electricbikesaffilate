@@ -281,6 +281,90 @@ async function fetchSourceDeals(source) {
   return deals;
 }
 
+function getCuratedPartnerDeals() {
+  const ribbleBaseTracking = 'https://www.awin1.com/cread.php?awinmid=5923&awinaffid=3040709&campaign=Outlet&clickref=marketplace&ued=';
+  return [
+    {
+      id: 'ribble_cycles_endurance_al_e',
+      title: 'Ribble Endurance AL e (Shimano Tiagra)',
+      brand: 'Ribble Cycles',
+      retailer: 'Ribble Cycles UK',
+      country: 'UK',
+      currency: 'GBP',
+      symbol: '£',
+      category: 'Commuter',
+      dealBucket: '🔥 Mega Deal',
+      dealScore: 61.4,
+      motor_power: '250W Mahle ebikemotion High Torque',
+      battery: '250Wh Integrated Lithium-Ion',
+      range_miles: '45 - 60 Miles',
+      max_speed: '15.5 mph',
+      is_uk_legal: true,
+      rrp: 3599,
+      sale_price: 2299,
+      savings_amount: 1300,
+      discount_percentage: 36,
+      image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600',
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
+      badge_text: 'SAVE £1300 (36% OFF)',
+      first_seen: new Date().toISOString().slice(0, 10),
+      is_new: true
+    },
+    {
+      id: 'ribble_cycles_urban_al_e',
+      title: 'Ribble Urban AL e (SRAM NX 1x11)',
+      brand: 'Ribble Cycles',
+      retailer: 'Ribble Cycles UK',
+      country: 'UK',
+      currency: 'GBP',
+      symbol: '£',
+      category: 'Commuter',
+      dealBucket: '🔥 Mega Deal',
+      dealScore: 31.6,
+      motor_power: '250W Mahle X35+ Hub Motor',
+      battery: '250Wh Integrated Lithium-Ion',
+      range_miles: '40 - 55 Miles',
+      max_speed: '15.5 mph',
+      is_uk_legal: true,
+      rrp: 2599,
+      sale_price: 1999,
+      savings_amount: 600,
+      discount_percentage: 23,
+      image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600',
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
+      badge_text: 'SAVE £600 (23% OFF)',
+      first_seen: new Date().toISOString().slice(0, 10),
+      is_new: true
+    },
+    {
+      id: 'ribble_cycles_cgr_al_e',
+      title: 'Ribble CGR AL e Gravel Electric Bike',
+      brand: 'Ribble Cycles',
+      retailer: 'Ribble Cycles UK',
+      country: 'UK',
+      currency: 'GBP',
+      symbol: '£',
+      category: 'Commuter',
+      dealBucket: '🔥 Mega Deal',
+      dealScore: 25.0,
+      motor_power: '250W Mahle ebikemotion',
+      battery: '250Wh Integrated Lithium-Ion',
+      range_miles: '45 - 60 Miles',
+      max_speed: '15.5 mph',
+      is_uk_legal: true,
+      rrp: 2999,
+      sale_price: 2499,
+      savings_amount: 500,
+      discount_percentage: 17,
+      image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=600',
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
+      badge_text: 'SAVE £500 (17% OFF)',
+      first_seen: new Date().toISOString().slice(0, 10),
+      is_new: true
+    }
+  ];
+}
+
 async function runAggregator() {
   console.log('--- Starting Multi-Source E-Bike Deals Aggregation ---');
   
@@ -303,6 +387,10 @@ async function runAggregator() {
     const sourceDeals = await fetchSourceDeals(source);
     allDeals = allDeals.concat(sourceDeals);
   }
+
+  // Include verified approved partner deals (e.g. Ribble Cycles)
+  const partnerDeals = getCuratedPartnerDeals();
+  allDeals = allDeals.concat(partnerDeals);
 
   // Assign first_seen and is_new badge
   allDeals.forEach(d => {

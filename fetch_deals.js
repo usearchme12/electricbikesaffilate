@@ -307,7 +307,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 1300,
       discount_percentage: 36,
       image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-endurance-al-e/'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
       badge_text: 'SAVE £1300 (36% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
@@ -333,7 +333,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 600,
       discount_percentage: 23,
       image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-hybrid-al-e/'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
       badge_text: 'SAVE £600 (23% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
@@ -359,7 +359,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 500,
       discount_percentage: 17,
       image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-cgr-al-e/'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/bikes/electric-bikes/'),
       badge_text: 'SAVE £500 (17% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true

@@ -287,8 +287,8 @@ function getCuratedPartnerDeals() {
 
   return [
     {
-      id: 'ribble_cycles_allroad_sl_r_e',
-      title: 'Ribble ALLROAD SL R E Lightweight Carbon Road e-Bike',
+      id: 'ribble_cycles_allroad_sl_r_e_pro',
+      title: 'Ribble ALLROAD SL R E Pro (Ultegra Di2) Carbon Road e-Bike',
       brand: 'Ribble Cycles',
       retailer: 'Ribble Cycles UK',
       country: 'UK',
@@ -307,14 +307,14 @@ function getCuratedPartnerDeals() {
       savings_amount: 400,
       discount_percentage: 10,
       image: 'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-allroad-sl-r-e/?colour=midnight-blue'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-allroad-sl-r-e-pro/build-v2/?colour=midnight-blue'),
       badge_text: 'SAVE £400 (10% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
     },
     {
-      id: 'ribble_cycles_allroad_e_al',
-      title: 'Ribble ALLROAD E AL Endurance Electric Road Bike',
+      id: 'ribble_cycles_allroad_e_al_105',
+      title: 'Ribble ALLROAD E AL (Shimano 105) Electric Road Bike',
       brand: 'Ribble Cycles',
       retailer: 'Ribble Cycles UK',
       country: 'UK',
@@ -333,14 +333,14 @@ function getCuratedPartnerDeals() {
       savings_amount: 350,
       discount_percentage: 12,
       image: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-allroad-e-al/?colour=midnight-metallic-blue'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-allroad-e-al-105/build-v2/?colour=midnight-metallic-blue'),
       badge_text: 'SAVE £350 (12% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
     },
     {
-      id: 'ribble_cycles_cgr_e_al_v3',
-      title: 'Ribble CGR E AL V3 All-Road / Commute Electric Bike',
+      id: 'ribble_cycles_cgr_e_al_105_v3',
+      title: 'Ribble CGR E AL (Shimano 105 V3) All-Road Electric Bike',
       brand: 'Ribble Cycles',
       retailer: 'Ribble Cycles UK',
       country: 'UK',
@@ -359,14 +359,14 @@ function getCuratedPartnerDeals() {
       savings_amount: 200,
       discount_percentage: 7,
       image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-cgr-e-al-v3/?colour=black'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-cgr-e-al-105-v3/build-v2/?colour=black'),
       badge_text: 'SAVE £200 (7% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true
     },
     {
-      id: 'ribble_cycles_allgrit_e_carbon',
-      title: 'Ribble ALLGRIT E Carbon X Sportfit Gravel e-Bike',
+      id: 'ribble_cycles_cgr_e_carbon_x_105_di2',
+      title: 'Ribble CGR E CARBON-X (Shimano 105 Di2) Gravel e-Bike',
       brand: 'Ribble Cycles',
       retailer: 'Ribble Cycles UK',
       country: 'UK',
@@ -385,7 +385,7 @@ function getCuratedPartnerDeals() {
       savings_amount: 200,
       discount_percentage: 5,
       image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600',
-      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-allgrit-e-carbon-x-sportfit-apex-xplr-axs/?colour=sandstone'),
+      url: ribbleBaseTracking + encodeURIComponent('https://www.ribblecycles.co.uk/ribble-cgr-e-carbon-x-105-di2-v3/build-v2/?colour=champagne-green'),
       badge_text: 'SAVE £200 (5% OFF)',
       first_seen: new Date().toISOString().slice(0, 10),
       is_new: true

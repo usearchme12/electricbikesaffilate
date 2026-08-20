@@ -20,7 +20,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1** | **Engwe UK / Global** | [engwe-bikes-uk.com](https://engwe-bikes-uk.com/) | **Impact.com** (`engwecom.brand`) | ⏳ Applied / Pending | ✅ **Live Feed Active** (5 deals) |
 | **2** | **Tredz** | [tredz.co.uk](https://www.tredz.co.uk/) | **Awin** *(ID: 1980)* | ⏳ Applied (Pending) | Waiting for Awin CSV feed |
-| **3** | **Ribble Cycles** | [ribblecycles.co.uk](https://www.ribblecycles.co.uk/) | **Awin** | ⏳ Applied (Pending) | Waiting for Awin CSV feed |
+| **3** | **Ribble Cycles** | [ribblecycles.co.uk](https://www.ribblecycles.co.uk/) | **Awin** *(MID: 5923)* | ✅ **Approved / Active** | MID 5923 tracking configured |
 | **4** | **Leisure Lakes Bikes** | [leisurelakesbikes.com](https://www.leisurelakesbikes.com/) | **Awin** | ⏳ Applied (Pending) | Waiting for Awin CSV feed |
 | **5** | **Heybike UK** | [heybike.co.uk](https://heybike.co.uk/) | **Awin** | ⏳ Applied (Pending) | ✅ **Live Feed Active** (1 deal) |
 | **6** | **DYU Cycle UK** | [uk.dyucycle.com](https://uk.dyucycle.com/) | **Awin** | ⏳ Applied (Pending) | ✅ **Live Feed Active** (3 deals) |

@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-21 06:57:48",
-    "total_deals": 49,
+    "last_updated": "2026-08-22 06:51:17",
+    "total_deals": 48,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -442,32 +442,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/products/6_fb537967-18f1-4a7f-8dbd-ba2eef5e34dc.jpg?v=1760495806",
       "url": "https://uk.dyucycle.com/products/dyu-small-electric-bike-d3f",
       "badge_text": "SAVE £190 (35% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": true
-    },
-    {
-      "id": "e_bikeshop_co_uk_15351351247232",
-      "title": "Haibike AllTrail 4 2026",
-      "brand": "Haibike Electric Bikes",
-      "retailer": "E-BikeShop UK",
-      "country": "UK",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Mountain",
-      "dealBucket": "🔥 Mega Deal",
-      "dealScore": 23.7,
-      "motor_power": "250W-500W High Torque",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "15.5 mph",
-      "is_uk_legal": true,
-      "rrp": 3499,
-      "sale_price": 2999,
-      "savings_amount": 500,
-      "discount_percentage": 14,
-      "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-AllTrail-4-2026-Electric-Bike-Blue.jpg?v=1765893898",
-      "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-alltrail-4-2026",
-      "badge_text": "SAVE £500 (14% OFF)",
       "first_seen": "2026-08-20",
       "is_new": true
     },

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-22 06:51:17",
+    "last_updated": "2026-08-23 06:52:01",
     "total_deals": 48,
     "sources_scanned": [
       "E-BikeShop.co.uk",
@@ -53,7 +53,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=6914&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fwww.leisurelakesbikes.com%2Fbikes%2Felectric-bikes%2Fmerida-eone-sixty-7000-electric-bike-goldsilver__411417",
       "badge_text": "SAVE £2401 (38% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "e_bikeshop_co_uk_15351321559424",
@@ -79,7 +79,7 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-hybe-cf-9-2026",
       "badge_text": "SAVE £1950 (30% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "leisure_lakes_mondraker_level_r",
@@ -105,7 +105,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=6914&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fwww.leisurelakesbikes.com%2Fbikes%2Felectric-bikes%2Fmondraker-level-r-electric-bike-2026-chili-redsuper-black__433857",
       "badge_text": "SAVE £1700 (28% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8391383548086",
@@ -131,7 +131,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-p275-se-combo",
       "badge_text": "SAVE £1400 (47% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8241398710454",
@@ -157,7 +157,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-p275-se",
       "badge_text": "SAVE £700 (47% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "heybike_uk_8370053808443",
@@ -183,7 +183,7 @@
       "url": "https://heybike.co.uk/products/ec-1",
       "badge_text": "SAVE £600 (35% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_8796910616789",
@@ -209,7 +209,7 @@
       "url": "https://www.cyrusher.co.uk/products/kommoda-2-0",
       "badge_text": "SAVE £600 (33% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_9343680282837",
@@ -235,7 +235,7 @@
       "url": "https://www.cyrusher.co.uk/products/kommoda-pro",
       "badge_text": "SAVE £500 (26% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "e_bikeshop_co_uk_15351339581824",
@@ -261,7 +261,7 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-allmtn-4-2026",
       "badge_text": "SAVE £650 (15% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "dyu_cycle_uk_8271011086500",
@@ -287,7 +287,7 @@
       "url": "https://uk.dyucycle.com/products/c6-26-inch-city-electric-bike",
       "badge_text": "SAVE £300 (38% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8169600778422",
@@ -313,7 +313,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fl20-3-0-boost-combo",
       "badge_text": "SAVE £500 (20% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_14937652167032",
@@ -339,7 +339,7 @@
       "url": "https://www.pureelectric.com/products/air5-ultra-suspension",
       "badge_text": "SAVE £250 (36% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_7986263949525",
@@ -365,7 +365,7 @@
       "url": "https://www.cyrusher.co.uk/products/trax-ebike",
       "badge_text": "SAVE £500 (18% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_7934768644309",
@@ -391,7 +391,7 @@
       "url": "https://www.cyrusher.co.uk/products/ranger-ebike",
       "badge_text": "SAVE £500 (18% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_9006660419797",
@@ -417,7 +417,7 @@
       "url": "https://www.cyrusher.co.uk/products/flex",
       "badge_text": "SAVE £400 (22% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "dyu_cycle_uk_8271012069540",
@@ -443,7 +443,7 @@
       "url": "https://uk.dyucycle.com/products/dyu-small-electric-bike-d3f",
       "badge_text": "SAVE £190 (35% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_9445342740693",
@@ -469,7 +469,7 @@
       "url": "https://www.cyrusher.co.uk/products/sonder-lite",
       "badge_text": "SAVE £300 (27% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_14904608751992",
@@ -495,7 +495,7 @@
       "url": "https://www.pureelectric.com/products/advance-reboxed-1",
       "badge_text": "SAVE £200 (27% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pedalgo_uk_10154801561864",
@@ -521,7 +521,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=114770&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fpedalgo.co.uk%2Fproducts%2Felectric-cargo-bike-ultimate-curve",
       "badge_text": "SAVE £401 (13% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8169596223670",
@@ -547,7 +547,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fl20-3-0-pro-combo",
       "badge_text": "SAVE £400 (13% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_14932006240632",
@@ -573,7 +573,7 @@
       "url": "https://www.pureelectric.com/products/escape-pro",
       "badge_text": "SAVE £150 (27% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_9006660387029",
@@ -599,7 +599,7 @@
       "url": "https://www.cyrusher.co.uk/products/roam",
       "badge_text": "SAVE £300 (17% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_8905427812565",
@@ -625,7 +625,7 @@
       "url": "https://www.cyrusher.co.uk/products/glider",
       "badge_text": "SAVE £300 (17% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_8832694321365",
@@ -651,7 +651,7 @@
       "url": "https://www.cyrusher.co.uk/products/rover",
       "badge_text": "SAVE £300 (17% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8164313268406",
@@ -677,7 +677,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-l20-3-0-boost",
       "badge_text": "SAVE £250 (19% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_15020411683192",
@@ -703,7 +703,7 @@
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-black-refurbished",
       "badge_text": "SAVE £200 (22% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_15020411519352",
@@ -729,7 +729,7 @@
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-papaya-refurbished",
       "badge_text": "SAVE £200 (22% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8269327138998",
@@ -755,7 +755,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-ep-2-3-0-boost",
       "badge_text": "SAVE £200 (15% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8164311990454",
@@ -781,7 +781,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-l20-3-0-pro",
       "badge_text": "SAVE £200 (13% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_14941317824888",
@@ -807,7 +807,7 @@
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-flex",
       "badge_text": "SAVE £150 (15% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "dyu_cycle_uk_8271010431140",
@@ -833,7 +833,7 @@
       "url": "https://uk.dyucycle.com/products/a1f-ebike",
       "badge_text": "SAVE £100 (17% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "tenways_14923430789492",
@@ -859,7 +859,7 @@
       "url": "https://www.tenways.com/products/ago-x",
       "badge_text": "SAVE £200 (10% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pedalgo_uk_10154645389576",
@@ -885,7 +885,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=114770&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fpedalgo.co.uk%2Fproducts%2Famcargobikes-electric-cargo-bike-deluxe",
       "badge_text": "SAVE £199 (10% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8815718695094",
@@ -911,7 +911,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-o20-boost-combo",
       "badge_text": "SAVE £200 (9% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_7361724678232",
@@ -937,7 +937,7 @@
       "url": "https://www.pureelectric.com/products/pure-advance-electric-scooter",
       "badge_text": "SAVE £100 (15% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "tenways_7919692218517",
@@ -989,7 +989,7 @@
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-chrome-reboxed",
       "badge_text": "SAVE £100 (13% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "cyrusher_uk_8992605634773",
@@ -1015,7 +1015,7 @@
       "url": "https://www.cyrusher.co.uk/products/loop",
       "badge_text": "SAVE £100 (13% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_15012476813688",
@@ -1041,7 +1041,7 @@
       "url": "https://www.pureelectric.com/products/air-6-ultra-max-suspension",
       "badge_text": "SAVE £75 (12% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8800587808950",
@@ -1067,7 +1067,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-o20-boost",
       "badge_text": "SAVE £100 (8% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "tenways_14735051161972",
@@ -1119,7 +1119,7 @@
       "url": "https://www.pureelectric.com/products/air-6-pro-suspension",
       "badge_text": "SAVE £50 (11% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_15013412241784",
@@ -1145,7 +1145,7 @@
       "url": "https://www.pureelectric.com/products/escape-pro-suspension",
       "badge_text": "SAVE £50 (10% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "fiido_uk_10053672927533",
@@ -1171,7 +1171,7 @@
       "url": "https://uk.fiido.com/products/fiido-nomads-trekking-e-bike",
       "badge_text": "SAVE £92 (7% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "tenways_8195597664405",
@@ -1223,7 +1223,7 @@
       "url": "https://www.pureelectric.com/products/air-6-ultra-suspension",
       "badge_text": "SAVE £50 (9% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "tenways_8195598188693",
@@ -1275,7 +1275,7 @@
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-ep-2-boost",
       "badge_text": "SAVE £50 (5% OFF)",
       "first_seen": "2026-08-20",
-      "is_new": true
+      "is_new": false
     }
   ]
 }

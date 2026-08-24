@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-23 06:52:01",
+    "last_updated": "2026-08-24 07:11:14",
     "total_deals": 48,
     "sources_scanned": [
       "E-BikeShop.co.uk",
@@ -963,7 +963,7 @@
       "url": "https://www.tenways.com/products/ago-t",
       "badge_text": "SAVE £200 (7% OFF)",
       "first_seen": "2026-08-21",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_14955809997176",
@@ -1093,7 +1093,7 @@
       "url": "https://www.tenways.com/products/cgo600",
       "badge_text": "SAVE £100 (8% OFF)",
       "first_seen": "2026-08-21",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_15012469768568",
@@ -1197,7 +1197,7 @@
       "url": "https://www.tenways.com/products/cgo600-pro",
       "badge_text": "SAVE £100 (6% OFF)",
       "first_seen": "2026-08-21",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "pure_electric_15012473864568",
@@ -1249,7 +1249,7 @@
       "url": "https://www.tenways.com/products/cgo800s",
       "badge_text": "SAVE £100 (5% OFF)",
       "first_seen": "2026-08-21",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "engwe_uk_8183413309622",

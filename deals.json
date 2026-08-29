@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-28 18:29:21",
+    "last_updated": "2026-08-29 12:35:23",
     "total_deals": 47,
     "sources_scanned": [
       "E-BikeShop.co.uk",
@@ -183,7 +183,7 @@
       "url": "https://uk.dyucycle.com/products/m20-all-terrain-long-range-electric-bike",
       "badge_text": "SAVE £600 (43% OFF)",
       "first_seen": "2026-08-26",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "heybike_uk_8370053808443",

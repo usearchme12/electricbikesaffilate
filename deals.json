@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-08-30 11:43:27",
-    "total_deals": 47,
+    "last_updated": "2026-08-31 13:22:09",
+    "total_deals": 46,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -728,32 +728,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1230798400.jpg?v=1775035570",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-papaya-refurbished",
       "badge_text": "SAVE £200 (22% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
-    },
-    {
-      "id": "engwe_uk_8269327138998",
-      "title": "EP-2 3.0 Boost",
-      "brand": "engwe uk",
-      "retailer": "Engwe UK Official",
-      "country": "UK",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Fat Tyre",
-      "dealBucket": "Standard Deal",
-      "dealScore": 14.2,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "15.5 mph",
-      "is_uk_legal": true,
-      "rrp": 1299,
-      "sale_price": 1099,
-      "savings_amount": 200,
-      "discount_percentage": 15,
-      "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/EP-23.0boost01.jpg?v=1767084299",
-      "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-ep-2-3-0-boost",
-      "badge_text": "SAVE £200 (15% OFF)",
       "first_seen": "2026-08-20",
       "is_new": false
     },

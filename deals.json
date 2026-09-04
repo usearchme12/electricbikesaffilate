@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-09-03 11:01:27",
-    "total_deals": 49,
+    "last_updated": "2026-09-04 11:02:12",
+    "total_deals": 51,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -784,6 +784,32 @@
       "is_new": false
     },
     {
+      "id": "engwe_uk_8269327138998",
+      "title": "EP-2 3.0 Boost",
+      "brand": "engwe uk",
+      "retailer": "Engwe UK Official",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Fat Tyre",
+      "dealBucket": "Standard Deal",
+      "dealScore": 14.2,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 1299,
+      "sale_price": 1099,
+      "savings_amount": 200,
+      "discount_percentage": 15,
+      "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/EP-23.0boost01.jpg?v=1767084299",
+      "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-ep-2-3-0-boost",
+      "badge_text": "SAVE £200 (15% OFF)",
+      "first_seen": "2026-09-04",
+      "is_new": true
+    },
+    {
       "id": "pure_electric_14859601936760",
       "title": "Pure x McLaren Chrome",
       "brand": "Pure",
@@ -1096,6 +1122,32 @@
       "is_new": false
     },
     {
+      "id": "tenways_14735051161972",
+      "title": "TENWAYS CGO600",
+      "brand": "TENWAYS",
+      "retailer": "Tenways Direct",
+      "country": "UK/EU",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Commuter",
+      "dealBucket": "Standard Deal",
+      "dealScore": 7.3,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "20 mph",
+      "is_uk_legal": false,
+      "rrp": 1299,
+      "sale_price": 1199,
+      "savings_amount": 100,
+      "discount_percentage": 8,
+      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/Greygreen-1.webp?v=1758781276",
+      "url": "https://www.tenways.com/products/cgo600",
+      "badge_text": "SAVE £100 (8% OFF)",
+      "first_seen": "2026-09-04",
+      "is_new": true
+    },
+    {
       "id": "pure_electric_15012469768568",
       "title": "AIR⁶ PRO+ SUSPENSION",
       "brand": "Pure",
@@ -1249,7 +1301,7 @@
       "url": "https://www.tenways.com/products/ago-air",
       "badge_text": "SAVE £100 (5% OFF)",
       "first_seen": "2026-09-01",
-      "is_new": true
+      "is_new": false
     },
     {
       "id": "tenways_8195598188693",

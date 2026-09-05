@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-09-04 11:02:12",
-    "total_deals": 51,
+    "last_updated": "2026-09-05 10:24:17",
+    "total_deals": 52,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -184,6 +184,32 @@
       "badge_text": "SAVE £600 (43% OFF)",
       "first_seen": "2026-08-26",
       "is_new": false
+    },
+    {
+      "id": "e_bikeshop_co_uk_15351333126528",
+      "title": "Haibike AllMtn 6 2026",
+      "brand": "Haibike Electric Bikes",
+      "retailer": "E-BikeShop UK",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Mountain",
+      "dealBucket": "🔥 Mega Deal",
+      "dealScore": 39.5,
+      "motor_power": "250W-500W High Torque",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 4699,
+      "sale_price": 3799,
+      "savings_amount": 900,
+      "discount_percentage": 19,
+      "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-AllMtn-6-2026-Electric-Bike-Ocean-Grey.jpg?v=1765813205",
+      "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-allmtn-6-2026",
+      "badge_text": "SAVE £900 (19% OFF)",
+      "first_seen": "2026-09-05",
+      "is_new": true
     },
     {
       "id": "heybike_uk_8370053808443",

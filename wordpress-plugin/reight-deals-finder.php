@@ -120,6 +120,50 @@ function rgb_register_deal_finder_shortcode($atts) {
           margin: 0 auto;
         }
 
+        /* Newsletter / Omnisend Card */
+        .rgb-newsletter-card {
+          background: linear-gradient(145deg, #131b2e 0%, #090d16 100%) !important;
+          border: 1px solid var(--rgb-border) !important;
+          border-top: 3px solid var(--rgb-primary) !important;
+          border-radius: 16px;
+          padding: 2rem 1.5rem;
+          margin-bottom: 2rem;
+          text-align: center;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .rgb-newsletter-badge {
+          display: inline-block;
+          background: rgba(245, 158, 11, 0.15) !important;
+          color: var(--rgb-primary) !important;
+          font-size: 0.75rem;
+          font-weight: 800;
+          padding: 0.3rem 0.8rem;
+          border-radius: 99px;
+          text-transform: uppercase;
+          margin-bottom: 0.75rem;
+          letter-spacing: 0.05em;
+        }
+        .rgb-newsletter-card h3 {
+          color: #ffffff !important;
+          font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
+          font-weight: 800 !important;
+          margin-top: 0 !important;
+          margin-bottom: 0.5rem !important;
+        }
+        .rgb-newsletter-sub {
+          color: var(--rgb-muted) !important;
+          font-size: 0.92rem;
+          max-width: 580px;
+          margin: 0 auto 1.25rem !important;
+          line-height: 1.5;
+        }
+        .rgb-newsletter-trust {
+          color: #64748b !important;
+          font-size: 0.75rem;
+          margin-top: 0.9rem;
+          font-weight: 600;
+        }
+
         .rgb-filter-bar {
           background: var(--rgb-card-bg);
           border: 1px solid var(--rgb-border);
@@ -312,6 +356,18 @@ function rgb_register_deal_finder_shortcode($atts) {
         <span class="rgb-badge" id="rgbHeaderBadge">⚡ Live Multi-Source Deals • Updated Today</span>
         <h2>Top Electric Bike Discounts & Deals</h2>
         <p>Real-time price cuts from verified UK e-bike specialists and direct brands.</p>
+      </div>
+
+      <!-- Omnisend Weekly Deals Subscription Banner -->
+      <div class="rgb-newsletter-card" id="rgbNewsletterCard">
+        <div class="rgb-newsletter-badge">⚡ WEEKLY PRICE DROP DIGEST</div>
+        <h3>⚡ Reight Good E-Bike Deals — Delivered Weekly</h3>
+        <p class="rgb-newsletter-sub">We scan UK retailers daily for secret price cuts and clearance stock. Join our weekly digest and grab top e-bike bargains before they sell out.</p>
+
+        <!-- Omnisend Form Embed -->
+        <div id="omnisend-embedded-v2-6a8986b8c8c1603e9077a360"></div>
+
+        <p class="rgb-newsletter-trust">🔒 100% Free • Sent Weekly • Unsubscribe Anytime</p>
       </div>
 
       <div class="rgb-filter-bar">

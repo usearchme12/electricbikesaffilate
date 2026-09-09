@@ -239,6 +239,50 @@
       color: #fff;
     }
 
+    /* Newsletter / Omnisend Card */
+    .rgb-newsletter-card {
+      background: linear-gradient(145deg, #131b2e 0%, #090d16 100%);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--primary);
+      border-radius: 16px;
+      padding: 2.2rem 1.5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+    .rgb-newsletter-badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.3rem 0.8rem;
+      border-radius: 99px;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+    .rgb-newsletter-card h2 {
+      font-family: 'Outfit', sans-serif;
+      color: #ffffff;
+      font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .rgb-newsletter-sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.5;
+    }
+    .rgb-newsletter-trust {
+      color: #64748b;
+      font-size: 0.78rem;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
     /* Section Header */
     .section-header {
       display: flex;
@@ -490,6 +534,18 @@
         <div class="stat-val" id="statSourcesCount">5 Stores</div>
         <div class="stat-lbl">Direct Feeds Monitored</div>
       </div>
+    </section>
+
+    <!-- Omnisend Weekly Deals Subscription Banner -->
+    <section class="rgb-newsletter-card" id="weeklyDigest">
+      <div class="rgb-newsletter-badge">⚡ WEEKLY PRICE DROP DIGEST</div>
+      <h2>⚡ Reight Good E-Bike Deals — Delivered Weekly</h2>
+      <p class="rgb-newsletter-sub">We scan UK retailers daily for secret price cuts and clearance stock. Join our weekly digest and grab top e-bike bargains before they sell out.</p>
+
+      <!-- Omnisend Form Embed Container -->
+      <div id="omnisend-embedded-v2-6a8986b8c8c1603e9077a360"></div>
+
+      <p class="rgb-newsletter-trust">🔒 100% Free • Sent Weekly • Unsubscribe Anytime</p>
     </section>
 
     <!-- Filter & Search Bar -->

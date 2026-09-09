@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-09-08 11:02:29",
-    "total_deals": 49,
+    "last_updated": "2026-09-09 10:56:44",
+    "total_deals": 46,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -52,8 +52,8 @@
       "image": "https://www.leisurelakesbikes.com/images/merida-eonesixty-7000-electric-bike-2024-goldsilver.jpg",
       "url": "https://www.awin1.com/cread.php?awinmid=6914&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fwww.leisurelakesbikes.com%2Fbikes%2Felectric-bikes%2Fmerida-eone-sixty-7000-electric-bike-goldsilver__411417",
       "badge_text": "SAVE £2401 (38% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "e_bikeshop_co_uk_15351321559424",
@@ -78,8 +78,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-Hybe-CF-9-2026-Electric-Bike-Brown.jpg?v=1765810730",
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-hybe-cf-9-2026",
       "badge_text": "SAVE £1950 (30% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "leisure_lakes_mondraker_level_r",
@@ -104,8 +104,8 @@
       "image": "https://www.leisurelakesbikes.com/images/products/m/mo/mondraker-level-r-electric-bike-2026.jpg",
       "url": "https://www.awin1.com/cread.php?awinmid=6914&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fwww.leisurelakesbikes.com%2Fbikes%2Felectric-bikes%2Fmondraker-level-r-electric-bike-2026-chili-redsuper-black__433857",
       "badge_text": "SAVE £1700 (28% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8391383548086",
@@ -130,8 +130,34 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/P275_SE_1.jpg?v=1768809378",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-p275-se-combo",
       "badge_text": "SAVE £1300 (44% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
+    },
+    {
+      "id": "engwe_uk_8241398710454",
+      "title": "P275 SE",
+      "brand": "engwe uk",
+      "retailer": "Engwe UK Official",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Commuter",
+      "dealBucket": "🔥 Mega Deal",
+      "dealScore": 43.2,
+      "motor_power": "250W Road Legal",
+      "battery": "400Wh - 750Wh Lithium-Ion",
+      "range_miles": "35 - 75 Miles",
+      "max_speed": "15.5 mph",
+      "is_uk_legal": true,
+      "rrp": 1499,
+      "sale_price": 849,
+      "savings_amount": 650,
+      "discount_percentage": 43,
+      "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/P275SE_01_7f24b64d-face-433f-9bcc-1f87be91b8c3.jpg?v=1767074661",
+      "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-p275-se",
+      "badge_text": "SAVE £650 (43% OFF)",
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "dyu_cycle_uk_15244701237616",
@@ -156,8 +182,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/files/M20_c00579a9-e920-46f5-a6e8-eda0ad2a8e9d.jpg?v=1787813197",
       "url": "https://uk.dyucycle.com/products/m20-all-terrain-long-range-electric-bike",
       "badge_text": "SAVE £600 (43% OFF)",
-      "first_seen": "2026-08-26",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "e_bikeshop_co_uk_15351333126528",
@@ -182,8 +208,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-AllMtn-6-2026-Electric-Bike-Ocean-Grey.jpg?v=1765813205",
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-allmtn-6-2026",
       "badge_text": "SAVE £900 (19% OFF)",
-      "first_seen": "2026-09-05",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "heybike_uk_8370053808443",
@@ -208,8 +234,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0730/5792/7483/files/EC1_7ef5773e-c729-4c47-a99b-39bc78075802.png?v=1751970130",
       "url": "https://heybike.co.uk/products/ec-1",
       "badge_text": "SAVE £600 (35% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_8796910616789",
@@ -234,8 +260,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-E-Bike-Kommoda3.0-Main-Green-1.jpg?v=1774320844",
       "url": "https://www.cyrusher.co.uk/products/kommoda-2-0",
       "badge_text": "SAVE £600 (33% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "e_bikeshop_co_uk_15351339581824",
@@ -260,8 +286,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Haibike-AllMtn-4-2026-Electric-Bike-Grey.jpg?v=1765887983",
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-allmtn-4-2026",
       "badge_text": "SAVE £650 (15% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "dyu_cycle_uk_8271011086500",
@@ -286,8 +312,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/files/01_6af4da4e-08ff-4d40-b7d1-5aecd83b830a.jpg?v=1760495883",
       "url": "https://uk.dyucycle.com/products/c6-26-inch-city-electric-bike",
       "badge_text": "SAVE £300 (38% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8169600778422",
@@ -312,8 +338,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/1_11af9723-c33a-4926-8e83-d3a198a2091a.jpg?v=1764668047",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fl20-3-0-boost-combo",
       "badge_text": "SAVE £500 (20% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_14937652167032",
@@ -338,8 +364,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-air-ultra-suspension-1238469011.jpg?v=1778803545",
       "url": "https://www.pureelectric.com/products/air5-ultra-suspension",
       "badge_text": "SAVE £250 (36% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_7986263949525",
@@ -364,8 +390,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-E-Bike-Trax2.0-Main-Blue-11.jpg?v=1767939260",
       "url": "https://www.cyrusher.co.uk/products/trax-ebike",
       "badge_text": "SAVE £500 (18% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_7934768644309",
@@ -390,8 +416,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher_Ranger_2.0_ebike_Green-11.jpg?v=1767938841",
       "url": "https://www.cyrusher.co.uk/products/ranger-ebike",
       "badge_text": "SAVE £500 (18% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_9006660419797",
@@ -416,8 +442,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Flex-Emtb-E-Bike-Main-Blue-1.jpg?v=1784899404",
       "url": "https://www.cyrusher.co.uk/products/flex",
       "badge_text": "SAVE £400 (22% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "dyu_cycle_uk_8271012069540",
@@ -442,8 +468,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/0579/5236/products/6_fb537967-18f1-4a7f-8dbd-ba2eef5e34dc.jpg?v=1760495806",
       "url": "https://uk.dyucycle.com/products/dyu-small-electric-bike-d3f",
       "badge_text": "SAVE £190 (35% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_9445342740693",
@@ -468,8 +494,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Sonder-Lite-Blue-1.jpg?v=1783347171",
       "url": "https://www.cyrusher.co.uk/products/sonder-lite",
       "badge_text": "SAVE £300 (27% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_14904608751992",
@@ -494,8 +520,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-platinum-advance-33049019514968.jpg?v=1720747281",
       "url": "https://www.pureelectric.com/products/advance-reboxed-1",
       "badge_text": "SAVE £200 (27% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pedalgo_uk_10154801561864",
@@ -520,8 +546,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0911/9727/6424/files/Screenshot2025-04-05at00.01.32.jpg?v=1750519070",
       "url": "https://www.awin1.com/cread.php?awinmid=114770&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fpedalgo.co.uk%2Fproducts%2Felectric-cargo-bike-ultimate-curve",
       "badge_text": "SAVE £401 (13% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8169596223670",
@@ -546,8 +572,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/2_62ac8446-2ef9-4920-865c-204a7c655e2f.jpg?v=1764668058",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fl20-3-0-pro-combo",
       "badge_text": "SAVE £400 (13% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_14932006240632",
@@ -572,8 +598,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-electric-scooter-escape-pro-1238462108.jpg?v=1778800600",
       "url": "https://www.pureelectric.com/products/escape-pro",
       "badge_text": "SAVE £150 (27% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_9006660387029",
@@ -598,8 +624,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Roam-E-Bike-Blue-001.jpg?v=1762762175",
       "url": "https://www.cyrusher.co.uk/products/roam",
       "badge_text": "SAVE £300 (17% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_8905427812565",
@@ -624,8 +650,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/GliderwithBag-3.jpg?v=1764129891",
       "url": "https://www.cyrusher.co.uk/products/glider",
       "badge_text": "SAVE £300 (17% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_8832694321365",
@@ -650,8 +676,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Rover-E-Bike-Green-001.jpg?v=1762770884",
       "url": "https://www.cyrusher.co.uk/products/rover",
       "badge_text": "SAVE £300 (17% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8164313268406",
@@ -676,8 +702,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/L20_3.0_Boost.png?v=1787719907",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-l20-3-0-boost",
       "badge_text": "SAVE £250 (19% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_15020411683192",
@@ -702,8 +728,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-pure-x-mclaren-black-1230822866.jpg?v=1775044030",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-black-refurbished",
       "badge_text": "SAVE £200 (22% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_15020411519352",
@@ -728,8 +754,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1230798400.jpg?v=1775035570",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-papaya-refurbished",
       "badge_text": "SAVE £200 (22% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_14896045326712",
@@ -754,34 +780,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-flex-reboxed-1250933431.jpg?v=1784913552",
       "url": "https://www.pureelectric.com/products/flex-reboxed",
       "badge_text": "SAVE £200 (22% OFF)",
-      "first_seen": "2026-09-03",
-      "is_new": false
-    },
-    {
-      "id": "tenways_7919692218517",
-      "title": "TENWAYS AGO T",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 15.5,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 2699,
-      "sale_price": 2399,
-      "savings_amount": 300,
-      "discount_percentage": 11,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/green_cc228123-abb2-4ae0-81f3-c8bd5166eec2.webp?v=1756713072",
-      "url": "https://www.tenways.com/products/ago-t",
-      "badge_text": "SAVE £300 (11% OFF)",
-      "first_seen": "2026-08-21",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8269327138998",
@@ -806,8 +806,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/EP-23.0boost01.jpg?v=1767084299",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-ep-2-3-0-boost",
       "badge_text": "SAVE £200 (15% OFF)",
-      "first_seen": "2026-09-04",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_14859601936760",
@@ -832,8 +832,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-chrome-pure-x-mclaren-chrome-1247004506.jpg?v=1783099211",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-chrome",
       "badge_text": "SAVE £150 (17% OFF)",
-      "first_seen": "2026-09-03",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_8010662772824",
@@ -858,8 +858,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-papaya-1238469006.jpg?v=1778803760",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-papaya-edition",
       "badge_text": "SAVE £150 (17% OFF)",
-      "first_seen": "2026-09-03",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8164311990454",
@@ -884,8 +884,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/L20_3.0_Pro_0fe86aa6-653a-4afc-ae18-82d6a46a0710.png?v=1787720998",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-l20-3-0-pro",
       "badge_text": "SAVE £200 (13% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_14941317824888",
@@ -910,8 +910,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-papaya-pure-x-mclaren-flex-1238469007.jpg?v=1778803486",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-flex",
       "badge_text": "SAVE £150 (15% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8815718695094",
@@ -936,8 +936,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/c0ad2be69190712bf2cde8f7cd4fee95.jpg?v=1782697074",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-o20-boost-combo",
       "badge_text": "SAVE £200 (9% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_7361724678232",
@@ -962,8 +962,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-advance-33049038159960.jpg?v=1720750523",
       "url": "https://www.pureelectric.com/products/pure-advance-electric-scooter",
       "badge_text": "SAVE £100 (15% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_14955809997176",
@@ -988,8 +988,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-chrome-pure-x-mclaren-chrome-1182624359.jpg?v=1754076717",
       "url": "https://www.pureelectric.com/products/pure-x-mclaren-chrome-reboxed",
       "badge_text": "SAVE £100 (13% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "cyrusher_uk_8992605634773",
@@ -1014,8 +1014,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-Loop-City-Folding-E-Bike-Main-Black-07.jpg?v=1784881157",
       "url": "https://www.cyrusher.co.uk/products/loop",
       "badge_text": "SAVE £100 (13% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_15012476813688",
@@ -1040,8 +1040,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-max-suspension-1244805436.jpg?v=1781711378",
       "url": "https://www.pureelectric.com/products/air-6-ultra-max-suspension",
       "badge_text": "SAVE £75 (12% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8800587808950",
@@ -1066,34 +1066,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/2053.png?v=1779963383",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-o20-boost",
       "badge_text": "SAVE £100 (8% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
-    },
-    {
-      "id": "tenways_14735051161972",
-      "title": "TENWAYS CGO600",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 7.3,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 1299,
-      "sale_price": 1199,
-      "savings_amount": 100,
-      "discount_percentage": 8,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/Greygreen-1.webp?v=1758781276",
-      "url": "https://www.tenways.com/products/cgo600",
-      "badge_text": "SAVE £100 (8% OFF)",
-      "first_seen": "2026-09-04",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_15012469768568",
@@ -1118,8 +1092,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-pro-suspension-1244805481.jpg?v=1781712730",
       "url": "https://www.pureelectric.com/products/air-6-pro-suspension",
       "badge_text": "SAVE £50 (11% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_15013412241784",
@@ -1144,8 +1118,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-escape-pro-suspension-1244805413.jpg?v=1781710694",
       "url": "https://www.pureelectric.com/products/escape-pro-suspension",
       "badge_text": "SAVE £50 (10% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "fiido_uk_10053672927533",
@@ -1170,34 +1144,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0814/1232/5677/files/11-sunstone-yellow-m.webp?v=1751938354",
       "url": "https://uk.fiido.com/products/fiido-nomads-trekking-e-bike",
       "badge_text": "SAVE £92 (7% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
-    },
-    {
-      "id": "tenways_8195597664405",
-      "title": "TENWAYS CGO600 Pro | Plus",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 6.3,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 1799,
-      "sale_price": 1699,
-      "savings_amount": 100,
-      "discount_percentage": 6,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/willow_mist-1.webp?v=1775096126",
-      "url": "https://www.tenways.com/products/cgo600-pro",
-      "badge_text": "SAVE £100 (6% OFF)",
-      "first_seen": "2026-08-21",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "pure_electric_15012473864568",
@@ -1222,8 +1170,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-air-ultra-suspension-1244805459.jpg?v=1781712072",
       "url": "https://www.pureelectric.com/products/air-6-ultra-suspension",
       "badge_text": "SAVE £50 (9% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "tenways_14968231526772",
@@ -1235,47 +1183,21 @@
       "symbol": "£",
       "category": "Commuter",
       "dealBucket": "Standard Deal",
-      "dealScore": 5.8,
+      "dealScore": 5.4,
       "motor_power": "250W Road Legal",
       "battery": "400Wh - 750Wh Lithium-Ion",
       "range_miles": "35 - 75 Miles",
       "max_speed": "20 mph",
       "is_uk_legal": false,
-      "rrp": 2199,
-      "sale_price": 2099,
-      "savings_amount": 100,
+      "rrp": 1927,
+      "sale_price": 1839,
+      "savings_amount": 88,
       "discount_percentage": 5,
       "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/Air_Belt-Air_Belt_-_Velvet_Red_1.png?v=1774431627",
       "url": "https://www.tenways.com/products/ago-air",
-      "badge_text": "SAVE £100 (5% OFF)",
-      "first_seen": "2026-09-01",
-      "is_new": false
-    },
-    {
-      "id": "tenways_8195598188693",
-      "title": "TENWAYS CGO800S | Plus",
-      "brand": "TENWAYS",
-      "retailer": "Tenways Direct",
-      "country": "UK/EU",
-      "currency": "GBP",
-      "symbol": "£",
-      "category": "Commuter",
-      "dealBucket": "Standard Deal",
-      "dealScore": 5.8,
-      "motor_power": "250W Road Legal",
-      "battery": "400Wh - 750Wh Lithium-Ion",
-      "range_miles": "35 - 75 Miles",
-      "max_speed": "20 mph",
-      "is_uk_legal": false,
-      "rrp": 1899,
-      "sale_price": 1799,
-      "savings_amount": 100,
-      "discount_percentage": 5,
-      "image": "https://cdn.shopify.com/s/files/1/0563/3926/7733/files/1_ceb4832d-d55d-4521-a1ae-de18135198dc.webp?v=1788246543",
-      "url": "https://www.tenways.com/products/cgo800s",
-      "badge_text": "SAVE £100 (5% OFF)",
-      "first_seen": "2026-08-21",
-      "is_new": false
+      "badge_text": "SAVE £88 (5% OFF)",
+      "first_seen": "2026-09-09",
+      "is_new": true
     },
     {
       "id": "engwe_uk_8183413309622",
@@ -1300,8 +1222,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0627/1385/6182/files/2_f7000d51-73b1-442e-9190-8c7e25f9bf48.jpg?v=1767074687",
       "url": "https://www.awin1.com/cread.php?awinmid=65774&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fengwe-bikes-uk.com%2Fproducts%2Fengwe-ep-2-boost",
       "badge_text": "SAVE £50 (5% OFF)",
-      "first_seen": "2026-08-20",
-      "is_new": false
+      "first_seen": "2026-09-09",
+      "is_new": true
     }
   ]
 }

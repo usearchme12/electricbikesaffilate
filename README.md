@@ -148,19 +148,31 @@ To avoid 404 errors, wrong landing pages, or losing user intent, follow these sp
 
 ---
 
-## 📝 Release Notes & Recent Changelog
+### Version 2.3.3 (Current Production Release)
+* **⚡ Eradicated Scroll Page Flashing / Flicker**:
+  * Fixed asynchronous re-rendering in `fetchTopDeals()`: when remote feeds match the bundled 138 deals, the DOM is no longer wiped and rebuilt, stopping the white flash/blink on scroll.
+  * Added explicit `width="360" height="220"` and `decoding="async"` to every card image, eliminating layout recalculations.
+  * Added `skip-lazy` and `data-no-lazy="1"` attributes to bypass aggressive LiteSpeed Cache LQIP placeholder transitions.
+* **🛡️ Bulletproof BFCache & Theme Image Sizing (Giant Image Bug Fix)**:
+  * Overcame WordPress theme `.entry-content img { height: auto !important; }` overrides with multi-layer high-specificity CSS: `#rgb-deal-finder-root .rgb-card-img`, `.entry-content #rgb-deal-finder-root img.rgb-card-img`.
+  * Hard-locked image containers to `height: 220px !important; max-height: 220px !important; object-fit: contain !important;` so raw 2000px Shopify images can never blow out the card grid when returning from another page.
+  * Added `pageshow` event handler for seamless browser Back/Forward Cache (BFCache) layout restoration.
 
-### Version 2.4.0 (Latest)
-* **🎨 Fixed Theme Heading Overrides & Contrast**:
-  * Added high-specificity CSS rules with `!important` across `#rgb-deal-finder-root .rgb-card-title`, headings, specs, and price rows.
-  * Ensures bright white text on dark cards regardless of WordPress theme global `h3` styling.
-* **🛞 Added Dedicated "Fat Tyre" Filter Tab & Auto-Detection Engine**:
-  * Added `🛞 Fat Tyre` button to the primary filter pills bar in both the WordPress plugin and standalone dashboard.
-  * **Model Recognition**: Automatically identifies popular fat tyre platforms including Cyrusher (*Kommoda 3.0, Kommoda Pro, Trax, Ranger, Rover, Roam, Ovia, Kuattro*), Engwe (*EP-2, EP-2 Boost/Pro, L20, L20 Boost/Pro, O20, M20, Engine Pro*), Heybike (*Mars, Tyson, Hero, Explorer, Horizon, Brawn*), and Fiido (*Titan, M1 Pro*).
-  * **Spec Matching**: Detects tyre dimensions and keywords (`fat`, `fat tyre`, `all-terrain`, `4.0"`, `20x4`, `26x4`).
-  * **Resilient Multi-Filter**: Fat tyre bikes with step-through or folding frames now appear under both relevant categories and the Fat Tyre tab.
-* **🔗 Full Direct-Purchase Deep Linking Across All 4 Approved Awin Networks**:
-  * Integrated verified direct product / build URLs for **Engwe UK** (`MID: 65774`), **Ribble Cycles** (`MID: 5923`), **Leisure Lakes Bikes** (`MID: 6914`), and **Pedal Go UK** (`MID: 114770`).
-* **📦 Updated Plugin Zip Distributions**: Rebuilt `reight-deals-finder.zip` and `wordpress-plugin.zip` for instant deployment.
+### Version 2.3.2
+* **📊 2x2 Deal Specification Grid Overhaul**:
+  * Restructured specifications display on every deal card: **Category**, **Motor**, **Battery**, and **UK Legal Status** (`✅ Road Legal` vs `⚠️ Off-Road`).
+  * Replaced speculative defaults with strict verified spec extractors.
+* **🔍 Google Search Console & Indexability Compliance**:
+  * Removed legacy `noindex` directives from `reight-deals-finder.php`.
+  * Verified passing status in Google Search Console URL Inspection tool.
+  * Enforced `rel="sponsored nofollow noopener"` on all outbound affiliate links to maintain full Google spam-policy compliance.
+
+### Version 2.3.1 & 2.3.0
+* **📈 Crawler Multi-Page Pagination Expansion**:
+  * Upgraded `fetch_deals.js` to paginate through retailer JSON feeds up to 4 pages per merchant.
+  * Verified deals surged from 43 to 138 active, in-stock e-bike bargains.
+* **🛞 Rescued Fat Tyre E-Bikes**: Refined negative keyword filters to ensure legitimate 4-inch fat-tyre electric bikes are not falsely discarded.
+* **🛡️ Outage & Failure Protection**: Added request timeouts and cached deal preservation so upstream retailer API downtime cannot wipe the active deals feed.
+
 
 

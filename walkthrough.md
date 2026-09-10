@@ -1,62 +1,106 @@
-# Walkthrough: Version 2.3.5 Upgrades
+# Walkthrough: Version 2.4.0 Upgrades
 
-We have resolved the JavaScript duplicate variable issue, added LiteSpeed optimization bypass tags, and implemented the full suite of lean upgrades across the crawler, backend database, standalone frontend dashboard, and WordPress plugin.
+Version 2.4.0 redesigns the ranking algorithm, main-page layout, click analytics, and WordPress directory presentation across the E-Bike Deals Finder ecosystem.
 
-### Version 2.3.5 Hotfix
-* **Syntax Error Fixed**: Removed duplicate `const priceFilter` declaration inside `rgbApplyFilters()`.
-* **LiteSpeed Optimization Bypass**: Added `data-no-optimize="1" data-no-defer="1"` to the inline shortcode `<script>` tag so LiteSpeed Cache cannot defer or block deals from loading immediately.
-* **Pre-commit Syntax Validation**: Added an automated Node.js JavaScript syntax check into `update_plugin.js` so any future updates are verified error-free before building zip archives.
+Expensive superbikes with large raw cash savings (£4,500+) no longer dominate the default view. High-value, accessible commuter and road-legal bikes now lead the directory, while luxury clearance deals remain showcased in their own dedicated section and available via a separate sort option.
 
 ---
 
-## 1. Rolling 30-Day Price History Engine
-* **Decoupled Architecture**: Full time-series history is saved in [price-history.json](file:///c:/Users/jason/Downloads/geministuff/ebike-deal-finder/price-history.json) on the backend (12.7 KB), keeping the public [deals.json](file:///c:/Users/jason/Downloads/geministuff/ebike-deal-finder/deals.json) lightweight (171 KB).
-* **Lean Signals Injected into Every Deal**:
-  * `lowest_price_30d`: Lowest price seen in the rolling 30-day window.
-  * `is_lowest_price_30d`: Boolean flag triggering the card badge `🔥 30-Day Low`.
-  * `price_drop_amount`: Calculated cash drop compared to the previous crawl.
-  * `last_checked`: Exact ISO timestamp.
-  * `is_cached`: Boolean indicating whether the item is live or preserved from cache.
+## 1. Budget-Aware `valueScore` Ranking Formula
+
+The previous unbounded formula gave unlimited weight to cash savings:
+```javascript
+// Previous formula (unbounded cash bonus):
+(discountPct * 0.5) + ((savings / 15) * 0.5)
+```
+A £4,500 saving added 150 points by itself, so £5,000–£10,000 bikes naturally took over the top rankings.
+
+### New `valueScore` Implementation:
+```javascript
+// Budget-aware value score:
+const discountScore = Math.min(discountPct, 50) / 50 * 50;  // Up to 50 pts
+const savingsScore = Math.min(savings, 750) / 750 * 20;       // Up to 20 pts
+
+const affordabilityScore =
+  price <= 1000 ? 30 :
+  price <= 1500 ? 25 :
+  price <= 2500 ? 15 :
+  price <= 4000 ? 5 : 0;                                     // Up to 30 pts
+
+const valueScore = parseFloat((discountScore + savingsScore + affordabilityScore).toFixed(1));
+```
+
+### Score Comparison (Before vs After):
+| Bike Model | Sale Price | Cash Saving | Old Score | New `valueScore` | Default Position |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Engwe P275 SE** | £849 | £650 | ~65 | **90.3** | 🏆 **#1 Top Deal** |
+| **DYU M20 All-Terrain** | £799 | £600 | ~61 | **89.0** | 🥈 **#2 Top Deal** |
+| **Fiido C11 Pro** | £999 | £636 | ~60 | **86.0** | 🥉 **#3 Top Deal** |
+| **Fiido C21 Gravel** | £999 | £636 | ~60 | **86.0** | 🎖️ **#4 Top Deal** |
+| **Scott Voltage eRide 900** | £5,599 | £4,500 | **172.5** | **65.0** | Moved to Premium Clearance |
+| **Orbea Rise M-LTD Carbon** | £5,999 | £4,000 | **153.3** | **60.0** | Moved to Premium Clearance |
 
 ---
 
-## 2. Truthful Specifications & EAPC Legal Compliance
-* **No More Guessing**:
-  * If motor wattage is not explicitly detected or from an EU/UK certified system (Bosch, Shimano, Brose, Yamaha, Mahle, Fazua), it displays **`Specification not confirmed`** and UK Status displays **`⚠️ Check Retailer`**.
-  * Only confirmed $\le 250\text{W}$ motors are marked **`✅ Road Legal`**.
-  * Motors $> 250\text{W}$ (e.g. 500W, 750W, 1000W) are marked **`[Watts]W High Torque`** and **`⚠️ Off-Road Only`**.
-  * Unconfirmed batteries display **`Specification not confirmed`**, and ranges display **`See retailer listing`**.
+## 2. Balanced Sectioned Main-Page Layout
+
+In default view, deals are structured into 4 curated sections:
+1. **⚡ Best Value Under £1,500 (Budget Champions)**:
+   - First and largest section showcasing high-value budget & commuter e-bikes.
+   - Enforces retailer and brand diversity limits.
+2. **🚲 Strong Mid-Range Deals (£1,500 – £3,000)**:
+   - Highlighted mid-tier options with upgraded motors, torque sensors, and larger batteries.
+3. **💎 Premium Clearance Deals (£3,000+)**:
+   - Dedicated smaller showcase for high-end clearance price cuts.
+4. **📋 Complete E-Bike Deal Directory (Deduplicated)**:
+   - Excludes bikes already featured in the sections above to avoid repeating cards.
+   - Cleanly lists all remaining verified deals ordered by `valueScore`.
+
+> When a user searches, selects a filter pill (e.g. *Road Legal Only*, *Folding*, *Fat Tyre*), or picks a price band, the UI switches to a single unified grid matching their exact query.
 
 ---
 
-## 3. Outage Resilience & 72h Stale Cache Expiry
-* **Network Retry**: `fetchWithRetry()` automatically retries with a 2-second backoff on 5xx, 429, or network drops.
-* **Partial Merge**: If a merchant's pagination encounters an error on later pages, previously cached items from that retailer are merged so products are not arbitrarily lost.
-* **Stale Expiry**: Cached deals whose retailer remains offline for more than 72 hours are automatically purged to prevent zombie listings.
+## 3. Dedicated "Biggest Cash Savings (£)" Sort Option
+
+Shoppers specifically hunting clearance bargains can choose **"💰 Biggest Cash Savings (£)"** from the sort dropdown:
+- Sorts strictly by cash savings (`savings_amount`).
+- Surfaces the £4,500 off Scott, £4,000 off Orbea, and £2,400 off Merida bikes immediately.
 
 ---
 
-## 4. UI Filters Added
-* **✅ Road Legal Only**: Quick toggle pill in the primary navigation bar.
-* **🏷️ Price Ranges Dropdown**: Instant filtering for:
-  * Under £1,000
-  * £1,000 – £2,500
-  * £2,500 – £5,000
-  * Over £5,000
-* **Badges**: Added `🔥 30-Day Low` indicator on eligible cards.
+## 4. Retailer & Brand Diversity Safeguards
+
+A diversity filter prevents store dominance in the featured sections:
+- Under £1,500 section: Max 3 cards per retailer and max 2 per brand.
+- Premium clearance section: Max 2 cards per retailer.
+- Prevents any single retailer or brand from monopolizing the screen.
 
 ---
 
-## 5. Cloud Automation Schedule
-* **GitHub Action** [.github/workflows/daily_deals.yml](file:///c:/Users/jason/Downloads/geministuff/ebike-deal-finder/.github/workflows/daily_deals.yml) updated to run twice daily:
-  * `cron: '0 6,18 * * *'` (06:00 UTC and 18:00 UTC).
-  * Automatically commits updates to `deals.json`, `deals-data.js`, and `price-history.json`.
+## 5. Synchronised Outbound Click Tracking
+
+Both `index.html` and the WordPress plugin share identical tracking behavior:
+- **Dispatched Analytics Payload**:
+  ```javascript
+  {
+    event_category: 'Affiliate Outbound',
+    event_label: title,
+    deal_id: dealId,
+    deal_title: title,
+    retailer: retailer,
+    price: price,
+    value_score: scoreVal,
+    price_band: priceBand
+  }
+  ```
+- **Events**: Sent to GA4 (`gtag`) and GTM (`window.dataLayer`).
+- **Local Persistence**: Both persist clicks by price band (`Under £1,000`, `£1,000 – £1,500`, `£1,500 – £3,000`, `Over £3,000`) into `localStorage.rgb_click_stats`.
 
 ---
 
-## 6. Build Artifacts
-* **WordPress Plugin**: Updated to version **2.3.4** in [reight-deals-finder.php](file:///c:/Users/jason/Downloads/geministuff/ebike-deal-finder/wordpress-plugin/reight-deals-finder.php).
-* **Compiled Distribution Packages**:
-  * [reight-deals-finder.zip](file:///c:/Users/jason/Downloads/geministuff/ebike-deal-finder/reight-deals-finder.zip)
-  * [wordpress-plugin.zip](file:///c:/Users/jason/Downloads/geministuff/ebike-deal-finder/wordpress-plugin.zip)
-* **Git Status**: Clean working tree, all changes committed and pushed to `main` (commit `0e9c2ae`).
+## 6. Build Artifacts & Verification
+
+- **WordPress Plugin**: Updated to version **2.4.0** in `wordpress-plugin/reight-deals-finder.php`.
+- **Pre-commit Syntax Validation**: Evaluated embedded JavaScript with Node.js parser (`new Function()`) — passed with 0 errors.
+- **Distribution Packages**: Re-packaged into `reight-deals-finder.zip` and `wordpress-plugin.zip`.
+- **Automation**: Updated `.github/workflows/daily_deals.yml` to automatically execute `update_plugin.js` and commit updated plugin archives during twice-daily scrapes.

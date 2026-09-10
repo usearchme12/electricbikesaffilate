@@ -198,35 +198,44 @@ php = php.replace(/let lastUpdatedStr = ".*?";/, 'let lastUpdatedStr = "' + deal
 // 9. CLEANLY replace rendering and filter logic with budget-aware ranking, sectioned layout, and price band tracking
 const cleanLogic = `        function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
-          if (price <= 1500) return '£1,000–£1,500';
-          if (price <= 3000) return '£1,500–£3,000';
+          if (price <= 1500) return '£1,000 – £1,500';
+          if (price <= 3000) return '£1,500 – £3,000';
           return 'Over £3,000';
         }
 
         window.rgbTrackDealClick = function(dealId, title, retailer, price, valueScore) {
-          const priceBand = rgbGetPriceBand(price);
-          if (typeof window.gtag === 'function') {
-            window.gtag('event', 'outbound_deal_click', {
+          try {
+            const priceBand = rgbGetPriceBand(price);
+            const scoreVal = typeof valueScore === 'number' ? valueScore : (parseFloat(valueScore) || 80);
+            const payload = {
+              event_category: 'Affiliate Outbound',
+              event_label: title,
               deal_id: dealId,
               deal_title: title,
               retailer: retailer,
               price: price,
-              price_band: priceBand,
-              value_score: valueScore
-            });
+              value_score: scoreVal,
+              price_band: priceBand
+            };
+
+            if (typeof gtag === 'function') {
+              gtag('event', 'outbound_deal_click', payload);
+            }
+            if (window.dataLayer && Array.isArray(window.dataLayer)) {
+              window.dataLayer.push({
+                event: 'outbound_deal_click',
+                ...payload
+              });
+            }
+
+            const stats = JSON.parse(localStorage.getItem('rgb_click_stats') || '{"Under £1,000":0,"£1,000 – £1,500":0,"£1,500 – £3,000":0,"Over £3,000":0,"total":0}');
+            stats[priceBand] = (stats[priceBand] || 0) + 1;
+            stats.total = (stats.total || 0) + 1;
+            localStorage.setItem('rgb_click_stats', JSON.stringify(stats));
+            console.log('[RGB DEAL CLICK]', payload);
+          } catch(e) {
+            console.warn('Click tracking error:', e);
           }
-          if (window.dataLayer && Array.isArray(window.dataLayer)) {
-            window.dataLayer.push({
-              event: 'outbound_deal_click',
-              deal_id: dealId,
-              deal_title: title,
-              retailer: retailer,
-              price: price,
-              price_band: priceBand,
-              value_score: valueScore
-            });
-          }
-          console.log('[RGB DEAL CLICK]', { dealId, retailer, price, priceBand, valueScore });
         };
 
         function rgbFilterWithDiversity(deals, maxPerRetailer, maxPerBrand, limit) {
@@ -359,6 +368,14 @@ const cleanLogic = `        function rgbGetPriceBand(price) {
             const featuredMid = rgbFilterWithDiversity(midRange, 3, 3, 6);
             const featuredPremium = rgbFilterWithDiversity(premium, 2, 2, 4);
 
+            // Exclude already featured bikes so they do not duplicate in the directory below
+            const featuredIds = new Set([
+              ...featuredUnder1500.map(d => d.id),
+              ...featuredMid.map(d => d.id),
+              ...featuredPremium.map(d => d.id)
+            ]);
+            const remainingDeals = filtered.filter(d => !featuredIds.has(d.id));
+
             let html = '';
 
             if (featuredUnder1500.length > 0) {
@@ -412,20 +429,22 @@ const cleanLogic = `        function rgbGetPriceBand(price) {
               \`;
             }
 
-            html += \`
-              <section class="rgb-section">
-                <div class="rgb-section-header">
-                  <div class="rgb-section-title-wrap">
-                    <h3 class="rgb-section-title">📋 Complete E-Bike Deal Directory</h3>
-                    <span class="rgb-section-badge rgb-badge-all">All \${filtered.length} Live Deals</span>
+            if (remainingDeals.length > 0) {
+              html += \`
+                <section class="rgb-section">
+                  <div class="rgb-section-header">
+                    <div class="rgb-section-title-wrap">
+                      <h3 class="rgb-section-title">📋 Complete E-Bike Deal Directory</h3>
+                      <span class="rgb-section-badge rgb-badge-all">\${remainingDeals.length} More Deals</span>
+                    </div>
+                    <p class="rgb-section-sub">Browse every remaining verified price cut currently tracked across UK retailers, ordered by overall value score.</p>
                   </div>
-                  <p class="rgb-section-sub">Browse every verified price cut currently tracked across UK retailers, ordered by overall value score.</p>
-                </div>
-                <div class="rgb-grid">
-                  \${filtered.map(rgbRenderDealCard).join('')}
-                </div>
-              </section>
-            \`;
+                  <div class="rgb-grid">
+                    \${remainingDeals.map(rgbRenderDealCard).join('')}
+                  </div>
+                </section>
+              \`;
+            }
 
             container.innerHTML = html;
           } else {

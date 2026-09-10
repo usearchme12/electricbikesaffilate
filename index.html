@@ -873,23 +873,34 @@
       return 'Over £3,000';
     }
 
-    function trackDealClick(dealId, title, retailer, price, priceBand) {
+    function trackDealClick(dealId, title, retailer, price, valueScore) {
       try {
+        const priceBand = getPriceBand(price);
+        const scoreVal = typeof valueScore === 'number' ? valueScore : (parseFloat(valueScore) || 80);
+        const payload = {
+          event_category: 'Affiliate Outbound',
+          event_label: title,
+          deal_id: dealId,
+          retailer: retailer,
+          price: price,
+          value_score: scoreVal,
+          price_band: priceBand
+        };
+
         if (typeof gtag === 'function') {
-          gtag('event', 'outbound_deal_click', {
-            event_category: 'Affiliate Outbound',
-            event_label: title,
-            deal_id: dealId,
-            retailer: retailer,
-            price: price,
-            price_band: priceBand
+          gtag('event', 'outbound_deal_click', payload);
+        }
+        if (window.dataLayer && Array.isArray(window.dataLayer)) {
+          window.dataLayer.push({
+            event: 'outbound_deal_click',
+            ...payload
           });
         }
         const stats = JSON.parse(localStorage.getItem('rgb_click_stats') || '{"Under £1,000":0,"£1,000 – £1,500":0,"£1,500 – £3,000":0,"Over £3,000":0,"total":0}');
         stats[priceBand] = (stats[priceBand] || 0) + 1;
         stats.total = (stats.total || 0) + 1;
         localStorage.setItem('rgb_click_stats', JSON.stringify(stats));
-        console.log(`[OUTBOUND CLICK] Logged click in band "${priceBand}" for "${title}"`);
+        console.log(`[OUTBOUND CLICK] Logged click in band "${priceBand}" for "${title}"`, payload);
       } catch (e) {}
     }
 
@@ -966,7 +977,7 @@
               <span class="savings-pill">Save ${symbol}${savingsFormatted}</span>
             </div>
 
-            <a href="${d.url}" target="_blank" rel="sponsored nofollow noopener" class="btn-deal" onclick="trackDealClick('${d.id}', '${d.title.replace(/'/g, "\\'")}', '${d.retailer}', ${d.sale_price}, '${priceBand}')">
+            <a href="${d.url}" target="_blank" rel="sponsored nofollow noopener" class="btn-deal" onclick="trackDealClick('${d.id}', '${d.title.replace(/'/g, "\\'")}', '${d.retailer}', ${d.sale_price}, ${score})">
               👉 View Deal at ${d.retailer} ➔
             </a>
           </div>

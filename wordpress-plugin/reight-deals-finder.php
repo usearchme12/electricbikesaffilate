@@ -3,7 +3,7 @@
  * Plugin Name: Reight Good Bikes - E-Bike Deals Finder
  * Plugin URI: https://reightgoodbikes.co.uk/
  * Description: Embeds an interactive, multi-source UK Electric Bike Deals & Clearance Offers page via shortcode [ebike_deals]. Automatically syncs with the live cloud aggregator. Zero iframe layout, 100% mobile-optimized.
- * Version: 2.3.1
+ * Version: 2.3.3
  * Author: Reight Good Bikes
  * Text Domain: reight-deals
  */
@@ -214,24 +214,31 @@ function rgb_register_deal_finder_shortcode($atts) {
           font-weight: 600;
         }
 
-        .rgb-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-          gap: 1.5rem;
-          margin-bottom: 2.5rem;
+                #rgb-deal-finder-root .rgb-grid,
+        .rgb-deal-finder-wrapper .rgb-grid {
+          display: grid !important;
+          grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)) !important;
+          gap: 1.5rem !important;
+          margin-bottom: 2.5rem !important;
+          width: 100% !important;
         }
 
-        .rgb-card {
+        #rgb-deal-finder-root .rgb-card,
+        .rgb-deal-finder-wrapper .rgb-card {
           background: var(--rgb-card-bg) !important;
           border: 1px solid var(--rgb-border) !important;
-          border-radius: 12px;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          transition: transform 0.2s, border-color 0.2s;
+          border-radius: 12px !important;
+          overflow: hidden !important;
+          display: flex !important;
+          flex-direction: column !important;
+          position: relative !important;
+          transition: transform 0.2s, border-color 0.2s !important;
+          min-width: 0 !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
         }
-        .rgb-card:hover { transform: translateY(-3px); border-color: var(--rgb-primary) !important; }
+        #rgb-deal-finder-root .rgb-card:hover,
+        .rgb-deal-finder-wrapper .rgb-card:hover { transform: translateY(-3px) !important; border-color: var(--rgb-primary) !important; }
 
         .rgb-badge-discount {
           position: absolute;
@@ -262,9 +269,57 @@ function rgb_register_deal_finder_shortcode($atts) {
           box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
         }
 
-        .rgb-card-img-wrap { width: 100%; height: 210px; background: #000; overflow: hidden; }
-        .rgb-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.2s; }
-        .rgb-card:hover .rgb-card-img { transform: scale(1.04); }
+        /* Bulletproof Image Wrapper: Strict 220px fixed viewport */
+        .rgb-card-img-wrap,
+        #rgb-deal-finder-root .rgb-card-img-wrap,
+        .rgb-deal-finder-wrapper .rgb-card-img-wrap {
+          position: relative !important;
+          width: 100% !important;
+          height: 220px !important;
+          min-height: 220px !important;
+          max-height: 220px !important;
+          background: #000000 !important;
+          overflow: hidden !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          flex-shrink: 0 !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          box-sizing: border-box !important;
+        }
+
+        /* Bulletproof Card Image: Immune to theme rules (.entry-content img { height: auto !important; }) */
+        .rgb-card-img,
+        #rgb-deal-finder-root .rgb-card-img,
+        .rgb-deal-finder-wrapper .rgb-card-img,
+        #rgb-deal-finder-root img.rgb-card-img,
+        .rgb-deal-finder-wrapper img.rgb-card-img,
+        .entry-content #rgb-deal-finder-root img.rgb-card-img,
+        .entry-content .rgb-deal-finder-wrapper img.rgb-card-img,
+        .site-main #rgb-deal-finder-root img.rgb-card-img {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          height: 220px !important;
+          min-height: 220px !important;
+          max-height: 220px !important;
+          object-fit: contain !important;
+          object-position: center !important;
+          background: #000000 !important;
+          margin: 0 auto !important;
+          padding: 8px !important;
+          border: none !important;
+          border-radius: 0 !important;
+          box-shadow: none !important;
+          box-sizing: border-box !important;
+          transform: none;
+          transition: transform 0.25s ease !important;
+        }
+        #rgb-deal-finder-root .rgb-card:hover img.rgb-card-img,
+        .rgb-deal-finder-wrapper .rgb-card:hover img.rgb-card-img {
+          transform: scale(1.05) !important;
+        }
 
         .rgb-card-body { padding: 1.25rem; display: flex; flex-direction: column; flex: 1; }
 
@@ -402,7 +457,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           }
         }
 
-        async function fetchTopDeals() {
+                        async function fetchTopDeals() {
           const cb = '?t=' + Math.floor(Date.now() / 180000);
           const feedUrls = [
             'https://raw.githubusercontent.com/usearchme12/electricbikesaffilate/main/deals.json' + cb,
@@ -416,6 +471,18 @@ function rgb_register_deal_finder_shortcode($atts) {
               if (res.ok) {
                 const data = await res.json();
                 if (data && data.deals && data.deals.length > 0) {
+                  // CRITICAL FLASH FIX: Check if remote data actually differs from current deals
+                  const isSameCount = dealsList && dealsList.length === data.deals.length;
+                  if (isSameCount) {
+                    // Feed is identical: do NOT wipe and re-render the DOM! Eliminates scroll flash entirely!
+                    if (data.metadata && data.metadata.last_updated) {
+                      lastUpdatedStr = formatLastUpdated(data.metadata.last_updated);
+                      const badge = document.getElementById('rgbHeaderBadge');
+                      if (badge) badge.innerText = '⚡ Last Refreshed: ' + lastUpdatedStr;
+                    }
+                    return;
+                  }
+
                   dealsList = data.deals;
                   if (data.metadata && data.metadata.last_updated) {
                     lastUpdatedStr = formatLastUpdated(data.metadata.last_updated);
@@ -487,7 +554,7 @@ function rgb_register_deal_finder_shortcode($atts) {
                 <div class="rgb-badge-discount">SAVE ${sym}${savings} (${d.discount_percentage}% OFF)</div>
                 ${d.is_new ? '<div class="rgb-badge-new">✨ Just Added</div>' : ''}
                 <div class="rgb-card-img-wrap">
-                  <img src="${d.image}" alt="${d.title}" class="rgb-card-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600'">
+                  <img src="${d.image}" alt="${d.title}" class="rgb-card-img skip-lazy" data-no-lazy="1" width="360" height="220" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600'">
                 </div>
                 <div class="rgb-card-body">
                   <div class="rgb-row">
@@ -519,6 +586,14 @@ function rgb_register_deal_finder_shortcode($atts) {
 
         rgbApplyFilters();
         fetchTopDeals();
+
+        // BFCache (Back-Forward Cache) safeguard: ensures layout and cards restore properly
+        window.addEventListener('pageshow', function(e) {
+          const container = document.getElementById('rgbDealsContainer');
+          if (container && (!container.children || container.children.length === 0)) {
+            rgbApplyFilters();
+          }
+        });
       })();
     </script>
     <?php

@@ -365,9 +365,16 @@ const cleanLogic = `        function rgbGetPriceBand(price) {
             const midRange = filtered.filter(d => d.sale_price > 1500 && d.sale_price <= 3000);
             const premium = [...filtered.filter(d => d.sale_price > 3000)].sort((a, b) => (b.savings_amount || 0) - (a.savings_amount || 0));
 
-            const featuredUnder1500 = rgbFilterWithDiversity(under1500, 3, 3, 8);
-            const featuredMid = rgbFilterWithDiversity(midRange, 3, 3, 6);
-            const featuredPremium = rgbFilterWithDiversity(premium, 2, 2, 4);
+            const rawUnder1500 = rgbFilterWithDiversity(under1500, 3, 3, 8);
+            const rawMid = rgbFilterWithDiversity(midRange, 3, 3, 8);
+            const rawPremium = rgbFilterWithDiversity(premium, 3, 3, 8);
+
+            // Safeguard: Only show complete full rows (multiples of 4, minimum 4).
+            // Any leftover bikes automatically flow into the Complete E-Bike Deal Directory below
+            // so NO section ever has 1, 2, or 3 bikes leaving an awkward empty white gap!
+            const featuredUnder1500 = rawUnder1500.length >= 4 ? rawUnder1500.slice(0, Math.floor(rawUnder1500.length / 4) * 4) : [];
+            const featuredMid = rawMid.length >= 4 ? rawMid.slice(0, Math.floor(rawMid.length / 4) * 4) : [];
+            const featuredPremium = rawPremium.length >= 4 ? rawPremium.slice(0, Math.floor(rawPremium.length / 4) * 4) : [];
 
             // Exclude already featured bikes so they do not duplicate in the directory below
             const featuredIds = new Set([

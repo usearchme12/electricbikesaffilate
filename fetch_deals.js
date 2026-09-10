@@ -580,6 +580,14 @@ function updatePriceHistory(deals) {
     if (d.is_cached === undefined) d.is_cached = false;
   });
 
+  // Prune inactive products so price-history.json reflects current inventory only
+  const activeIds = new Set(deals.map(d => d.id));
+  for (const id of Object.keys(history)) {
+    if (!activeIds.has(id)) {
+      delete history[id];
+    }
+  }
+
   fs.writeFileSync(PRICE_HISTORY_FILE, JSON.stringify(history, null, 2), 'utf-8');
   console.log(`[PRICE HISTORY] Tracked rolling 30-day price history for ${Object.keys(history).length} unique deals`);
 }

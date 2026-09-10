@@ -3,7 +3,7 @@
  * Plugin Name: Reight Good Bikes - E-Bike Deals Finder
  * Plugin URI: https://reightgoodbikes.co.uk/
  * Description: Embeds an interactive, multi-source UK Electric Bike Deals & Clearance Offers page via shortcode [ebike_deals]. Automatically syncs with the live cloud aggregator. Zero iframe layout, 100% mobile-optimized.
- * Version: 2.4.1
+ * Version: 2.4.2
  * Author: Reight Good Bikes
  * Text Domain: reight-deals
  */
@@ -54,6 +54,29 @@ function rgb_register_deal_finder_shortcode($atts) {
     ?>
     <div id="rgb-deal-finder-root" class="rgb-deal-finder-wrapper">
       <style>
+        /* Eliminate ALL theme white gaps on the deals page */
+        .page .container.content-wrapper,
+        .single .container.content-wrapper,
+        .content-wrapper {
+          margin-top: 15px !important;
+          padding-top: 0 !important;
+        }
+        .entry-header {
+          margin-bottom: 10px !important;
+        }
+        .entry-content > p {
+          margin-bottom: 12px !important;
+        }
+        .entry-content > p:empty,
+        .entry-content > p.wp-block-paragraph:empty {
+          display: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          height: 0 !important;
+        }
+
+        /* Seamless dark wrapper - ELIMINATES all white background and gaps inside deals */
+        #rgb-deal-finder-root.rgb-deal-finder-wrapper,
         .rgb-deal-finder-wrapper {
           --rgb-bg: #090d16;
           --rgb-card-bg: #131b2e;
@@ -65,10 +88,15 @@ function rgb_register_deal_finder_shortcode($atts) {
           --rgb-red: #ef4444;
           --rgb-text: #f8fafc;
           --rgb-muted: #94a3b8;
-          color: var(--rgb-text);
-          margin: 1rem 0;
+          background: #090d16 !important;
+          color: var(--rgb-text) !important;
+          border-radius: 16px !important;
+          padding: 1.75rem 1.25rem 2.5rem !important;
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45) !important;
+          margin: 0.75rem 0 2.5rem 0 !important;
           line-height: 1.4;
           width: 100%;
+          box-sizing: border-box !important;
         }
 
         #rgb-deal-finder-root,
@@ -79,7 +107,7 @@ function rgb_register_deal_finder_shortcode($atts) {
 
         .rgb-header {
           text-align: center;
-          padding: 0.5rem 0.5rem 1.25rem;
+          padding: 0.25rem 0.5rem 1rem;
         }
         .rgb-badge {
           display: inline-block;
@@ -168,10 +196,15 @@ function rgb_register_deal_finder_shortcode($atts) {
         #rgb-deal-finder-root .rgb-search-row {
           display: flex !important;
           flex-direction: row !important;
-          flex-wrap: wrap !important;
+          flex-wrap: nowrap !important;
           gap: 0.65rem !important;
           align-items: center !important;
           width: 100% !important;
+        }
+        @media (max-width: 820px) {
+          #rgb-deal-finder-root .rgb-search-row {
+            flex-wrap: wrap !important;
+          }
         }
 
         #rgb-deal-finder-root input.rgb-search-input,
@@ -653,7 +686,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           rgbApplyFilters();
         };
 
-                                                                                        function rgbGetPriceBand(price) {
+                                                                                                function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
           if (price <= 1500) return '£1,000 – £1,500';
           if (price <= 3000) return '£1,500 – £3,000';

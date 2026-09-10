@@ -10,8 +10,8 @@ let php = fs.readFileSync('wordpress-plugin/reight-deals-finder.php', 'utf8');
 const wasCRLF = php.includes('\r\n');
 php = php.replace(/\r\n/g, '\n');
 
-// 2. Bump Version to 2.4.1
-php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.4.1');
+// 2. Bump Version to 2.4.2
+php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.4.2');
 
 
 // 3. Ensure LiteSpeed cache bypass hook is in place

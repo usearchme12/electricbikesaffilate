@@ -148,7 +148,17 @@ To avoid 404 errors, wrong landing pages, or losing user intent, follow these sp
 
 ---
 
-### Version 2.3.4 (Current Production Release)
+### Version 2.3.5 (Current Production Release)
+* **🔧 Fixed JavaScript Parser Syntax Error**:
+  * Removed duplicate `const priceFilter` variable declaration inside `rgbApplyFilters()`.
+  * Consolidated price filter rules and category checks into a single clean pass.
+* **🛡️ LiteSpeed Cache Optimization Bypass**:
+  * Appended `data-no-optimize="1" data-no-defer="1"` to the inline deals shortcode `<script>` tag.
+  * Prevents LiteSpeed from postponing JavaScript execution until user interaction, guaranteeing instantaneous render upon page load.
+* **🤖 Automated Build Syntax Validation**:
+  * Upgraded `update_plugin.js` with an automatic Node.js AST parser validation step to prevent unverified JavaScript from ever being packaged into distribution zip files.
+
+### Version 2.3.4
 * **📉 Rolling 30-Day Price History Engine**:
   * Added decoupled `price-history.json` tracking on the backend, preserving historical price dips without bloating the client-side `deals.json` payload.
   * Injected lean calculated metrics into every deal: `lowest_price_30d`, `is_lowest_price_30d`, `price_drop_amount`, `last_checked`, and `is_cached`.

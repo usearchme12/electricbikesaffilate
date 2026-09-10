@@ -1,6 +1,11 @@
-# Walkthrough: Version 2.3.4 Upgrades
+# Walkthrough: Version 2.3.5 Upgrades
 
-We have implemented the full suite of lean upgrades across the crawler, backend database, standalone frontend dashboard, and WordPress plugin.
+We have resolved the JavaScript duplicate variable issue, added LiteSpeed optimization bypass tags, and implemented the full suite of lean upgrades across the crawler, backend database, standalone frontend dashboard, and WordPress plugin.
+
+### Version 2.3.5 Hotfix
+* **Syntax Error Fixed**: Removed duplicate `const priceFilter` declaration inside `rgbApplyFilters()`.
+* **LiteSpeed Optimization Bypass**: Added `data-no-optimize="1" data-no-defer="1"` to the inline shortcode `<script>` tag so LiteSpeed Cache cannot defer or block deals from loading immediately.
+* **Pre-commit Syntax Validation**: Added an automated Node.js JavaScript syntax check into `update_plugin.js` so any future updates are verified error-free before building zip archives.
 
 ---
 

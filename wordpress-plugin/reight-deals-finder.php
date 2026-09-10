@@ -3,7 +3,7 @@
  * Plugin Name: Reight Good Bikes - E-Bike Deals Finder
  * Plugin URI: https://reightgoodbikes.co.uk/
  * Description: Embeds an interactive, multi-source UK Electric Bike Deals & Clearance Offers page via shortcode [ebike_deals]. Automatically syncs with the live cloud aggregator. Zero iframe layout, 100% mobile-optimized.
- * Version: 2.4.0
+ * Version: 2.4.1
  * Author: Reight Good Bikes
  * Text Domain: reight-deals
  */
@@ -65,147 +65,213 @@ function rgb_register_deal_finder_shortcode($atts) {
           --rgb-red: #ef4444;
           --rgb-text: #f8fafc;
           --rgb-muted: #94a3b8;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
           color: var(--rgb-text);
-          margin: 1.5rem 0;
-          line-height: 1.5;
+          margin: 1rem 0;
+          line-height: 1.4;
+          width: 100%;
         }
 
-        .rgb-deal-finder-wrapper * { box-sizing: border-box; }
+        #rgb-deal-finder-root,
+        #rgb-deal-finder-root * {
+          box-sizing: border-box !important;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+        }
 
         .rgb-header {
           text-align: center;
-          padding: 1.5rem 1rem 2rem;
+          padding: 0.5rem 0.5rem 1.25rem;
         }
         .rgb-badge {
           display: inline-block;
           background: rgba(245, 158, 11, 0.15);
           border: 1px solid rgba(245, 158, 11, 0.35);
           color: var(--rgb-primary) !important;
-          padding: 0.35rem 0.9rem;
+          padding: 0.3rem 0.85rem;
           border-radius: 9999px;
-          font-size: 0.78rem;
+          font-size: 0.75rem;
           font-weight: 800;
-          margin-bottom: 0.75rem;
+          margin-bottom: 0.5rem;
           text-transform: uppercase;
         }
-        .rgb-header h2 {
-          font-size: clamp(1.6rem, 4vw, 2.2rem);
-          font-weight: 800;
-          color: #0f172a;
-          margin-bottom: 0.5rem;
+        #rgb-deal-finder-root .rgb-header h2 {
+          font-size: clamp(1.4rem, 3.5vw, 1.9rem) !important;
+          font-weight: 800 !important;
+          color: #ffffff !important;
+          margin: 0 0 0.35rem 0 !important;
+          line-height: 1.25 !important;
         }
-        .rgb-header p {
-          color: #64748b;
-          font-size: 0.95rem;
-          max-width: 600px;
-          margin: 0 auto;
+        #rgb-deal-finder-root .rgb-header p {
+          color: #94a3b8 !important;
+          font-size: 0.92rem !important;
+          max-width: 580px;
+          margin: 0 auto !important;
+          line-height: 1.4 !important;
         }
 
-        /* Newsletter / Omnisend Card */
-        .rgb-newsletter-card {
+        /* Newsletter / Omnisend Card - Compact & Clean */
+        #rgb-deal-finder-root .rgb-newsletter-card {
           background: linear-gradient(145deg, #131b2e 0%, #090d16 100%) !important;
           border: 1px solid var(--rgb-border) !important;
           border-top: 3px solid var(--rgb-primary) !important;
-          border-radius: 16px;
-          padding: 2rem 1.5rem;
-          margin-bottom: 2rem;
+          border-radius: 12px;
+          padding: 1.25rem 1.25rem;
+          margin-bottom: 1.5rem;
           text-align: center;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
         }
         .rgb-newsletter-badge {
           display: inline-block;
           background: rgba(245, 158, 11, 0.15) !important;
           color: var(--rgb-primary) !important;
-          font-size: 0.75rem;
+          font-size: 0.72rem;
           font-weight: 800;
-          padding: 0.3rem 0.8rem;
+          padding: 0.25rem 0.7rem;
           border-radius: 99px;
           text-transform: uppercase;
-          margin-bottom: 0.75rem;
-          letter-spacing: 0.05em;
+          margin-bottom: 0.5rem;
+          letter-spacing: 0.04em;
         }
-        .rgb-newsletter-card h3 {
+        #rgb-deal-finder-root .rgb-newsletter-card h3 {
           color: #ffffff !important;
-          font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
+          font-size: clamp(1.15rem, 2.5vw, 1.4rem) !important;
           font-weight: 800 !important;
           margin-top: 0 !important;
-          margin-bottom: 0.5rem !important;
+          margin-bottom: 0.35rem !important;
         }
-        .rgb-newsletter-sub {
+        #rgb-deal-finder-root .rgb-newsletter-sub {
           color: var(--rgb-muted) !important;
-          font-size: 0.92rem;
-          max-width: 580px;
-          margin: 0 auto 1.25rem !important;
-          line-height: 1.5;
+          font-size: 0.88rem !important;
+          max-width: 540px;
+          margin: 0 auto 1rem !important;
+          line-height: 1.4 !important;
         }
-        .rgb-newsletter-trust {
+        #rgb-deal-finder-root .rgb-newsletter-trust {
           color: #64748b !important;
-          font-size: 0.75rem;
-          margin-top: 0.9rem;
+          font-size: 0.72rem !important;
+          margin-top: 0.75rem !important;
           font-weight: 600;
         }
 
-        .rgb-filter-bar {
-          background: var(--rgb-card-bg);
-          border: 1px solid var(--rgb-border);
+        /* Compact, Single-Row Responsive Filter Bar */
+        #rgb-deal-finder-root .rgb-filter-bar {
+          background: #131b2e !important;
+          border: 1px solid var(--rgb-border) !important;
           border-radius: 12px;
-          padding: 1rem 1.25rem;
-          margin-bottom: 2rem;
-          display: flex;
-          flex-direction: column;
-          gap: 0.9rem;
+          padding: 0.85rem 1.1rem !important;
+          margin-bottom: 1.75rem !important;
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 0.75rem !important;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
         }
 
-        .rgb-search-row {
-          display: flex;
-          gap: 0.75rem;
-          flex-wrap: wrap;
+        #rgb-deal-finder-root .rgb-search-row {
+          display: flex !important;
+          flex-direction: row !important;
+          flex-wrap: wrap !important;
+          gap: 0.65rem !important;
+          align-items: center !important;
+          width: 100% !important;
         }
-        .rgb-search-input {
-          flex: 1;
-          min-width: 220px;
+
+        #rgb-deal-finder-root input.rgb-search-input,
+        #rgb-deal-finder-root .rgb-search-input {
+          flex: 1 1 220px !important;
+          min-width: 200px !important;
+          height: 42px !important;
+          min-height: 42px !important;
+          max-height: 42px !important;
           background: #090d16 !important;
           border: 1px solid var(--rgb-border) !important;
           color: #ffffff !important;
-          padding: 0.65rem 1rem;
-          border-radius: 8px;
-          font-size: 0.9rem;
-          outline: none;
+          padding: 0.5rem 1rem !important;
+          border-radius: 8px !important;
+          font-size: 0.88rem !important;
+          line-height: 1.2 !important;
+          outline: none !important;
+          margin: 0 !important;
         }
-        .rgb-search-input:focus { border-color: var(--rgb-primary) !important; }
+        #rgb-deal-finder-root .rgb-search-input:focus {
+          border-color: var(--rgb-primary) !important;
+          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2) !important;
+        }
 
-        .rgb-dropdown {
+        #rgb-deal-finder-root select.rgb-dropdown,
+        #rgb-deal-finder-root .rgb-dropdown {
+          flex: 0 1 auto !important;
+          width: auto !important;
+          min-width: 180px !important;
+          max-width: 260px !important;
+          height: 42px !important;
+          min-height: 42px !important;
+          max-height: 42px !important;
           background: #090d16 !important;
           border: 1px solid var(--rgb-border) !important;
           color: #ffffff !important;
-          padding: 0.65rem 0.9rem;
-          border-radius: 8px;
-          font-size: 0.85rem;
-          outline: none;
-          cursor: pointer;
+          padding: 0.5rem 2rem 0.5rem 0.85rem !important;
+          border-radius: 8px !important;
+          font-size: 0.85rem !important;
+          line-height: 1.2 !important;
+          outline: none !important;
+          cursor: pointer !important;
+          margin: 0 !important;
+          -webkit-appearance: none !important;
+          -moz-appearance: none !important;
+          appearance: none !important;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394a3b8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E") !important;
+          background-repeat: no-repeat !important;
+          background-position: right 0.75rem center !important;
+          background-size: 1rem !important;
+        }
+        #rgb-deal-finder-root select.rgb-dropdown:focus {
+          border-color: var(--rgb-primary) !important;
+          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2) !important;
         }
 
-        .rgb-pills-row {
-          display: flex;
-          gap: 0.4rem;
-          flex-wrap: wrap;
-          align-items: center;
+        #rgb-deal-finder-root .rgb-pills-row {
+          display: flex !important;
+          gap: 0.4rem !important;
+          flex-wrap: wrap !important;
+          align-items: center !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
         }
-        .rgb-pill {
-          background: #090d16;
-          border: 1px solid var(--rgb-border);
+        #rgb-deal-finder-root .rgb-pill {
+          height: 32px !important;
+          min-height: 32px !important;
+          line-height: 1.2 !important;
+          background: #090d16 !important;
+          border: 1px solid var(--rgb-border) !important;
           color: var(--rgb-muted) !important;
-          padding: 0.35rem 0.75rem;
-          border-radius: 6px;
-          font-size: 0.8rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.15s;
+          padding: 0.35rem 0.75rem !important;
+          border-radius: 6px !important;
+          font-size: 0.8rem !important;
+          font-weight: 600 !important;
+          cursor: pointer !important;
+          margin: 0 !important;
+          display: inline-flex !important;
+          align-items: center !important;
+          transition: all 0.15s ease !important;
         }
-        .rgb-pill:hover { background: #1e293b; color: #ffffff !important; }
-        .rgb-pill.active { background: var(--rgb-primary) !important; border-color: var(--rgb-primary) !important; color: #000000 !important; font-weight: 800; }
-        .rgb-pill.new.active { background: #10b981 !important; border-color: #10b981 !important; color: #000000 !important; font-weight: 800; }
+        #rgb-deal-finder-root .rgb-pill:hover {
+          background: #1e293b !important;
+          color: #ffffff !important;
+          border-color: #334155 !important;
+        }
+        #rgb-deal-finder-root .rgb-pill.active {
+          background: var(--rgb-primary) !important;
+          border-color: var(--rgb-primary) !important;
+          color: #000000 !important;
+          font-weight: 800 !important;
+        }
+        #rgb-deal-finder-root .rgb-pill.new.active,
+        #rgb-deal-finder-root .rgb-pill.legal.active {
+          background: #10b981 !important;
+          border-color: #10b981 !important;
+          color: #000000 !important;
+          font-weight: 800 !important;
+        }
 
         .rgb-status-meta {
           font-size: 0.85rem;
@@ -587,7 +653,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           rgbApplyFilters();
         };
 
-                                                                function rgbGetPriceBand(price) {
+                                                                                        function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
           if (price <= 1500) return '£1,000 – £1,500';
           if (price <= 3000) return '£1,500 – £3,000';

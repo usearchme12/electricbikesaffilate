@@ -10,8 +10,9 @@ let php = fs.readFileSync('wordpress-plugin/reight-deals-finder.php', 'utf8');
 const wasCRLF = php.includes('\r\n');
 php = php.replace(/\r\n/g, '\n');
 
-// 2. Bump Version to 2.4.0
-php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.4.0');
+// 2. Bump Version to 2.4.1
+php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.4.1');
+
 
 // 3. Ensure LiteSpeed cache bypass hook is in place
 if (!php.includes('rgb_disable_litespeed_cache')) {
@@ -495,7 +496,8 @@ if (wasCRLF) {
 // 11. Write modified PHP plugin and deals.json
 fs.writeFileSync('wordpress-plugin/reight-deals-finder.php', php, 'utf8');
 fs.copyFileSync('deals.json', 'wordpress-plugin/deals.json');
-console.log('Successfully updated reight-deals-finder.php with v2.4.0 and', dealsData.deals.length, 'deals');
+console.log('Successfully updated reight-deals-finder.php with v2.4.1 and', dealsData.deals.length, 'deals');
+
 
 // 12. Re-package zip files
 try {

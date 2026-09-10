@@ -98,9 +98,18 @@ Both `index.html` and the WordPress plugin share identical tracking behavior:
 
 ---
 
-## 6. Build Artifacts & Verification
+## 6. Version 2.4.1: Compact Menus & Whitespace Optimization
 
-- **WordPress Plugin**: Updated to version **2.4.0** in `wordpress-plugin/reight-deals-finder.php`.
+- **Single-Row Dropdowns**: Scoped high-specificity rules to `#rgb-deal-finder-root select.rgb-dropdown` (`width: auto !important`, `min-width: 180px !important`, `max-width: 260px !important`, `height: 42px !important`) to stop the theme's global `select { width: 100%; min-height: 51px; }` from breaking the Search bar and dropdowns onto 3 stacked lines.
+- **Theme Font Override Protection**: Scoped sans-serif typography (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important`) across all elements in the plugin to prevent the theme's global `Lora, serif` font from leaking into bike titles and buttons.
+- **Whitespace Compression**: Reduced vertical padding and margins across the header, newsletter banner, and category pills for a tight, app-like visual hierarchy matching the standalone preview.
+
+---
+
+## 7. Build Artifacts & Verification
+
+- **WordPress Plugin**: Updated to version **2.4.1** in `wordpress-plugin/reight-deals-finder.php`.
 - **Pre-commit Syntax Validation**: Evaluated embedded JavaScript with Node.js parser (`new Function()`) — passed with 0 errors.
 - **Distribution Packages**: Re-packaged into `reight-deals-finder.zip` and `wordpress-plugin.zip`.
 - **Automation**: Updated `.github/workflows/daily_deals.yml` to automatically execute `update_plugin.js` and commit updated plugin archives during twice-daily scrapes.
+

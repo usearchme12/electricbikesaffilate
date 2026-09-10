@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 Mockup Preview - Reight Good Bikes Deals + Omnisend Digest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #131b2e;
+      --border: #23314f;
+      --primary: #f59e0b;
+      --accent-neon: #10b981;
+      --accent-blue: #38bdf8;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      line-height: 1.5;
+      padding-bottom: 5rem;
+    }
+
+    .top-nav {
+      background: rgba(9, 13, 22, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-logo {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #fff;
+      text-decoration: none;
+    }
+    .brand-logo span { color: var(--primary); }
+
+    .preview-pill {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2.5rem 1rem 1.5rem;
+    }
+    .hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* Newsletter Card Mockup */
+    .newsletter-card {
+      background: linear-gradient(145deg, #131b2e 0%, #090d16 100%);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--primary);
+      border-radius: 16px;
+      padding: 2.2rem 1.5rem;
+      margin: 1.5rem 0 2.5rem;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+    .newsletter-badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.3rem 0.8rem;
+      border-radius: 99px;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+    }
+    .newsletter-card h2 {
+      font-family: 'Outfit', sans-serif;
+      color: #ffffff;
+      font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .newsletter-sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .mock-omnisend-box {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .mock-input {
+      flex: 1;
+      min-width: 240px;
+      background: #090d16;
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 0.8rem 1.1rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+    .mock-btn {
+      background: var(--primary);
+      color: #000;
+      font-weight: 800;
+      padding: 0.8rem 1.4rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    .newsletter-trust {
+      color: #64748b;
+      font-size: 0.78rem;
+      margin-top: 1rem;
+    }
+
+    /* Filters Mockup */
+    .filter-bar {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .filter-pills { display: flex; gap: 0.5rem; }
+    .pill { background: #090d16; border: 1px solid var(--border); color: var(--muted); padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; }
+    .pill.active { background: var(--primary); color: #000; font-weight: 800; }
+
+    /* Cards Grid Mockup */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .card-title { font-weight: 700; color: #fff; margin-bottom: 0.5rem; font-size: 1rem; }
+    .card-price { color: var(--primary); font-size: 1.3rem; font-weight: 800; }
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav">
+    <a href="#" class="brand-logo">🚴 <span>Reight Good Bikes</span></a>
+    <span class="preview-pill">🛠️ Temporary Local Mockup Page</span>
+  </nav>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Top Electric Bike Discounts & Deals</h1>
+      <p>Real-time price cuts from verified UK e-bike specialists and direct brands.</p>
+    </header>
+
+    <!-- Omnisend Mockup Section -->
+    <section class="newsletter-card">
+      <div class="newsletter-badge">⚡ WEEKLY PRICE DROP DIGEST</div>
+      <h2>⚡ Reight Good E-Bike Deals — Delivered Weekly</h2>
+      <p class="newsletter-sub">We scan UK retailers daily for secret price cuts and clearance stock. Join our weekly digest and grab top e-bike bargains before they sell out.</p>
+
+      <!-- Real Omnisend Embed Container -->
+      <div id="omnisend-embedded-v2-6a8986b8c8c1603e9077a360">
+        <!-- Visual Fallback/Mockup representation if script isn't loaded -->
+        <div class="mock-omnisend-box">
+          <input type="email" class="mock-input" placeholder="Enter your email address..." />
+          <button class="mock-btn">Join Weekly Digest</button>
+        </div>
+      </div>
+
+      <p class="newsletter-trust">🔒 100% Free • Sent Weekly • Unsubscribe Anytime</p>
+    </section>
+
+    <!-- Filters -->
+    <div class="filter-bar">
+      <div class="filter-pills">
+        <span class="pill active">All Deals</span>
+        <span class="pill">🔥 Mega Deals</span>
+        <span class="pill">Under £1,000</span>
+      </div>
+      <span style="color: var(--muted); font-size: 0.85rem;">Showing 24 Verified Deals</span>
+    </div>
+
+    <!-- Deals Grid Mockup -->
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">Specialized Turbo Tero 3.0</div>
+        <div class="card-price">£1,899 <span style="font-size:0.8rem; text-decoration:line-through; color:var(--muted)">£2,800</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Cube Reaction Hybrid Pro 620</div>
+        <div class="card-price">£2,149 <span style="font-size:0.8rem; text-decoration:line-through; color:var(--muted)">£2,999</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Haibike AllMtn 3 E-MTB</div>
+        <div class="card-price">£3,499 <span style="font-size:0.8rem; text-decoration:line-through; color:var(--muted)">£4,500</span></div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

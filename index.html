@@ -750,10 +750,10 @@
               <h3 class="card-title">${d.title}</h3>
 
               <div class="specs-grid">
-                <div><span class="spec-lbl">Brand</span><div class="spec-val">${d.brand || d.retailer}</div></div>
                 <div><span class="spec-lbl">Category</span><div class="spec-val">${d.category}</div></div>
                 <div><span class="spec-lbl">Motor</span><div class="spec-val">${d.motor_power}</div></div>
-                <div><span class="spec-lbl">Range</span><div class="spec-val">${d.range_miles}</div></div>
+                <div><span class="spec-lbl">Battery</span><div class="spec-val">${d.battery || 'Spec on site'}</div></div>
+                <div><span class="spec-lbl">UK Status</span><div class="spec-val">${d.is_uk_legal ? '✅ Road Legal' : '⚠️ Off-Road'}</div></div>
               </div>
 
               <div class="price-row">

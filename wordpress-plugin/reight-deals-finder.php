@@ -498,6 +498,8 @@ function rgb_register_deal_finder_shortcode($atts) {
                   <div class="rgb-specs">
                     <div><span class="rgb-spec-lbl">Category</span><div class="rgb-spec-val">${d.category}</div></div>
                     <div><span class="rgb-spec-lbl">Motor</span><div class="rgb-spec-val">${d.motor_power}</div></div>
+                    <div><span class="rgb-spec-lbl">Battery</span><div class="rgb-spec-val">${d.battery || 'Spec on site'}</div></div>
+                    <div><span class="rgb-spec-lbl">UK Status</span><div class="rgb-spec-val">${d.is_uk_legal ? '✅ Road Legal' : '⚠️ Off-Road'}</div></div>
                   </div>
                   <div class="rgb-price-row">
                     <div>

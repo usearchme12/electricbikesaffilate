@@ -10,8 +10,8 @@ let php = fs.readFileSync('wordpress-plugin/reight-deals-finder.php', 'utf8');
 const wasCRLF = php.includes('\r\n');
 php = php.replace(/\r\n/g, '\n');
 
-// 2. Bump Version to 2.3.3
-php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.3.3');
+// 2. Bump Version to 2.3.4
+php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.3.4');
 
 // 3. Ensure LiteSpeed cache bypass hook is in place
 if (!php.includes('rgb_disable_litespeed_cache')) {
@@ -40,52 +40,14 @@ add_action('wp', 'rgb_disable_litespeed_cache');
   php = php.replace("add_action('wp_head', 'rgb_noindex_deals_page');", "add_action('wp_head', 'rgb_noindex_deals_page');\n" + noCacheHook);
 }
 
-// 4. Update CSS for rock-solid grid and image sizing (prevents theme overrides & giant images on back navigation)
-const newCssBlock = `        #rgb-deal-finder-root .rgb-grid,
-        .rgb-deal-finder-wrapper .rgb-grid {
-          display: grid !important;
-          grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)) !important;
-          gap: 1.5rem !important;
-          margin-bottom: 2.5rem !important;
-          width: 100% !important;
-        }
-
-        #rgb-deal-finder-root .rgb-card,
-        .rgb-deal-finder-wrapper .rgb-card {
-          background: var(--rgb-card-bg) !important;
-          border: 1px solid var(--rgb-border) !important;
-          border-radius: 12px !important;
-          overflow: hidden !important;
-          display: flex !important;
-          flex-direction: column !important;
-          position: relative !important;
-          transition: transform 0.2s, border-color 0.2s !important;
-          min-width: 0 !important;
-          max-width: 100% !important;
-          box-sizing: border-box !important;
-        }
-        #rgb-deal-finder-root .rgb-card:hover,
-        .rgb-deal-finder-wrapper .rgb-card:hover { transform: translateY(-3px) !important; border-color: var(--rgb-primary) !important; }
-
-        .rgb-badge-discount {
-          position: absolute;
-          top: 0.75rem;
-          left: 0.75rem;
-          background: var(--rgb-red) !important;
-          color: #ffffff !important;
-          font-size: 0.72rem;
-          font-weight: 800;
-          padding: 0.25rem 0.55rem;
-          border-radius: 4px;
-          text-transform: uppercase;
-          z-index: 2;
-        }
-
-        .rgb-badge-new {
+// 4. Update CSS for 30-day low badge and Road Legal pill styling
+if (!php.includes('.rgb-badge-low30')) {
+  const lowBadgeCss = `
+        .rgb-badge-low30 {
           position: absolute;
           top: 0.75rem;
           right: 0.75rem;
-          background: #10b981 !important;
+          background: #f59e0b !important;
           color: #000000 !important;
           font-size: 0.72rem;
           font-weight: 800;
@@ -93,142 +55,116 @@ const newCssBlock = `        #rgb-deal-finder-root .rgb-grid,
           border-radius: 4px;
           text-transform: uppercase;
           z-index: 2;
-          box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+          box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
         }
+        .rgb-pill.legal.active { background: #10b981 !important; border-color: #10b981 !important; color: #000000 !important; font-weight: 800; }
+`;
+  php = php.replace('.rgb-badge-new {', lowBadgeCss + '        .rgb-badge-new {');
+}
 
-        /* Bulletproof Image Wrapper: Strict 220px fixed viewport */
-        .rgb-card-img-wrap,
-        #rgb-deal-finder-root .rgb-card-img-wrap,
-        .rgb-deal-finder-wrapper .rgb-card-img-wrap {
-          position: relative !important;
-          width: 100% !important;
-          height: 220px !important;
-          min-height: 220px !important;
-          max-height: 220px !important;
-          background: #000000 !important;
-          overflow: hidden !important;
-          display: flex !important;
-          align-items: center !important;
-          justify-content: center !important;
-          flex-shrink: 0 !important;
-          padding: 0 !important;
-          margin: 0 !important;
-          box-sizing: border-box !important;
-        }
+// 5. Add Price Range Select to Search Row if not present
+if (!php.includes('rgbPriceSelect')) {
+  const priceSelectHtml = `          <select id="rgbPriceSelect" class="rgb-dropdown" onchange="rgbApplyFilters()">
+            <option value="all">🏷️ All Price Ranges</option>
+            <option value="under1000">⚡ Under £1,000</option>
+            <option value="1000-2500">🚲 £1,000 – £2,500</option>
+            <option value="2500-5000">💎 £2,500 – £5,000</option>
+            <option value="over5000">👑 Over £5,000</option>
+          </select>
+        </div>`;
+  php = php.replace(/\s*<\/select>\s*<\/div>\s*<div class="rgb-pills-row">/, '\n          </select>\n' + priceSelectHtml + '\n\n        <div class="rgb-pills-row">');
+}
 
-        /* Bulletproof Card Image: Immune to theme rules (.entry-content img { height: auto !important; }) */
-        .rgb-card-img,
-        #rgb-deal-finder-root .rgb-card-img,
-        .rgb-deal-finder-wrapper .rgb-card-img,
-        #rgb-deal-finder-root img.rgb-card-img,
-        .rgb-deal-finder-wrapper img.rgb-card-img,
-        .entry-content #rgb-deal-finder-root img.rgb-card-img,
-        .entry-content .rgb-deal-finder-wrapper img.rgb-card-img,
-        .site-main #rgb-deal-finder-root img.rgb-card-img {
-          display: block !important;
-          width: 100% !important;
-          max-width: 100% !important;
-          height: 220px !important;
-          min-height: 220px !important;
-          max-height: 220px !important;
-          object-fit: contain !important;
-          object-position: center !important;
-          background: #000000 !important;
-          margin: 0 auto !important;
-          padding: 8px !important;
-          border: none !important;
-          border-radius: 0 !important;
-          box-shadow: none !important;
-          box-sizing: border-box !important;
-          transform: none;
-          transition: transform 0.25s ease !important;
-        }
-        #rgb-deal-finder-root .rgb-card:hover img.rgb-card-img,
-        .rgb-deal-finder-wrapper .rgb-card:hover img.rgb-card-img {
-          transform: scale(1.05) !important;
-        }`;
+// 6. Add Road Legal Only Pill if not present
+if (!php.includes('data-cat="legal"')) {
+  php = php.replace(
+    '<button class="rgb-pill active" data-cat="all" onclick="rgbFilter(\'all\', this)">All Deals</button>',
+    '<button class="rgb-pill active" data-cat="all" onclick="rgbFilter(\'all\', this)">All Deals</button>\n          <button class="rgb-pill legal" data-cat="legal" onclick="rgbFilter(\'legal\', this)">✅ Road Legal Only</button>'
+  );
+}
 
-// Replace CSS from .rgb-grid to .rgb-card:hover .rgb-card-img { transform: scale(1.04); }
-php = php.replace(
-  /\.rgb-grid\s*\{[\s\S]*?\.rgb-card:hover \.rgb-card-img \{ transform: scale\(1\.04\); \}/,
-  newCssBlock
-);
-
-// 5. Update dealsList and lastUpdatedStr
+// 7. Update dealsList and lastUpdatedStr
 const dealsJsonStr = JSON.stringify(dealsData.deals);
 php = php.replace(/let dealsList = \[.*?\];/s, 'let dealsList = ' + dealsJsonStr + ';');
 php = php.replace(/let lastUpdatedStr = ".*?";/, 'let lastUpdatedStr = "' + dealsData.metadata.last_updated + ' (Auto-updated daily)";');
 
-// 6. Update fetchTopDeals to eliminate scroll flashing
-const newFetchFunc = `        async function fetchTopDeals() {
-          const cb = '?t=' + Math.floor(Date.now() / 180000);
-          const feedUrls = [
-            'https://raw.githubusercontent.com/usearchme12/electricbikesaffilate/main/deals.json' + cb,
-            'https://cdn.jsdelivr.net/gh/usearchme12/electricbikesaffilate@main/deals.json' + cb,
-            '<?php echo plugins_url('deals.json', __FILE__); ?>' + cb
-          ];
-
-          for (const url of feedUrls) {
-            try {
-              const res = await fetch(url, { cache: 'no-store' });
-              if (res.ok) {
-                const data = await res.json();
-                if (data && data.deals && data.deals.length > 0) {
-                  // CRITICAL FLASH FIX: Check if remote data actually differs from current deals
-                  const isSameCount = dealsList && dealsList.length === data.deals.length;
-                  if (isSameCount) {
-                    // Feed is identical: do NOT wipe and re-render the DOM! Eliminates scroll flash entirely!
-                    if (data.metadata && data.metadata.last_updated) {
-                      lastUpdatedStr = formatLastUpdated(data.metadata.last_updated);
-                      const badge = document.getElementById('rgbHeaderBadge');
-                      if (badge) badge.innerText = '⚡ Last Refreshed: ' + lastUpdatedStr;
-                    }
-                    return;
-                  }
-
-                  dealsList = data.deals;
-                  if (data.metadata && data.metadata.last_updated) {
-                    lastUpdatedStr = formatLastUpdated(data.metadata.last_updated);
-                    const badge = document.getElementById('rgbHeaderBadge');
-                    if (badge) badge.innerText = '⚡ Last Refreshed: ' + lastUpdatedStr;
-                  }
-                  rgbApplyFilters();
-                  return;
-                }
-              }
-            } catch(e) {
-              console.warn('Feed fetch attempt failed:', url, e);
+// 8. Update filter logic inside rgbApplyFilters to handle legal and price range filters
+const oldFilterLogic = `            if (curCat === 'new') return d.is_new === true;
+            if (curCat === 'mega') return d.discount_percentage >= 30 || d.savings_amount >= 400;
+            if (curCat === 'budget') return d.sale_price <= 1000;
+            if (curCat === 'Fat Tyre') {
+              if (d.category === 'Fat Tyre' || d.category === 'Cargo & Fat Tyre') return true;
+              const t = (d.title + ' ' + (d.brand || '')).toLowerCase();
+              const fatKws = ['fat', 'kommoda', 'ranger', 'rover', 'trax', 'roam', 'kuattro', 'ovia', 'ep-2', 'engine pro', 'l20', 'm20', 'o20', 'e26', 'mars', 'tyson', 'brawn', 'hero', 'all-terrain', '4.0'];
+              return fatKws.some(k => t.includes(k));
             }
-          }
-        }`;
+            if (curCat !== 'all' && d.category !== curCat) return false;
+            return true;`;
 
-php = php.replace(
-  /async function fetchTopDeals\(\)\s*\{[\s\S]*?console\.warn\('Feed fetch attempt failed:', url, e\);\s*\}\s*\}\s*\}/,
-  newFetchFunc
-);
+const newFilterLogic = `            const priceFilter = document.getElementById('rgbPriceSelect')?.value || 'all';
+            if (priceFilter === 'under1000' && d.sale_price > 1000) return false;
+            if (priceFilter === '1000-2500' && (d.sale_price < 1000 || d.sale_price > 2500)) return false;
+            if (priceFilter === '2500-5000' && (d.sale_price < 2500 || d.sale_price > 5000)) return false;
+            if (priceFilter === 'over5000' && d.sale_price < 5000) return false;
 
-// 7. Update card image tag to include dimensions, decoding="async", and LiteSpeed lazy-load bypass flags
-php = php.replace(
-  /<img src="\${d\.image}" alt="\${d\.title}" class="rgb-card-img"[^>]*>/,
-  '<img src="${d.image}" alt="${d.title}" class="rgb-card-img skip-lazy" data-no-lazy="1" width="360" height="220" loading="lazy" decoding="async" onerror="this.src=\'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600\'">'
-);
+            if (curCat === 'legal') return d.is_uk_legal === true;
+            if (curCat === 'new') return d.is_new === true;
+            if (curCat === 'mega') return d.discount_percentage >= 30 || d.savings_amount >= 400;
+            if (curCat === 'budget') return d.sale_price <= 1000;
+            if (curCat === 'Fat Tyre') {
+              if (d.category === 'Fat Tyre' || d.category === 'Cargo & Fat Tyre') return true;
+              const t = (d.title + ' ' + (d.brand || '')).toLowerCase();
+              const fatKws = ['fat', 'kommoda', 'ranger', 'rover', 'trax', 'roam', 'kuattro', 'ovia', 'ep-2', 'engine pro', 'l20', 'm20', 'o20', 'e26', 'mars', 'tyson', 'brawn', 'hero', 'all-terrain', '4.0'];
+              return fatKws.some(k => t.includes(k));
+            }
+            if (curCat !== 'all' && d.category !== curCat) return false;
+            return true;`;
 
-// 8. Add BFCache pageshow listener if not present
-if (!php.includes('pageshow')) {
-  const oldFooter = `        rgbApplyFilters();\n        fetchTopDeals();\n      })();`;
-  const newFooter = `        rgbApplyFilters();
-        fetchTopDeals();
+if (php.includes(oldFilterLogic)) {
+  php = php.replace(oldFilterLogic, newFilterLogic);
+}
 
-        // BFCache (Back-Forward Cache) safeguard: ensures layout and cards restore properly
-        window.addEventListener('pageshow', function(e) {
-          const container = document.getElementById('rgbDealsContainer');
-          if (container && (!container.children || container.children.length === 0)) {
-            rgbApplyFilters();
-          }
-        });
-      })();`;
+// 9. Update card markup in container.innerHTML for badges and truthful specs
+const oldCardMarkup = `              <article class="rgb-card">
+                <div class="rgb-badge-discount">SAVE \${sym}\${savings} (\${d.discount_percentage}% OFF)</div>
+                \${d.is_new ? '<div class="rgb-badge-new">✨ Just Added</div>' : ''}
+                <div class="rgb-card-img-wrap">
+                  <img src="\${d.image}" alt="\${d.title}" class="rgb-card-img skip-lazy" data-no-lazy="1" width="360" height="220" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600'">
+                </div>
+                <div class="rgb-card-body">
+                  <div class="rgb-row">
+                    <span class="rgb-retailer">\${d.retailer}</span>
+                    <span class="rgb-score">Score: \${d.dealScore || 85}</span>
+                  </div>
+                  <h3 class="rgb-card-title">\${d.title}</h3>
+                  <div class="rgb-specs">
+                    <div><span class="rgb-spec-lbl">Category</span><div class="rgb-spec-val">\${d.category}</div></div>
+                    <div><span class="rgb-spec-lbl">Motor</span><div class="rgb-spec-val">\${d.motor_power}</div></div>
+                    <div><span class="rgb-spec-lbl">Battery</span><div class="rgb-spec-val">\${d.battery || 'Spec on site'}</div></div>
+                    <div><span class="rgb-spec-lbl">UK Status</span><div class="rgb-spec-val">\${d.is_uk_legal ? '✅ Road Legal' : '⚠️ Off-Road'}</div></div>
+                  </div>`;
 
-  php = php.replace(oldFooter, newFooter);
+const newCardMarkup = `              <article class="rgb-card">
+                <div class="rgb-badge-discount">SAVE \${sym}\${savings} (\${d.discount_percentage}% OFF)</div>
+                \${d.is_lowest_price_30d ? '<div class="rgb-badge-low30">🔥 30-Day Low</div>' : (d.is_new ? '<div class="rgb-badge-new">✨ Just Added</div>' : '')}
+                <div class="rgb-card-img-wrap">
+                  <img src="\${d.image}" alt="\${d.title}" class="rgb-card-img skip-lazy" data-no-lazy="1" width="360" height="220" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600'">
+                </div>
+                <div class="rgb-card-body">
+                  <div class="rgb-row">
+                    <span class="rgb-retailer">\${d.retailer}</span>
+                    <span class="rgb-score">Score: \${d.dealScore || 85}</span>
+                  </div>
+                  <h3 class="rgb-card-title">\${d.title}</h3>
+                  <div class="rgb-specs">
+                    <div><span class="rgb-spec-lbl">Category</span><div class="rgb-spec-val">\${d.category}</div></div>
+                    <div><span class="rgb-spec-lbl">Motor</span><div class="rgb-spec-val" title="\${d.motor_power}">\${d.motor_power === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.motor_power}</div></div>
+                    <div><span class="rgb-spec-lbl">Battery</span><div class="rgb-spec-val" title="\${d.battery}">\${d.battery === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.battery}</div></div>
+                    <div><span class="rgb-spec-lbl">UK Status</span><div class="rgb-spec-val">\${d.is_uk_legal ? '<span style="color:#10b981;">✅ Road Legal</span>' : (d.motor_power === 'Specification not confirmed' ? '<span style="color:#f59e0b;">⚠️ Check Retailer</span>' : '<span style="color:#ef4444;">⚠️ Off-Road</span>')}</div></div>
+                  </div>`;
+
+if (php.includes(oldCardMarkup)) {
+  php = php.replace(oldCardMarkup, newCardMarkup);
 }
 
 // Restore line endings if originally CRLF
@@ -236,12 +172,12 @@ if (wasCRLF) {
   php = php.replace(/\n/g, '\r\n');
 }
 
-// 9. Write modified PHP plugin and deals.json
+// 10. Write modified PHP plugin and deals.json
 fs.writeFileSync('wordpress-plugin/reight-deals-finder.php', php, 'utf8');
 fs.copyFileSync('deals.json', 'wordpress-plugin/deals.json');
-console.log('Successfully updated reight-deals-finder.php with', dealsData.deals.length, 'deals and timestamp', dealsData.metadata.last_updated);
+console.log('Successfully updated reight-deals-finder.php with v2.3.4 and', dealsData.deals.length, 'deals');
 
-// 10. Re-package zip files
+// 11. Re-package zip files
 try {
   execSync('py -c "import zipfile, os; z = zipfile.ZipFile(\'reight-deals-finder.zip\', \'w\', zipfile.ZIP_DEFLATED); [z.write(os.path.join(\'wordpress-plugin\', f), os.path.join(\'reight-deals-finder\', f)) for f in os.listdir(\'wordpress-plugin\')]; z.close()"');
   fs.copyFileSync('reight-deals-finder.zip', 'wordpress-plugin.zip');

@@ -14,6 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DEALS_FILE = path.join(__dirname, 'deals.json');
+const PRICE_HISTORY_FILE = path.join(__dirname, 'price-history.json');
 
 // Your Official Awin Publisher ID
 const AWIN_PUBLISHER_ID = '3040709';
@@ -231,24 +232,37 @@ function detectCategory(title, type) {
 function parseSpecs(product, category) {
   const fullText = `${product.title} ${product.body_html || ''} ${(product.tags || []).join(' ')}`.toLowerCase();
   
-  // Motor Wattage
-  let motorPower = category === 'Mountain' ? '250W Mid-Drive' : '250W Road Legal';
-  let isUkLegal = true;
-  
+  // 1. Motor Wattage & UK Road Legal Detection
+  let motorPower = 'Specification not confirmed';
+  let isUkLegal = false;
+  let isConfirmed = false;
+
+  // Recognized EU/UK certified mid-drive / motor systems (Bosch, Shimano Steps, Mahle, Brose, Yamaha, Fazua, TQ)
+  const isMidDriveBrand = /\b(bosch|shimano steps|brose|yamaha|mahle|fazua|tq-hpr)\b/i.test(fullText);
+
   const motorMatch = fullText.match(/\b(250|350|500|750|1000|1200|1500)\s*w\b/i);
   if (motorMatch) {
     const watts = parseInt(motorMatch[1], 10);
     if (watts > 250) {
       motorPower = `${watts}W High Torque`;
-      isUkLegal = false; // UK EAPC limit is 250W continuous
+      isUkLegal = false; // Over UK 250W EAPC continuous limit -> Off-road only
+      isConfirmed = true;
     } else {
-      motorPower = '250W Road Legal';
+      motorPower = isMidDriveBrand || category === 'Mountain' ? '250W Mid-Drive' : '250W Road Legal';
       isUkLegal = true;
+      isConfirmed = true;
     }
+  } else if (isMidDriveBrand) {
+    motorPower = '250W Mid-Drive (EAPC)';
+    isUkLegal = true;
+    isConfirmed = true;
+  } else {
+    motorPower = 'Specification not confirmed';
+    isUkLegal = false; // Never assume road legal without verification
   }
 
-  // Battery Wh / Ah
-  let battery = 'Lithium-Ion';
+  // 2. Battery Wh / Ah
+  let battery = 'Specification not confirmed';
   const whMatch = fullText.match(/\b(\d{3,4})\s*wh\b/i);
   const ahMatch = fullText.match(/\b(\d{1,2}(?:\.\d+)?)\s*ah\b/i);
   const vMatch = fullText.match(/\b(36|48|52)\s*v\b/i);
@@ -261,30 +275,52 @@ function parseSpecs(product, category) {
   } else if (ahMatch) {
     battery = `${ahMatch[1]}Ah Lithium-Ion`;
   } else {
-    battery = 'Spec on retailer site';
+    battery = 'Specification not confirmed';
   }
 
-  const maxSpeed = isUkLegal ? '15.5 mph (EAPC)' : '20+ mph (Off-Road)';
+  // 3. Max Speed
+  let maxSpeed = 'Check retailer listing';
+  if (isUkLegal) {
+    maxSpeed = '15.5 mph (EAPC)';
+  } else if (isConfirmed && !isUkLegal) {
+    maxSpeed = '20+ mph (Off-Road)';
+  }
 
-  return { motorPower, battery, isUkLegal, maxSpeed };
+  // 4. Range
+  const rangeMatch = fullText.match(/\b(\d{2,3})\s*[-–to]\s*(\d{2,3})\s*(?:miles|mi)\b/i);
+  let rangeMiles = rangeMatch ? `${rangeMatch[1]} - ${rangeMatch[2]} Miles` : 'See retailer listing';
+
+  return { motorPower, battery, isUkLegal, maxSpeed, rangeMiles };
 }
 
-async function fetchWithTimeout(url, timeoutMs = 12000) {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'application/json'
-      },
-      signal: controller.signal
-    });
-    clearTimeout(timeoutId);
-    return res;
-  } catch (err) {
-    clearTimeout(timeoutId);
-    throw err;
+async function fetchWithRetry(url, timeoutMs = 12000, maxRetries = 1) {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+          'Accept': 'application/json'
+        },
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+      if (res.ok) return res;
+      if (attempt < maxRetries && (res.status >= 500 || res.status === 429)) {
+        await new Promise(r => setTimeout(r, 2000));
+        continue;
+      }
+      return res;
+    } catch (err) {
+      clearTimeout(timeoutId);
+      if (attempt < maxRetries) {
+        console.warn(`[RETRY] Network issue for ${url} (${err.message}). Retrying in 2s...`);
+        await new Promise(r => setTimeout(r, 2000));
+        continue;
+      }
+      throw err;
+    }
   }
 }
 
@@ -293,15 +329,15 @@ async function fetchSourceDeals(source, previousDeals = []) {
   const seenIds = new Set();
   const maxPages = source.maxPages || 2;
   const baseUrlClean = source.endpoint.replace(/\.json.*$/, '');
-  let fetchFailed = false;
+  let hadFailure = false;
 
   for (let page = 1; page <= maxPages; page++) {
     const pageUrl = `${baseUrlClean}.json?limit=250&page=${page}`;
     try {
-      const res = await fetchWithTimeout(pageUrl);
+      const res = await fetchWithRetry(pageUrl);
       if (!res.ok) {
-        console.warn(`[WARN] ${source.name} page ${page} returned status ${res.status}`);
-        if (page === 1) fetchFailed = true;
+        console.warn(`[WARN] ${source.name} page ${page} returned HTTP ${res.status}`);
+        hadFailure = true;
         break;
       }
       const data = await res.json();
@@ -378,7 +414,7 @@ async function fetchSourceDeals(source, previousDeals = []) {
           dealScore: parseFloat(dealScore.toFixed(1)),
           motor_power: specs.motorPower,
           battery: specs.battery,
-          range_miles: '35 - 75 Miles',
+          range_miles: specs.rangeMiles,
           max_speed: specs.maxSpeed,
           is_uk_legal: specs.isUkLegal,
           rrp: comparePrice,
@@ -391,6 +427,7 @@ async function fetchSourceDeals(source, previousDeals = []) {
           badge_text: `SAVE ${source.symbol}${savings} (${discountPct}% OFF)`,
           first_seen: p.published_at ? p.published_at.slice(0, 10) : new Date().toISOString().slice(0, 10),
           is_new: false,
+          is_cached: false,
           last_verified: new Date().toISOString()
         });
       }
@@ -398,15 +435,26 @@ async function fetchSourceDeals(source, previousDeals = []) {
       if (products.length < 250) break; // Exhausted catalog
     } catch (err) {
       console.error(`[ERROR] Fetching ${source.name} page ${page}:`, err.message);
-      if (page === 1) fetchFailed = true;
+      hadFailure = true;
       break;
     }
   }
 
-  // Outage fallback: if retailer completely failed and we have previous cached deals, preserve them
-  if (fetchFailed && previousDeals.length > 0) {
-    console.warn(`[OUTAGE FALLBACK] Preserving ${previousDeals.length} cached deals for ${source.name}`);
-    return previousDeals.map(d => ({ ...d, is_cached: true }));
+  // Outage fallback / merge: if any page failed, preserve previous cached deals
+  if (hadFailure && previousDeals.length > 0) {
+    if (deals.length === 0) {
+      console.warn(`[OUTAGE FALLBACK] Preserving all ${previousDeals.length} cached deals for ${source.name}`);
+      return previousDeals.map(d => ({ ...d, is_cached: true }));
+    }
+    // Partial success: merge missing cached items
+    const fetchedIds = new Set(deals.map(d => d.id));
+    for (const cd of previousDeals) {
+      if (!fetchedIds.has(cd.id)) {
+        deals.push({ ...cd, is_cached: true });
+      }
+    }
+    console.log(`[MERGE] ${source.name}: Partial fetch merged with cache, total deals: ${deals.length}`);
+    return deals;
   }
 
   console.log(`[SUCCESS] ${source.name}: Found ${deals.length} verified discounted e-bikes`);
@@ -474,6 +522,57 @@ function getCuratedPartnerDeals() {
   ];
 }
 
+function updatePriceHistory(deals) {
+  let history = {};
+  try {
+    if (fs.existsSync(PRICE_HISTORY_FILE)) {
+      history = JSON.parse(fs.readFileSync(PRICE_HISTORY_FILE, 'utf-8'));
+    }
+  } catch (e) {
+    console.warn('[WARN] Could not parse price-history.json, starting fresh');
+    history = {};
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const cutoffDate = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+
+  deals.forEach(d => {
+    const id = d.id;
+    if (!history[id]) history[id] = [];
+
+    // Prune history entries older than 30 days
+    history[id] = history[id].filter(h => h.d >= cutoffDate);
+
+    // Record today's price if not recorded yet
+    const todayEntry = history[id].find(h => h.d === today);
+    if (todayEntry) {
+      todayEntry.p = d.sale_price;
+    } else {
+      history[id].push({ d: today, p: d.sale_price });
+    }
+
+    // Lowest price in 30 days
+    const prices = history[id].map(h => h.p);
+    const lowest = Math.min(...prices);
+    d.lowest_price_30d = lowest;
+    d.is_lowest_price_30d = (d.sale_price <= lowest);
+
+    // Price drop amount compared to previous check
+    if (history[id].length > 1) {
+      const prevPrice = history[id][history[id].length - 2].p;
+      d.price_drop_amount = prevPrice > d.sale_price ? Math.round(prevPrice - d.sale_price) : 0;
+    } else {
+      d.price_drop_amount = 0;
+    }
+
+    d.last_checked = new Date().toISOString();
+    if (d.is_cached === undefined) d.is_cached = false;
+  });
+
+  fs.writeFileSync(PRICE_HISTORY_FILE, JSON.stringify(history, null, 2), 'utf-8');
+  console.log(`[PRICE HISTORY] Tracked rolling 30-day price history for ${Object.keys(history).length} unique deals`);
+}
+
 async function runAggregator() {
   console.log('--- Starting Multi-Source E-Bike Deals Aggregation ---');
   
@@ -507,11 +606,46 @@ async function runAggregator() {
   const partnerDeals = getCuratedPartnerDeals();
   allDeals = allDeals.concat(partnerDeals);
 
+  // Stale cache expiry: drop cached deals older than 72 hours
+  const staleCutoff = new Date(Date.now() - 72 * 60 * 60 * 1000).toISOString();
+  const initialCount = allDeals.length;
+  allDeals = allDeals.filter(d => {
+    if (d.is_cached && d.last_verified && d.last_verified < staleCutoff) {
+      console.log(`[EXPIRED] Dropping stale cached deal >72h old: ${d.title}`);
+      return false;
+    }
+    return true;
+  });
+  if (initialCount > allDeals.length) {
+    console.log(`[CACHE EXPIRY] Purged ${initialCount - allDeals.length} stale cached deals`);
+  }
+
   // Safeguard: Do NOT overwrite database if aggregator completely failed to fetch deals
   if (allDeals.length < 10) {
     console.error(`[CRITICAL] Only ${allDeals.length} deals gathered. Aborting file overwrite to protect database integrity.`);
     process.exit(1);
   }
+
+  // Pre-publish validation & deduplication
+  const seenDealIds = new Set();
+  const seenUrls = new Set();
+  allDeals = allDeals.filter(d => {
+    if (!d.id || seenDealIds.has(d.id)) return false;
+    if (!d.url || seenUrls.has(d.url)) return false;
+    if (!d.sale_price || d.sale_price <= 0) return false;
+    if (d.rrp && d.sale_price >= d.rrp) return false;
+
+    // Extra redundancy scooter filter
+    const titleLower = (d.title || '').toLowerCase();
+    if (SCOOTER_PATTERNS.some(pat => pat.test(titleLower))) {
+      console.warn(`[VALIDATION REJECT] Discarding detected scooter: ${d.title}`);
+      return false;
+    }
+
+    seenDealIds.add(d.id);
+    seenUrls.add(d.url);
+    return true;
+  });
 
   // Assign first_seen and is_new badge
   allDeals.forEach(d => {
@@ -522,6 +656,9 @@ async function runAggregator() {
     }
     d.is_new = (d.first_seen >= twoDaysAgo);
   });
+
+  // Update 30-day Price History and compute price drop / 30-day low metrics
+  updatePriceHistory(allDeals);
 
   // Sort overall by highest Deal Score
   allDeals.sort((a, b) => b.dealScore - a.dealScore);

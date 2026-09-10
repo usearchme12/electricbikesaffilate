@@ -566,6 +566,14 @@
           <option value="all">🏬 All Stores & Retailers</option>
         </select>
 
+        <select id="priceSelect" class="dropdown-select" onchange="applyFilters()">
+          <option value="all">🏷️ All Price Ranges</option>
+          <option value="under1000">⚡ Under £1,000</option>
+          <option value="1000-2500">🚲 £1,000 – £2,500</option>
+          <option value="2500-5000">💎 £2,500 – £5,000</option>
+          <option value="over5000">👑 Over £5,000</option>
+        </select>
+
         <select id="sortSelect" class="dropdown-select" onchange="applyFilters()">
           <option value="dealScore">🏆 Best Deal Score</option>
           <option value="discount">🔥 Highest % Discount</option>
@@ -579,6 +587,7 @@
         <div class="filter-pills">
           <span class="filter-lbl">Category:</span>
           <button class="pill-btn active" data-cat="all" onclick="setCategory('all', this)">All Deals</button>
+          <button class="pill-btn legal" data-cat="legal" onclick="setCategory('legal', this)">✅ Road Legal Only</button>
           <button class="pill-btn mega" data-cat="mega" onclick="setCategory('mega', this)">🔥 Mega Deals (30%+)</button>
           <button class="pill-btn" data-cat="budget" onclick="setCategory('budget', this)">⚡ Under £1,000</button>
           <button class="pill-btn" data-cat="Fat Tyre" onclick="setCategory('Fat Tyre', this)">🛞 Fat Tyre</button>
@@ -680,6 +689,8 @@
       const sortMode = document.getElementById('sortSelect').value;
       const grid = document.getElementById('dealsGrid');
 
+      const priceFilter = document.getElementById('priceSelect')?.value || 'all';
+
       let list = allDeals.filter(d => {
         // Search query
         if (search) {
@@ -695,7 +706,14 @@
           return false;
         }
 
-        // Category filter
+        // Price range filter
+        if (priceFilter === 'under1000' && d.sale_price > 1000) return false;
+        if (priceFilter === '1000-2500' && (d.sale_price < 1000 || d.sale_price > 2500)) return false;
+        if (priceFilter === '2500-5000' && (d.sale_price < 2500 || d.sale_price > 5000)) return false;
+        if (priceFilter === 'over5000' && d.sale_price < 5000) return false;
+
+        // Category / Legality filter
+        if (curCategory === 'legal') return d.is_uk_legal === true;
         if (curCategory === 'mega') return d.discount_percentage >= 30 || d.savings_amount >= 400;
         if (curCategory === 'budget') return d.sale_price <= 1000;
         if (curCategory === 'Fat Tyre') {
@@ -742,7 +760,7 @@
           <article class="deal-card">
             <div class="card-badge-wrap">
               <span class="badge-discount">SAVE ${symbol}${savingsFormatted} (${d.discount_percentage}% OFF)</span>
-              ${d.dealBucket ? `<span class="badge-bucket">${d.dealBucket}</span>` : ''}
+              ${d.is_lowest_price_30d ? '<span class="badge-bucket" style="background:#f59e0b;color:#000;border:none;">🔥 30-Day Low</span>' : (d.dealBucket ? `<span class="badge-bucket">${d.dealBucket}</span>` : '')}
             </div>
 
             <div class="card-img-wrap">
@@ -759,9 +777,9 @@
 
               <div class="specs-grid">
                 <div><span class="spec-lbl">Category</span><div class="spec-val">${d.category}</div></div>
-                <div><span class="spec-lbl">Motor</span><div class="spec-val">${d.motor_power}</div></div>
-                <div><span class="spec-lbl">Battery</span><div class="spec-val">${d.battery || 'Spec on site'}</div></div>
-                <div><span class="spec-lbl">UK Status</span><div class="spec-val">${d.is_uk_legal ? '✅ Road Legal' : '⚠️ Off-Road'}</div></div>
+                <div><span class="spec-lbl">Motor</span><div class="spec-val" title="${d.motor_power}">${d.motor_power === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.motor_power}</div></div>
+                <div><span class="spec-lbl">Battery</span><div class="spec-val" title="${d.battery}">${d.battery === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.battery}</div></div>
+                <div><span class="spec-lbl">UK Status</span><div class="spec-val">${d.is_uk_legal ? '<span style="color:#10b981;">✅ Road Legal</span>' : (d.motor_power === 'Specification not confirmed' ? '<span style="color:#f59e0b;">⚠️ Check Retailer</span>' : '<span style="color:#ef4444;">⚠️ Off-Road</span>')}</div></div>
               </div>
 
               <div class="price-row">
@@ -784,6 +802,7 @@
     function resetFilters() {
       document.getElementById('searchInput').value = '';
       document.getElementById('storeSelect').value = 'all';
+      if (document.getElementById('priceSelect')) document.getElementById('priceSelect').value = 'all';
       document.getElementById('sortSelect').value = 'dealScore';
       curCategory = 'all';
       document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));

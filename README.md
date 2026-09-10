@@ -148,7 +148,27 @@ To avoid 404 errors, wrong landing pages, or losing user intent, follow these sp
 
 ---
 
-### Version 2.3.3 (Current Production Release)
+### Version 2.3.4 (Current Production Release)
+* **📉 Rolling 30-Day Price History Engine**:
+  * Added decoupled `price-history.json` tracking on the backend, preserving historical price dips without bloating the client-side `deals.json` payload.
+  * Injected lean calculated metrics into every deal: `lowest_price_30d`, `is_lowest_price_30d`, `price_drop_amount`, `last_checked`, and `is_cached`.
+  * Added `🔥 30-Day Low` card badges for bikes sitting at their lowest recorded price.
+* **⚖️ Truthful Specification & EAPC Legal Compliance**:
+  * Eliminated default speculation: products without verified motor wattage display `Specification not confirmed` and `⚠️ Check Retailer` instead of assuming road legality.
+  * Legitimate 250W motors (and Bosch/Shimano/Mahle/Brose systems) remain verified as `✅ Road Legal`.
+  * Unconfirmed battery specs cleanly show `Specification not confirmed`, and ranges show `See retailer listing`.
+* **🧭 Usability Filters (Road Legal & Price Brackets)**:
+  * Added dedicated `✅ Road Legal Only` toggle pill.
+  * Added instant Price Range filter dropdown (`Under £1,000`, `£1,000 – £2,500`, `£2,500 – £5,000`, `Over £5,000`).
+* **🛡️ Enhanced Outage Resilience & 72h Stale Cache Expiry**:
+  * Implemented single-retry backoff on network failures.
+  * If a retailer's multi-page crawl encounters partial errors, previously verified deals are automatically merged from cache.
+  * Cached deals from permanently offline merchants automatically expire after 72 hours.
+* **⏰ Twice-Daily Cloud Refresh Schedule**:
+  * Updated `.github/workflows/daily_deals.yml` to run twice daily at `06:00` and `18:00` UTC (07:00/19:00 BST in summer; 06:00/18:00 GMT in winter).
+  * Auto-tracks `price-history.json` across GitHub Action commits.
+
+### Version 2.3.3
 * **⚡ Eradicated Scroll Page Flashing / Flicker**:
   * Fixed asynchronous re-rendering in `fetchTopDeals()`: when remote feeds match the bundled 138 deals, the DOM is no longer wiped and rebuilt, stopping the white flash/blink on scroll.
   * Added explicit `width="360" height="220"` and `decoding="async"` to every card image, eliminating layout recalculations.

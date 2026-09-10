@@ -5,8 +5,8 @@ const { execSync } = require('child_process');
 const dealsData = JSON.parse(fs.readFileSync('deals.json', 'utf8'));
 let php = fs.readFileSync('wordpress-plugin/reight-deals-finder.php', 'utf8');
 
-// 1. Update Version to 2.3.0
-php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.3.0');
+// 1. Update Version to 2.3.1
+php = php.replace(/Version:\s*[0-9\.]+/i, 'Version: 2.3.1');
 
 // 2. Add LiteSpeed nocache hook if not present
 if (!php.includes('rgb_disable_litespeed_cache')) {

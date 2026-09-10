@@ -300,7 +300,26 @@
       align-items: center;
       gap: 0.5rem;
     }
+    .section-subtitle {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+      font-weight: 500;
+    }
     .section-meta { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+    .section-badge {
+      background: #1e293b;
+      color: #38bdf8;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .deal-section {
+      margin-bottom: 3.5rem;
+    }
 
     /* Deals Grid */
     .deals-grid {
@@ -575,9 +594,9 @@
         </select>
 
         <select id="sortSelect" class="dropdown-select" onchange="applyFilters()">
-          <option value="dealScore">🏆 Best Deal Score</option>
-          <option value="discount">🔥 Highest % Discount</option>
+          <option value="valueScore">🏆 Best Value Score (Budget & % Off)</option>
           <option value="savings">💰 Biggest Cash Savings (£)</option>
+          <option value="discount">🔥 Highest % Discount</option>
           <option value="price-asc">🏷️ Lowest Price</option>
           <option value="price-desc">💎 Highest Price</option>
         </select>
@@ -600,17 +619,10 @@
 
     </section>
 
-    <!-- Deals Grid -->
-    <section>
-      <div class="section-header">
-        <h2 class="section-title">⚡ Verified Deals & Price Cuts</h2>
-        <span class="section-meta" id="dealCountText">Loading deals...</span>
-      </div>
-
-      <div class="deals-grid" id="dealsGrid">
-        <!-- Injected via JavaScript -->
-      </div>
-    </section>
+    <!-- Deals Content Container -->
+    <div id="dealsContainer">
+      <!-- Injected dynamically via JavaScript -->
+    </div>
 
   </main>
 
@@ -729,18 +741,18 @@
 
       // Sorting
       list.sort((a, b) => {
-        if (sortMode === 'dealScore') return (b.dealScore || 0) - (a.dealScore || 0);
-        if (sortMode === 'discount') return b.discount_percentage - a.discount_percentage;
+        if (sortMode === 'valueScore' || sortMode === 'dealScore') return (b.valueScore || b.dealScore || 0) - (a.valueScore || a.dealScore || 0);
         if (sortMode === 'savings') return b.savings_amount - a.savings_amount;
+        if (sortMode === 'discount') return b.discount_percentage - a.discount_percentage;
         if (sortMode === 'price-asc') return a.sale_price - b.sale_price;
         if (sortMode === 'price-desc') return b.sale_price - a.sale_price;
         return 0;
       });
 
-      document.getElementById('dealCountText').innerText = `Showing ${list.length} Verified Deals`;
+      const container = document.getElementById('dealsContainer');
 
       if (!list.length) {
-        grid.innerHTML = `
+        container.innerHTML = `
           <div class="empty-state">
             <h3>No e-bikes found</h3>
             <p>Try clearing your search term or selecting a different category.</p>
@@ -750,60 +762,223 @@
         return;
       }
 
-      grid.innerHTML = list.map(d => {
-        const symbol = d.symbol || '£';
-        const savingsFormatted = Math.round(d.savings_amount).toLocaleString();
-        const saleFormatted = d.sale_price.toLocaleString('en-GB', { minimumFractionDigits: 2 });
-        const rrpFormatted = d.rrp ? d.rrp.toLocaleString('en-GB', { minimumFractionDigits: 2 }) : null;
+      const isDefaultView = !search && storeFilter === 'all' && priceFilter === 'all' && curCategory === 'all' && (sortMode === 'valueScore' || sortMode === 'dealScore');
 
-        return `
-          <article class="deal-card">
-            <div class="card-badge-wrap">
-              <span class="badge-discount">SAVE ${symbol}${savingsFormatted} (${d.discount_percentage}% OFF)</span>
-              ${d.is_lowest_price_30d ? '<span class="badge-bucket" style="background:#f59e0b;color:#000;border:none;">🔥 30-Day Low</span>' : (d.dealBucket ? `<span class="badge-bucket">${d.dealBucket}</span>` : '')}
-            </div>
+      if (isDefaultView) {
+        // Section 1: Best Value Under £1,500 (Everyday Steals) with diversity limits
+        const poolUnder1500 = list.filter(d => d.sale_price <= 1500);
+        const featuredUnder1500 = filterWithDiversity(poolUnder1500, 8, 3, 2);
 
-            <div class="card-img-wrap">
-              <img src="${d.image}" alt="${d.title}" class="card-img" width="360" height="220" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600'">
-            </div>
+        // Section 2: Strong Mid-Range Deals (£1,500 – £3,000) with diversity limits
+        const poolMidRange = list.filter(d => d.sale_price > 1500 && d.sale_price <= 3000);
+        const featuredMidRange = filterWithDiversity(poolMidRange, 6, 2, 2);
 
-            <div class="card-body">
-              <div class="retailer-row">
-                <span class="retailer-tag">${d.retailer}</span>
-                <span class="score-tag">⚡ Score: ${d.dealScore || 80}</span>
+        // Section 3: Premium Clearance Deals (£3,000+) - High cash savings
+        const poolPremium = list.filter(d => d.sale_price > 3000);
+        const featuredPremium = filterWithDiversity(poolPremium, 6, 2, 2);
+
+        // Section 4: Full directory of remaining deals
+        const featuredIds = new Set([
+          ...featuredUnder1500.map(d => d.id),
+          ...featuredMidRange.map(d => d.id),
+          ...featuredPremium.map(d => d.id)
+        ]);
+        const remainingDeals = list.filter(d => !featuredIds.has(d.id));
+
+        container.innerHTML = `
+          <!-- Section 1: Best Value Under £1,500 -->
+          <section class="deal-section">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">⚡ Best Value Under £1,500 (Everyday Steals)</h2>
+                <div class="section-subtitle">Top-rated budget, commuter, and folding e-bikes with maximum percentage discounts & accessibility</div>
               </div>
-
-              <h3 class="card-title">${d.title}</h3>
-
-              <div class="specs-grid">
-                <div><span class="spec-lbl">Category</span><div class="spec-val">${d.category}</div></div>
-                <div><span class="spec-lbl">Motor</span><div class="spec-val" title="${d.motor_power}">${d.motor_power === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.motor_power}</div></div>
-                <div><span class="spec-lbl">Battery</span><div class="spec-val" title="${d.battery}">${d.battery === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.battery}</div></div>
-                <div><span class="spec-lbl">UK Status</span><div class="spec-val">${d.is_uk_legal ? '<span style="color:#10b981;">✅ Road Legal</span>' : (d.motor_power === 'Specification not confirmed' ? '<span style="color:#f59e0b;">⚠️ Check Retailer</span>' : '<span style="color:#ef4444;">⚠️ Off-Road</span>')}</div></div>
-              </div>
-
-              <div class="price-row">
-                <div>
-                  <div class="sale-price">${symbol}${saleFormatted}</div>
-                  ${rrpFormatted ? `<span class="rrp-price">Was ${symbol}${rrpFormatted}</span>` : ''}
-                </div>
-                <span class="savings-pill">Save ${symbol}${savingsFormatted}</span>
-              </div>
-
-              <a href="${d.url}" target="_blank" rel="sponsored nofollow noopener" class="btn-deal">
-                👉 View Deal at ${d.retailer} ➔
-              </a>
+              <span class="section-badge">${featuredUnder1500.length} Top Picks</span>
             </div>
-          </article>
+            <div class="deals-grid">
+              ${featuredUnder1500.map(renderDealCard).join('')}
+            </div>
+          </section>
+
+          <!-- Section 2: Strong Mid-Range Deals -->
+          <section class="deal-section">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">🚲 Strong Mid-Range Deals (£1,500 – £3,000)</h2>
+                <div class="section-subtitle">Quality commuters, hardtails, and touring builds from established UK retailers</div>
+              </div>
+              <span class="section-badge">${featuredMidRange.length} Top Picks</span>
+            </div>
+            <div class="deals-grid">
+              ${featuredMidRange.map(renderDealCard).join('')}
+            </div>
+          </section>
+
+          <!-- Section 3: Premium Clearance Deals -->
+          <section class="deal-section">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">💎 Premium Clearance Deals (£3,000+)</h2>
+                <div class="section-subtitle">Huge £1,500 – £4,500 cash savings on top-tier carbon e-MTBs and performance builds</div>
+              </div>
+              <span class="section-badge">${featuredPremium.length} High-End Drops</span>
+            </div>
+            <div class="deals-grid">
+              ${featuredPremium.map(renderDealCard).join('')}
+            </div>
+          </section>
+
+          <!-- Section 4: Full Deal Directory -->
+          ${remainingDeals.length > 0 ? `
+          <section class="deal-section" style="margin-top: 1rem;">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">📋 More Verified Deals</h2>
+                <div class="section-subtitle">Browse all remaining live discounts across all retailers</div>
+              </div>
+              <span class="section-meta">${remainingDeals.length} More Deals</span>
+            </div>
+            <div class="deals-grid">
+              ${remainingDeals.map(renderDealCard).join('')}
+            </div>
+          </section>
+          ` : ''}
         `;
-      }).join('');
+      } else {
+        // Filtered or specifically sorted view (single unified grid)
+        const sortTitle = sortMode === 'savings' ? '💰 Deals by Biggest Cash Savings (£)' :
+                          sortMode === 'discount' ? '🔥 Deals by Highest % Discount' :
+                          sortMode === 'price-asc' ? '🏷️ Deals by Lowest Price' :
+                          sortMode === 'price-desc' ? '💎 Deals by Highest Price' :
+                          '⚡ Verified E-Bike Deals';
+
+        container.innerHTML = `
+          <section class="deal-section">
+            <div class="section-header">
+              <h2 class="section-title">${sortTitle}</h2>
+              <span class="section-meta">Showing ${list.length} Verified Deals</span>
+            </div>
+            <div class="deals-grid">
+              ${list.map(renderDealCard).join('')}
+            </div>
+          </section>
+        `;
+      }
+    }
+
+    function getPriceBand(price) {
+      if (price <= 1000) return 'Under £1,000';
+      if (price <= 1500) return '£1,000 – £1,500';
+      if (price <= 3000) return '£1,500 – £3,000';
+      return 'Over £3,000';
+    }
+
+    function trackDealClick(dealId, title, retailer, price, priceBand) {
+      try {
+        if (typeof gtag === 'function') {
+          gtag('event', 'outbound_deal_click', {
+            event_category: 'Affiliate Outbound',
+            event_label: title,
+            deal_id: dealId,
+            retailer: retailer,
+            price: price,
+            price_band: priceBand
+          });
+        }
+        const stats = JSON.parse(localStorage.getItem('rgb_click_stats') || '{"Under £1,000":0,"£1,000 – £1,500":0,"£1,500 – £3,000":0,"Over £3,000":0,"total":0}');
+        stats[priceBand] = (stats[priceBand] || 0) + 1;
+        stats.total = (stats.total || 0) + 1;
+        localStorage.setItem('rgb_click_stats', JSON.stringify(stats));
+        console.log(`[OUTBOUND CLICK] Logged click in band "${priceBand}" for "${title}"`);
+      } catch (e) {}
+    }
+
+    function filterWithDiversity(deals, maxItems = 8, maxPerRetailer = 3, maxPerBrand = 2) {
+      const result = [];
+      const retailerCounts = {};
+      const brandCounts = {};
+      const remainder = [];
+
+      for (const d of deals) {
+        const ret = d.retailer || 'Unknown';
+        const brand = d.brand || 'Unknown';
+        const rCount = retailerCounts[ret] || 0;
+        const bCount = brandCounts[brand] || 0;
+
+        if (rCount < maxPerRetailer && bCount < maxPerBrand) {
+          result.push(d);
+          retailerCounts[ret] = rCount + 1;
+          brandCounts[brand] = bCount + 1;
+          if (result.length >= maxItems) break;
+        } else {
+          remainder.push(d);
+        }
+      }
+
+      if (result.length < maxItems && remainder.length > 0) {
+        for (const d of remainder) {
+          result.push(d);
+          if (result.length >= maxItems) break;
+        }
+      }
+      return result;
+    }
+
+    function renderDealCard(d) {
+      const symbol = d.symbol || '£';
+      const savingsFormatted = Math.round(d.savings_amount).toLocaleString();
+      const saleFormatted = d.sale_price.toLocaleString('en-GB', { minimumFractionDigits: 2 });
+      const rrpFormatted = d.rrp ? d.rrp.toLocaleString('en-GB', { minimumFractionDigits: 2 }) : null;
+      const score = d.valueScore || d.dealScore || 80;
+      const priceBand = getPriceBand(d.sale_price);
+
+      return `
+        <article class="deal-card" data-price-band="${priceBand}">
+          <div class="card-badge-wrap">
+            <span class="badge-discount">SAVE ${symbol}${savingsFormatted} (${d.discount_percentage}% OFF)</span>
+            ${d.is_lowest_price_30d ? '<span class="badge-bucket" style="background:#f59e0b;color:#000;border:none;">🔥 30-Day Low</span>' : (d.dealBucket ? `<span class="badge-bucket">${d.dealBucket}</span>` : '')}
+          </div>
+
+          <div class="card-img-wrap">
+            <img src="${d.image}" alt="${d.title}" class="card-img" width="360" height="220" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600'">
+          </div>
+
+          <div class="card-body">
+            <div class="retailer-row">
+              <span class="retailer-tag">${d.retailer}</span>
+              <span class="score-tag">⭐ Value: ${score}</span>
+            </div>
+
+            <h3 class="card-title">${d.title}</h3>
+
+            <div class="specs-grid">
+              <div><span class="spec-lbl">Category</span><div class="spec-val">${d.category}</div></div>
+              <div><span class="spec-lbl">Motor</span><div class="spec-val" title="${d.motor_power}">${d.motor_power === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.motor_power}</div></div>
+              <div><span class="spec-lbl">Battery</span><div class="spec-val" title="${d.battery}">${d.battery === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.battery}</div></div>
+              <div><span class="spec-lbl">UK Status</span><div class="spec-val">${d.is_uk_legal ? '<span style="color:#10b981;">✅ Road Legal</span>' : (d.motor_power === 'Specification not confirmed' ? '<span style="color:#f59e0b;">⚠️ Check Retailer</span>' : '<span style="color:#ef4444;">⚠️ Off-Road</span>')}</div></div>
+            </div>
+
+            <div class="price-row">
+              <div>
+                <div class="sale-price">${symbol}${saleFormatted}</div>
+                ${rrpFormatted ? `<span class="rrp-price">Was ${symbol}${rrpFormatted}</span>` : ''}
+              </div>
+              <span class="savings-pill">Save ${symbol}${savingsFormatted}</span>
+            </div>
+
+            <a href="${d.url}" target="_blank" rel="sponsored nofollow noopener" class="btn-deal" onclick="trackDealClick('${d.id}', '${d.title.replace(/'/g, "\\'")}', '${d.retailer}', ${d.sale_price}, '${priceBand}')">
+              👉 View Deal at ${d.retailer} ➔
+            </a>
+          </div>
+        </article>
+      `;
     }
 
     function resetFilters() {
       document.getElementById('searchInput').value = '';
       document.getElementById('storeSelect').value = 'all';
       if (document.getElementById('priceSelect')) document.getElementById('priceSelect').value = 'all';
-      document.getElementById('sortSelect').value = 'dealScore';
+      document.getElementById('sortSelect').value = 'valueScore';
       curCategory = 'all';
       document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
       document.querySelector('.pill-btn[data-cat="all"]').classList.add('active');

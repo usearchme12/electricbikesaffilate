@@ -384,7 +384,15 @@ async function fetchSourceDeals(source, previousDeals = []) {
 
         const specs = parseSpecs(p, category);
 
-        const dealScore = (discountPct * 0.5) + ((savings / 15) * 0.5);
+        // Budget-aware value score: balances % discount, capped savings, and accessibility
+        const discountScore = Math.min(discountPct, 50) / 50 * 50;
+        const savingsScore = Math.min(savings, 750) / 750 * 20;
+        const affordabilityScore =
+          price <= 1000 ? 30 :
+          price <= 1500 ? 25 :
+          price <= 2500 ? 15 :
+          price <= 4000 ? 5 : 0;
+        const valueScore = parseFloat((discountScore + savingsScore + affordabilityScore).toFixed(1));
 
         let dealBucket = 'Standard Deal';
         if (discountPct >= 30 || savings >= 400) dealBucket = '🔥 Mega Deal';
@@ -411,7 +419,8 @@ async function fetchSourceDeals(source, previousDeals = []) {
           symbol: source.symbol,
           category: category,
           dealBucket: dealBucket,
-          dealScore: parseFloat(dealScore.toFixed(1)),
+          dealScore: valueScore,
+          valueScore: valueScore,
           motor_power: specs.motorPower,
           battery: specs.battery,
           range_miles: specs.rangeMiles,
@@ -475,7 +484,8 @@ function getCuratedPartnerDeals() {
       symbol: '£',
       category: 'Mountain',
       dealBucket: '🔥 Mega Deal',
-      dealScore: 99.0,
+      dealScore: 63.0,
+      valueScore: 63.0,
       motor_power: '250W Mid-Drive Shimano EP8',
       battery: '630Wh Shimano Lithium-Ion',
       range_miles: '50 - 85 Miles',
@@ -502,7 +512,8 @@ function getCuratedPartnerDeals() {
       symbol: '£',
       category: 'Mountain',
       dealBucket: '🔥 Mega Deal',
-      dealScore: 70.6,
+      dealScore: 48.0,
+      valueScore: 48.0,
       motor_power: '250W Mid-Drive Bosch CX',
       battery: '750Wh Bosch PowerTube',
       range_miles: '45 - 80 Miles',
@@ -660,8 +671,8 @@ async function runAggregator() {
   // Update 30-day Price History and compute price drop / 30-day low metrics
   updatePriceHistory(allDeals);
 
-  // Sort overall by highest Deal Score
-  allDeals.sort((a, b) => b.dealScore - a.dealScore);
+  // Sort overall by highest budget-aware Value Score
+  allDeals.sort((a, b) => (b.valueScore || b.dealScore || 0) - (a.valueScore || a.dealScore || 0));
 
   const payload = {
     metadata: {

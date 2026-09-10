@@ -28,12 +28,14 @@ jobs:
       - name: Run Multi-Source Deal Aggregator
         run: |
           node fetch_deals.js
+          node update_plugin.js
 
       - name: Commit and Push Updated Deals
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add deals.json deals-data.js price-history.json
+          git add deals.json deals-data.js price-history.json wordpress-plugin/deals.json wordpress-plugin/reight-deals-finder.php reight-deals-finder.zip wordpress-plugin.zip
           # Only commits if prices or inventory actually changed
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-refresh daily e-bike deals [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-refresh daily e-bike deals and plugin [skip ci]" && git push)
+
 

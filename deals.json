@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-09-12 20:10:51",
+    "last_updated": "2026-09-13 11:04:56",
     "total_deals": 141,
     "sources_scanned": [
       "E-BikeShop.co.uk",
@@ -57,11 +57,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.221Z",
       "lowest_price_30d": 849,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "dyu_cycle_uk_15244701237616",
@@ -91,11 +91,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:45.129Z",
+      "last_verified": "2026-09-13T11:04:50.721Z",
       "lowest_price_30d": 799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_9812103627053",
@@ -123,13 +123,13 @@
       "url": "https://uk.fiido.com/products/fiido-c11-pro-city-e-bike?variant=51957821767981",
       "badge_text": "SAVE £636 (39% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:48.974Z",
+      "last_verified": "2026-09-13T11:04:53.599Z",
       "lowest_price_30d": 999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_8646545178925",
@@ -157,13 +157,13 @@
       "url": "https://uk.fiido.com/products/fiido-c21-lightweight-step-over-urban-gravel-ebikes?variant=46489900745005",
       "badge_text": "SAVE £636 (39% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:49.266Z",
+      "last_verified": "2026-09-13T11:04:54.012Z",
       "lowest_price_30d": 999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_8970135240917",
@@ -191,13 +191,13 @@
       "url": "https://www.cyrusher.co.uk/products/rumble-2-0?variant=51487534645461",
       "badge_text": "SAVE £500 (36% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15205986697600",
@@ -225,13 +225,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-diem-20-2025?variant=56106341990784",
       "badge_text": "SAVE £1900 (44% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8391383548086",
@@ -261,11 +261,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.220Z",
       "lowest_price_30d": 1648,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "heybike_uk_8205448446267",
@@ -293,13 +293,13 @@
       "url": "https://heybike.co.uk/products/ec-1-st-1?variant=47142595199291",
       "badge_text": "SAVE £600 (35% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:44.749Z",
+      "last_verified": "2026-09-13T11:04:50.365Z",
       "lowest_price_30d": 1099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "heybike_uk_8370053808443",
@@ -329,11 +329,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:44.749Z",
+      "last_verified": "2026-09-13T11:04:50.365Z",
       "lowest_price_30d": 1099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "dyu_cycle_uk_8271011086500",
@@ -363,11 +363,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:45.129Z",
+      "last_verified": "2026-09-13T11:04:50.721Z",
       "lowest_price_30d": 499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8142661452014",
@@ -395,13 +395,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-vibe-h30-eq-mid-2024-uni?variant=44384013910254",
       "badge_text": "SAVE £1250 (40% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:42.409Z",
+      "last_verified": "2026-09-13T11:04:48.240Z",
       "lowest_price_30d": 1849,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_9237707325653",
@@ -429,13 +429,13 @@
       "url": "https://www.cyrusher.co.uk/products/zenith?variant=52977025450197",
       "badge_text": "SAVE £600 (33% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.762Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 1199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_8972121047253",
@@ -463,13 +463,13 @@
       "url": "https://www.cyrusher.co.uk/products/aura?variant=51493030592725",
       "badge_text": "SAVE £600 (33% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.762Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 1199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_8796910616789",
@@ -499,11 +499,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 1199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_9391047573805",
@@ -531,13 +531,13 @@
       "url": "https://uk.fiido.com/products/fiido-air-carbon-fiber-electric-bike?variant=48919061201197",
       "badge_text": "SAVE £909 (36% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:48.974Z",
+      "last_verified": "2026-09-13T11:04:53.599Z",
       "lowest_price_30d": 1636,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "dyu_cycle_uk_8271012069540",
@@ -567,11 +567,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:45.129Z",
+      "last_verified": "2026-09-13T11:04:50.721Z",
       "lowest_price_30d": 359,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8142670495982",
@@ -599,13 +599,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-diem-30-2025?variant=44384059261166",
       "badge_text": "SAVE £1200 (34% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 2299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8169071608046",
@@ -633,13 +633,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-scott-voltage-eride-920-2025?variant=44438689939694",
       "badge_text": "SAVE £2700 (44% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 3399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "pedalgo_uk_10304863633672",
@@ -667,13 +667,13 @@
       "url": "https://www.awin1.com/cread.php?awinmid=114770&awinaffid=3040709&clickref=dealspage&ued=https%3A%2F%2Fpedalgo.co.uk%2Fproducts%2Faitour-heal-mini-folding-electric-trike%3Fvariant%3D51656256848136",
       "badge_text": "SAVE £999 (33% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:47.602Z",
+      "last_verified": "2026-09-13T11:04:52.579Z",
       "lowest_price_30d": 2000,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_8646528860461",
@@ -701,13 +701,13 @@
       "url": "https://uk.fiido.com/products/fiido-m1-pro-fat-tire-electric-bike?variant=51957837758765",
       "badge_text": "SAVE £364 (27% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:48.974Z",
+      "last_verified": "2026-09-13T11:04:53.599Z",
       "lowest_price_30d": 999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8640443187438",
@@ -735,13 +735,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-gain-m30-2024?variant=45688151015662",
       "badge_text": "SAVE £2100 (40% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 3199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8169063448814",
@@ -769,13 +769,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-scott-voltage-eride-900-tuned-2025?variant=44438676209902",
       "badge_text": "SAVE £4500 (45% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 5599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_9445342740693",
@@ -805,11 +805,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.762Z",
+      "last_verified": "2026-09-13T11:04:55.374Z",
       "lowest_price_30d": 799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_9343680282837",
@@ -837,13 +837,13 @@
       "url": "https://www.cyrusher.co.uk/products/kommoda-pro?variant=53724753428693",
       "badge_text": "SAVE £500 (26% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.762Z",
+      "last_verified": "2026-09-13T11:04:55.374Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15701268726144",
@@ -871,13 +871,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-denna-h50-2026-cues-electric-gravel-bike?variant=57885031334272",
       "badge_text": "SAVE £1000 (29% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.404Z",
+      "last_verified": "2026-09-13T11:04:44.350Z",
       "lowest_price_30d": 2499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "leisure_lakes_merida_eone_sixty_7000",
@@ -905,11 +905,11 @@
       "badge_text": "SAVE £2401 (38% OFF)",
       "first_seen": "2026-09-09",
       "is_new": false,
-      "last_verified": "2026-09-12T20:10:51.984Z",
+      "last_verified": "2026-09-13T11:04:56.227Z",
       "lowest_price_30d": 3999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z",
+      "last_checked": "2026-09-13T11:04:56.228Z",
       "is_cached": false
     },
     {
@@ -938,13 +938,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-moustache-j-all-2024?variant=44352021364974",
       "badge_text": "SAVE £1800 (36% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:42.409Z",
+      "last_verified": "2026-09-13T11:04:48.241Z",
       "lowest_price_30d": 3199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8137729704174",
@@ -972,13 +972,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-m11-axs-2024?variant=44370658689262",
       "badge_text": "SAVE £3600 (40% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:42.409Z",
+      "last_verified": "2026-09-13T11:04:48.240Z",
       "lowest_price_30d": 5299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8140451643630",
@@ -1006,13 +1006,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-m-team-2024?variant=44378154533102",
       "badge_text": "SAVE £3700 (40% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:42.409Z",
+      "last_verified": "2026-09-13T11:04:48.241Z",
       "lowest_price_30d": 5599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8140434374894",
@@ -1040,13 +1040,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-m-ltd-2024?variant=44378134806766",
       "badge_text": "SAVE £4000 (40% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:42.409Z",
+      "last_verified": "2026-09-13T11:04:48.241Z",
       "lowest_price_30d": 5999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8132004741358",
@@ -1074,13 +1074,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-moustache-j-on-2024?variant=44351979749614",
       "badge_text": "SAVE £2000 (35% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:42.409Z",
+      "last_verified": "2026-09-13T11:04:48.241Z",
       "lowest_price_30d": 3699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_9006660419797",
@@ -1110,11 +1110,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8641040187630",
@@ -1142,13 +1142,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-st-h20-2025?variant=45691477655790",
       "badge_text": "SAVE £1800 (31% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.189Z",
       "lowest_price_30d": 3999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428162941166",
@@ -1176,13 +1176,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-m-team-2025-630wh?variant=45156968530158",
       "badge_text": "SAVE £3580 (35% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 6599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274220552576",
@@ -1210,13 +1210,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-h20-2026?variant=56372099907968",
       "badge_text": "SAVE £1400 (29% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 3399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8278238429422",
@@ -1244,13 +1244,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-ams-hybrid-one44-slx-2025?variant=44767224561902",
       "badge_text": "SAVE £1600 (29% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 3899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274346316160",
@@ -1278,13 +1278,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-m20-2026?variant=56372659650944",
       "badge_text": "SAVE £2150 (32% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 4549,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_14989695353216",
@@ -1312,13 +1312,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-hybe-cf-11-2025?variant=55292122005888",
       "badge_text": "SAVE £2700 (32% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 5699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428171329774",
@@ -1346,13 +1346,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-m10-2025-630wh?variant=45156999954670",
       "badge_text": "SAVE £2480 (32% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 5299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428174934254",
@@ -1380,13 +1380,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-sl-m10-2025-630wh?variant=45157024039150",
       "badge_text": "SAVE £2380 (32% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 4999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273308094848",
@@ -1414,13 +1414,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-st-h30-2026?variant=56369213538688",
       "badge_text": "SAVE £1200 (26% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 3499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273253011840",
@@ -1448,13 +1448,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-m-team-2026?variant=56369150460288",
       "badge_text": "SAVE £2750 (31% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 6249,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15158718398848",
@@ -1482,13 +1482,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-denna-h30-2025?variant=55948570526080",
       "badge_text": "SAVE £1000 (26% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_14962267423104",
@@ -1516,13 +1516,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-gain-m40-2025?variant=54868848476544",
       "badge_text": "SAVE £1300 (26% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 3699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_14962260509056",
@@ -1550,13 +1550,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-gain-m30-2025?variant=54868835369344",
       "badge_text": "SAVE £1400 (26% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 3899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8164313268406",
@@ -1586,11 +1586,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.221Z",
       "lowest_price_30d": 1049,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_8646532071725",
@@ -1618,13 +1618,13 @@
       "url": "https://uk.fiido.com/products/fiido-d3-pro-mini-electric-bike?variant=46489883181357",
       "badge_text": "SAVE £96 (18% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:49.266Z",
+      "last_verified": "2026-09-13T11:04:54.012Z",
       "lowest_price_30d": 449,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351325852032",
@@ -1652,13 +1652,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-allmtn-cf-9-2026?variant=56606905729408",
       "badge_text": "SAVE £1850 (30% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.406Z",
+      "last_verified": "2026-09-13T11:04:44.351Z",
       "lowest_price_30d": 4399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351321559424",
@@ -1688,11 +1688,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.406Z",
+      "last_verified": "2026-09-13T11:04:44.351Z",
       "lowest_price_30d": 4599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274417947008",
@@ -1720,13 +1720,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-sl-m10-2026?variant=56372996047232",
       "badge_text": "SAVE £2300 (30% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 5399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274277765504",
@@ -1754,13 +1754,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-m10-2026?variant=56372433092992",
       "badge_text": "SAVE £2450 (30% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 5749,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273307439488",
@@ -1788,13 +1788,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-st-h20-2026?variant=56369211343232",
       "badge_text": "SAVE £1350 (25% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 3949,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_9006660387029",
@@ -1824,11 +1824,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 1499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_8905427812565",
@@ -1858,11 +1858,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 1499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_8832694321365",
@@ -1892,11 +1892,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 1499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8278235676910",
@@ -1924,13 +1924,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-ams-hybrid-one44-slt-2025?variant=44767211847918",
       "badge_text": "SAVE £2200 (29% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 5299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8278230860014",
@@ -1958,13 +1958,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-ams-hybrid-one44-super-tm-2025?variant=44767192416494",
       "badge_text": "SAVE £2300 (29% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 5699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8169600778422",
@@ -1994,11 +1994,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.221Z",
       "lowest_price_30d": 2048,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274196468096",
@@ -2026,13 +2026,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-h10-2026?variant=56372019429760",
       "badge_text": "SAVE £1600 (28% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 4099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8640524845294",
@@ -2060,13 +2060,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-m20-2025-630wh?variant=45688550850798",
       "badge_text": "SAVE £1800 (28% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 4699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "leisure_lakes_mondraker_level_r",
@@ -2094,11 +2094,11 @@
       "badge_text": "SAVE £1700 (28% OFF)",
       "first_seen": "2026-09-09",
       "is_new": false,
-      "last_verified": "2026-09-12T20:10:51.984Z",
+      "last_verified": "2026-09-13T11:04:56.227Z",
       "lowest_price_30d": 4299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z",
+      "last_checked": "2026-09-13T11:04:56.228Z",
       "is_cached": false
     },
     {
@@ -2127,13 +2127,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-hybe-cf-11-2026?variant=56606827315584",
       "badge_text": "SAVE £2550 (27% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.406Z",
+      "last_verified": "2026-09-13T11:04:44.351Z",
       "lowest_price_30d": 6999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273266151808",
@@ -2161,13 +2161,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-m10-2026?variant=56369165730176",
       "badge_text": "SAVE £2000 (27% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 5399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_7986263949525",
@@ -2197,11 +2197,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 2299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_7934768644309",
@@ -2231,11 +2231,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.763Z",
+      "last_verified": "2026-09-13T11:04:55.375Z",
       "lowest_price_30d": 2299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273284239744",
@@ -2263,13 +2263,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-m20-2026?variant=56369200988544",
       "badge_text": "SAVE £1650 (26% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 4649,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_14779054162304",
@@ -2297,13 +2297,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-scott-patron-eride-900-2025?variant=52555091640704",
       "badge_text": "SAVE £2100 (26% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.189Z",
       "lowest_price_30d": 5999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "cyrusher_uk_8992605634773",
@@ -2333,11 +2333,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:50.762Z",
+      "last_verified": "2026-09-13T11:04:55.374Z",
       "lowest_price_30d": 699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8269327138998",
@@ -2367,11 +2367,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.220Z",
       "lowest_price_30d": 1099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_8646547767597",
@@ -2399,13 +2399,13 @@
       "url": "https://uk.fiido.com/products/fiido-x-folding-electric-bike?variant=46489909330221",
       "badge_text": "SAVE £236 (14% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:49.266Z",
+      "last_verified": "2026-09-13T11:04:54.012Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_14962264473984",
@@ -2433,13 +2433,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-gain-m30i-2025?variant=54868842578304",
       "badge_text": "SAVE £1500 (25% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 4499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428177096942",
@@ -2467,13 +2467,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-sl-m-ltd-2025-630wh?variant=45157035737326",
       "badge_text": "SAVE £2780 (25% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 8399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351333126528",
@@ -2503,11 +2503,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.406Z",
+      "last_verified": "2026-09-13T11:04:44.351Z",
       "lowest_price_30d": 3799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8164311990454",
@@ -2537,11 +2537,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.221Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15329443742080",
@@ -2569,13 +2569,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-scott-sub-tour-40-2026-low?variant=56532047987072",
       "badge_text": "SAVE £450 (16% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 2349,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15329404125568",
@@ -2603,13 +2603,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-scott-sub-tour-40-2026-crossbar?variant=56531975242112",
       "badge_text": "SAVE £450 (16% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 2349,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274240082304",
@@ -2637,13 +2637,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-lt-m-team-2026?variant=56372148601216",
       "badge_text": "SAVE £2332 (23% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 7899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15363969188224",
@@ -2671,13 +2671,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-alltrack-6-2026?variant=56649505472896",
       "badge_text": "SAVE £450 (15% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.407Z",
+      "last_verified": "2026-09-13T11:04:44.352Z",
       "lowest_price_30d": 2499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_8646533611821",
@@ -2705,13 +2705,13 @@
       "url": "https://uk.fiido.com/products/fiido-d11-folding-electric-bike-for-commuter?variant=50703883305261",
       "badge_text": "SAVE £89 (9% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:49.266Z",
+      "last_verified": "2026-09-13T11:04:54.012Z",
       "lowest_price_30d": 910,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_9292643336493",
@@ -2739,13 +2739,13 @@
       "url": "https://uk.fiido.com/products/fiido-t2-longtail-cargo-ebike-for-versatile-all-terrain?variant=48607121572141",
       "badge_text": "SAVE £181 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:48.974Z",
+      "last_verified": "2026-09-13T11:04:53.599Z",
       "lowest_price_30d": 1454,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15363973841280",
@@ -2773,13 +2773,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-alltrack-4-2026?variant=56649521660288",
       "badge_text": "SAVE £400 (15% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.405Z",
+      "last_verified": "2026-09-13T11:04:44.350Z",
       "lowest_price_30d": 2199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15364002873728",
@@ -2807,13 +2807,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-trekking-3-2026-low?variant=56649615573376",
       "badge_text": "SAVE £400 (15% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.406Z",
+      "last_verified": "2026-09-13T11:04:44.352Z",
       "lowest_price_30d": 2199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15364000973184",
@@ -2841,13 +2841,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-trekking-3-2026-crossbar?variant=56649612099968",
       "badge_text": "SAVE £400 (15% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.406Z",
+      "last_verified": "2026-09-13T11:04:44.352Z",
       "lowest_price_30d": 2199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273325592960",
@@ -2875,13 +2875,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-denna-m30-2026?variant=56379563180416",
       "badge_text": "SAVE £1050 (20% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 4149,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8673291698414",
@@ -2909,13 +2909,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-wild-m-team-2025-carbon?variant=45841591927022",
       "badge_text": "SAVE £1700 (20% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 6799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15213392429440",
@@ -2943,13 +2943,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-muga-30-2026?variant=56133420679552",
       "badge_text": "SAVE £700 (16% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 3699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15453855973760",
@@ -2977,13 +2977,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-kemen-adv-30-2026?variant=56947676250496",
       "badge_text": "SAVE £600 (17% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.407Z",
+      "last_verified": "2026-09-13T11:04:44.352Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351339581824",
@@ -3013,11 +3013,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.405Z",
+      "last_verified": "2026-09-13T11:04:44.351Z",
       "lowest_price_30d": 3599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274492166528",
@@ -3045,13 +3045,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-urrun-20-2026?variant=56373387854208",
       "badge_text": "SAVE £600 (16% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 3099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8183413309622",
@@ -3081,11 +3081,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.221Z",
       "lowest_price_30d": 899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351344955776",
@@ -3113,13 +3113,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-alltrail-6-2026?variant=56606987714944",
       "badge_text": "SAVE £600 (15% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.406Z",
+      "last_verified": "2026-09-13T11:04:44.351Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273346105728",
@@ -3147,13 +3147,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-gain-m30-2026?variant=56369290084736",
       "badge_text": "SAVE £850 (16% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 4449,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265409433984",
@@ -3181,13 +3181,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-touring-hybrid-one-600-2026-easy?variant=56350972051840",
       "badge_text": "SAVE £300 (13% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 2099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265372537216",
@@ -3215,13 +3215,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-stereo-hybrid-one77-hpc-tm-800-2026?variant=56350913593728",
       "badge_text": "SAVE £900 (16% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.884Z",
       "lowest_price_30d": 4599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670962221294",
@@ -3249,13 +3249,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-trekking-7-2026-crossbar?variant=45827944808686",
       "badge_text": "SAVE £600 (15% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670959993070",
@@ -3283,13 +3283,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-trekking-7-2026-low?variant=45827938189550",
       "badge_text": "SAVE £600 (15% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8800587808950",
@@ -3319,11 +3319,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.220Z",
       "lowest_price_30d": 1099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "tenways_14735051161972",
@@ -3351,13 +3351,13 @@
       "url": "https://www.tenways.com/products/cgo600?variant=52328132444532",
       "badge_text": "SAVE £100 (8% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:51.983Z",
+      "last_verified": "2026-09-13T11:04:56.227Z",
       "lowest_price_30d": 1199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15262642372992",
@@ -3385,13 +3385,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-reaction-hybrid-one-600-2026?variant=56338038358400",
       "badge_text": "SAVE £300 (12% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_10053672927533",
@@ -3421,11 +3421,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:48.382Z",
+      "last_verified": "2026-09-13T11:04:53.171Z",
       "lowest_price_30d": 1271,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351290003840",
@@ -3453,13 +3453,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-raleigh-novus-2026-crossbar-derailleur?variant=56606787305856",
       "badge_text": "SAVE £300 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.472Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 2499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15262659051904",
@@ -3487,13 +3487,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-reaction-hybrid-one-800-2026?variant=56338111693184",
       "badge_text": "SAVE £300 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "tenways_7919692218517",
@@ -3521,13 +3521,13 @@
       "url": "https://www.tenways.com/products/ago-t?variant=43484494332053",
       "badge_text": "SAVE £300 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:51.983Z",
+      "last_verified": "2026-09-13T11:04:56.227Z",
       "lowest_price_30d": 2399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351351247232",
@@ -3555,13 +3555,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-alltrail-4-2026?variant=56607029068160",
       "badge_text": "SAVE £500 (14% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.405Z",
+      "last_verified": "2026-09-13T11:04:44.351Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670953701614",
@@ -3589,13 +3589,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-trekking-6-5-2026-low?variant=56832999424384",
       "badge_text": "SAVE £500 (14% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670948983022",
@@ -3623,13 +3623,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-trekking-6-5-2026-crossbar?variant=45827895754990",
       "badge_text": "SAVE £500 (14% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274380263808",
@@ -3657,13 +3657,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-rise-sl-m-ltd-2026?variant=56372827619712",
       "badge_text": "SAVE £1200 (12% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 8999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351291412864",
@@ -3691,13 +3691,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-raleigh-captus-2026-low?variant=56606791401856",
       "badge_text": "SAVE £200 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.472Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 1699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265359036800",
@@ -3725,13 +3725,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-stereo-hybrid-one44-hpc-race-800-2026?variant=56350873289088",
       "badge_text": "SAVE £500 (13% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.884Z",
       "lowest_price_30d": 3499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265394164096",
@@ -3759,13 +3759,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-ams-hybrid-177-c-62-at-600x-2026?variant=56350949114240",
       "badge_text": "SAVE £800 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.474Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 6699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670930403566",
@@ -3793,13 +3793,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-haibike-alltrack-6-5-2026?variant=45827851682030",
       "badge_text": "SAVE £450 (14% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:41.711Z",
+      "last_verified": "2026-09-13T11:04:47.190Z",
       "lowest_price_30d": 2699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "fiido_uk_9981279502637",
@@ -3827,13 +3827,13 @@
       "url": "https://uk.fiido.com/products/fiido-c700-city-ebike?variant=50607052063021",
       "badge_text": "SAVE £182 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:48.974Z",
+      "last_verified": "2026-09-13T11:04:53.599Z",
       "lowest_price_30d": 1545,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265362837888",
@@ -3861,13 +3861,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-stereo-hybrid-one77-hpc-at-800-2026?variant=56350891934080",
       "badge_text": "SAVE £700 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.884Z",
       "lowest_price_30d": 5799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265357070720",
@@ -3895,13 +3895,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-stereo-hybrid-one44-hpc-at-800-2026?variant=56350867751296",
       "badge_text": "SAVE £700 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.884Z",
       "lowest_price_30d": 5799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265360544128",
@@ -3929,13 +3929,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-stereo-hybrid-one44-hpc-slx-800-2026?variant=56350882234752",
       "badge_text": "SAVE £500 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.474Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 3999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8815718695094",
@@ -3965,11 +3965,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.220Z",
       "lowest_price_30d": 2148,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "engwe_uk_8169596223670",
@@ -3999,11 +3999,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:43.319Z",
+      "last_verified": "2026-09-13T11:04:49.221Z",
       "lowest_price_30d": 2748,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "pedalgo_uk_10154801561864",
@@ -4033,11 +4033,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:47.602Z",
+      "last_verified": "2026-09-13T11:04:52.580Z",
       "lowest_price_30d": 2699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15262688575872",
@@ -4065,13 +4065,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-reaction-hybrid-race-800-2026?variant=56338231198080",
       "badge_text": "SAVE £400 (12% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265378500992",
@@ -4099,13 +4099,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-ams-hybrid-177-c-62-tm-600x-2026?variant=56350919754112",
       "badge_text": "SAVE £600 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.474Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 4899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265361953152",
@@ -4133,13 +4133,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-stereo-hybrid-one44-hpc-tm-800-2026?variant=56350885872000",
       "badge_text": "SAVE £600 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.474Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 4899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251699401088",
@@ -4167,13 +4167,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-kathmandu-hybrid-exc-800-2026-uni?variant=56287133237632",
       "badge_text": "SAVE £400 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251693142400",
@@ -4201,13 +4201,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-kathmandu-hybrid-exc-800-2026-easy?variant=56287124554112",
       "badge_text": "SAVE £400 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251665092992",
@@ -4235,13 +4235,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-kathmandu-hybrid-c-62-pro-400x-2026-crossbar?variant=56287078646144",
       "badge_text": "SAVE £400 (11% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 3099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251731317120",
@@ -4269,13 +4269,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-kathmandu-hybrid-one-800-2026-uni?variant=56287206637952",
       "badge_text": "SAVE £350 (12% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2649,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251712704896",
@@ -4303,13 +4303,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-kathmandu-hybrid-one-800-2026-crossbar?variant=56287153226112",
       "badge_text": "SAVE £350 (12% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2649,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15262718034304",
@@ -4337,13 +4337,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-reaction-hybrid-slx-800-2026?variant=56338364039552",
       "badge_text": "SAVE £350 (10% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.884Z",
       "lowest_price_30d": 3149,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "tenways_8195597664405",
@@ -4371,13 +4371,13 @@
       "url": "https://www.tenways.com/products/cgo600-pro?variant=54229821096308",
       "badge_text": "SAVE £100 (6% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:51.983Z",
+      "last_verified": "2026-09-13T11:04:56.227Z",
       "lowest_price_30d": 1699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351285612928",
@@ -4405,13 +4405,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-raleigh-novus-2026-low-hub?variant=56606778917248",
       "badge_text": "SAVE £300 (10% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.472Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351288004992",
@@ -4439,13 +4439,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-raleigh-novus-2026-crossbar-hub?variant=56606781669760",
       "badge_text": "SAVE £300 (10% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.472Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15262672650624",
@@ -4473,13 +4473,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-reaction-hybrid-pro-800-2026?variant=56338176770432",
       "badge_text": "SAVE £300 (10% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "tenways_14968231526772",
@@ -4509,11 +4509,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:51.983Z",
+      "last_verified": "2026-09-13T11:04:56.227Z",
       "lowest_price_30d": 2099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "tenways_8195598188693",
@@ -4541,13 +4541,13 @@
       "url": "https://www.tenways.com/products/cgo800s?variant=44247685136533",
       "badge_text": "SAVE £100 (5% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:51.983Z",
+      "last_verified": "2026-09-13T11:04:56.227Z",
       "lowest_price_30d": 1799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251744522624",
@@ -4575,13 +4575,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-kathmandu-hybrid-pro-800-2026-easy?variant=56287245074816",
       "badge_text": "SAVE £300 (9% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251739410816",
@@ -4609,13 +4609,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-kathmandu-hybrid-pro-800-2026-uni?variant=56287235211648",
       "badge_text": "SAVE £300 (9% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.476Z",
+      "last_verified": "2026-09-13T11:04:45.885Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15453830316416",
@@ -4643,13 +4643,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-muga-20-2026?variant=56947615629696",
       "badge_text": "SAVE £400 (8% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:39.407Z",
+      "last_verified": "2026-09-13T11:04:44.352Z",
       "lowest_price_30d": 4899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.985Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273358164352",
@@ -4677,13 +4677,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-gain-m30i-2026?variant=56369305289088",
       "badge_text": "SAVE £400 (7% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.472Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 5599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265363788160",
@@ -4711,13 +4711,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-stereo-hybrid-one77-hpc-race-800-2026?variant=56350892851584",
       "badge_text": "SAVE £250 (6% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.884Z",
       "lowest_price_30d": 3749,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265429913984",
@@ -4745,13 +4745,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-touring-hybrid-pro-800-2026-uni?variant=56351001936256",
       "badge_text": "SAVE £200 (7% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265414840704",
@@ -4779,13 +4779,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-touring-hybrid-pro-800-2026-crossbar?variant=56350979490176",
       "badge_text": "SAVE £200 (7% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.475Z",
+      "last_verified": "2026-09-13T11:04:45.883Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273444376960",
@@ -4813,13 +4813,13 @@
       "url": "https://www.e-bikeshop.co.uk/products/electric-bike-orbea-gain-m40-2026?variant=56369669931392",
       "badge_text": "SAVE £300 (6% OFF)",
       "first_seen": "2026-09-10",
-      "is_new": true,
+      "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-09-12T20:10:40.473Z",
+      "last_verified": "2026-09-13T11:04:45.882Z",
       "lowest_price_30d": 4699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-09-12T20:10:51.986Z"
+      "last_checked": "2026-09-13T11:04:56.228Z"
     }
   ]
 }

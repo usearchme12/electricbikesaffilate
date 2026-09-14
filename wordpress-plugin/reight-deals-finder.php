@@ -713,7 +713,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           rgbApplyFilters();
         };
 
-                                                                                                                                                                                function rgbGetPriceBand(price) {
+                                                                                                                                                                                        function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
           if (price <= 1500) return '£1,000 – £1,500';
           if (price <= 3000) return '£1,500 – £3,000';

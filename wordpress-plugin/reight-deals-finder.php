@@ -567,18 +567,6 @@ function rgb_register_deal_finder_shortcode($atts) {
         <p>Real-time price cuts from verified UK e-bike specialists and direct brands.</p>
       </div>
 
-      <!-- Omnisend Weekly Deals Subscription Banner -->
-      <div class="rgb-newsletter-card" id="rgbNewsletterCard">
-        <div class="rgb-newsletter-badge">⚡ WEEKLY PRICE DROP DIGEST</div>
-        <h3>⚡ Reight Good E-Bike Deals — Delivered Weekly</h3>
-        <p class="rgb-newsletter-sub">We scan UK retailers daily for secret price cuts and clearance stock. Join our weekly digest and grab top e-bike bargains before they sell out.</p>
-
-        <!-- Omnisend Form Embed -->
-        <div id="omnisend-embedded-v2-6a8986b8c8c1603e9077a360"></div>
-
-        <p class="rgb-newsletter-trust">🔒 100% Free • Sent Weekly • Unsubscribe Anytime</p>
-      </div>
-
       <div class="rgb-filter-bar">
         <div class="rgb-search-row">
           <input type="text" id="rgbSearchInput" class="rgb-search-input" placeholder="🔍 Search e-bikes, brands, Bosch motors, folding..." oninput="rgbApplyFilters()">
@@ -617,6 +605,45 @@ function rgb_register_deal_finder_shortcode($atts) {
 
       <div id="rgbDealsContainer">
         <!-- Cards inserted by script -->
+      </div>
+
+      <!-- Omnisend Weekly Deals Subscription Banner (Relocated beneath deals) -->
+      <div class="rgb-newsletter-card" id="rgbNewsletterCard" style="margin-top: 2.5rem;">
+        <div class="rgb-newsletter-badge">⚡ WEEKLY PRICE DROP DIGEST</div>
+        <h3>⚡ Never Miss a Flash Price Drop</h3>
+        <p class="rgb-newsletter-sub">We scan UK retailers daily for secret price cuts and clearance stock. Join our weekly digest and grab top e-bike bargains before they sell out.</p>
+
+        <!-- Omnisend Form Embed -->
+        <div id="omnisend-embedded-v2-6a8986b8c8c1603e9077a360"></div>
+
+        <p class="rgb-newsletter-trust">🔒 100% Free • Sent Weekly • Unsubscribe Anytime</p>
+      </div>
+
+      <!-- 5 Buyer Answers FAQ Section -->
+      <div class="rgb-faq-card" style="background: var(--rgb-card-bg); border: 1px solid var(--rgb-border); border-radius: 12px; padding: 1.5rem; margin-top: 2rem;">
+        <h3 style="color: #fff; font-size: 1.25rem; font-weight: 800; margin-bottom: 1.25rem; border-bottom: 1px solid var(--rgb-border); padding-bottom: 0.75rem;">Frequently Asked Questions About E-Bike Deals</h3>
+        <div style="display: flex; flex-direction: column; gap: 1.1rem;">
+          <div>
+            <h4 style="color: var(--rgb-primary); font-size: 0.98rem; font-weight: 700; margin-bottom: 0.35rem;">How can I tell if an e-bike deal is genuine?</h4>
+            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6;">Compare the exact model and specification, then check its current price against the 30-day low shown on the listing. Include delivery, assembly and any required accessories in the total. A crossed-out RRP alone doesn’t prove the discount is good.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--rgb-primary); font-size: 0.98rem; font-weight: 700; margin-bottom: 0.35rem;">What should I compare when looking at e-bike deals?</h4>
+            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6;">Compare the exact model, battery and motor specification, final delivered price, availability, warranty and returns. A cheaper bike with a smaller battery or different specification may not be the better deal.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--rgb-primary); font-size: 0.98rem; font-weight: 700; margin-bottom: 0.35rem;">When do e-bike deals usually peak?</h4>
+            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6;">There isn’t one guaranteed best time for every model. Prices vary with retailer promotions and stock changes, so compare the bike’s recorded price history rather than relying on a sale label or calendar date.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--rgb-primary); font-size: 0.98rem; font-weight: 700; margin-bottom: 0.35rem;">How do online deals compare with buying in a shop?</h4>
+            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6;">Compare the full delivered price and return terms online with what a local shop includes, such as seeing the bike in person, setup and after-sales support. The lowest sticker price may not be the best overall value.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--rgb-primary); font-size: 0.98rem; font-weight: 700; margin-bottom: 0.35rem;">Who compares e-bike prices?</h4>
+            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6;">Reight Good Bikes compares and verifies live deals across authorized UK e-bike specialists and direct brand warehouses (including Leisure Lakes Bikes, E-BikeShop UK, Engwe UK, Fiido, Cyrusher, and Pure Electric). Our automated engine audits live retailer inventory twice daily (at 06:00 and 18:00 UTC), records a rolling 30-day price history for every bike to expose artificial markdowns, and calculates an objective Deal Score based on specification quality, cash savings, and percentage discount.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -686,7 +713,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           rgbApplyFilters();
         };
 
-                                                                                                                                                                        function rgbGetPriceBand(price) {
+                                                                                                                                                                                function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
           if (price <= 1500) return '£1,000 – £1,500';
           if (price <= 3000) return '£1,500 – £3,000';

@@ -48,6 +48,116 @@ function rgb_disable_litespeed_cache() {
 }
 add_action('wp', 'rgb_disable_litespeed_cache');
 
+/**
+ * Output comprehensive Schema.org JSON-LD Structured Data for the Deals page.
+ * Includes CollectionPage, Organization, WebSite, and FAQPage (5 Buyer Questions).
+ */
+function rgb_output_deals_schema() {
+    global $post;
+    if (
+        (is_singular() && $post && (has_shortcode($post->post_content, 'ebike_deals') || has_shortcode($post->post_content, 'ebike_deal_finder'))) ||
+        (is_page('ebike-deals') || (isset($_SERVER['REQUEST_URI']) && strpos($_SERVER['REQUEST_URI'], 'ebike-deals') !== false))
+    ) {
+        $schema = array(
+            '@context' => 'https://schema.org',
+            '@graph' => array(
+                array(
+                    '@type' => 'Organization',
+                    '@id' => 'https://reightgoodbikes.co.uk/#organization',
+                    'name' => 'Reight Good Bikes',
+                    'url' => 'https://reightgoodbikes.co.uk/',
+                    'logo' => array(
+                        '@type' => 'ImageObject',
+                        '@id' => 'https://reightgoodbikes.co.uk/#logo',
+                        'url' => 'https://reightgoodbikes.co.uk/wp-content/uploads/2022/11/handsome-man-riding-bicycle.jpg',
+                        'caption' => 'Reight Good Bikes'
+                    ),
+                    'description' => 'Independent UK electric bike specialist, real-time deals tracker, and buyer guides.'
+                ),
+                array(
+                    '@type' => 'WebSite',
+                    '@id' => 'https://reightgoodbikes.co.uk/#website',
+                    'url' => 'https://reightgoodbikes.co.uk/',
+                    'name' => 'Reight Good Bikes',
+                    'description' => 'Electric Bike Deals, Reviews & Guides in the UK',
+                    'publisher' => array(
+                        '@id' => 'https://reightgoodbikes.co.uk/#organization'
+                    )
+                ),
+                array(
+                    '@type' => 'CollectionPage',
+                    '@id' => 'https://reightgoodbikes.co.uk/ebike-deals/#webpage',
+                    'url' => 'https://reightgoodbikes.co.uk/ebike-deals/',
+                    'name' => 'Top Electric Bike Discounts & Deals UK | Reight Good Bikes',
+                    'description' => 'Real-time price cuts from verified UK e-bike specialists and direct brands. Rolling 30-day price tracking to verify genuine discounts.',
+                    'isPartOf' => array(
+                        '@id' => 'https://reightgoodbikes.co.uk/#website'
+                    ),
+                    'about' => array(
+                        '@type' => 'Thing',
+                        'name' => 'Electric Bikes (E-Bikes)'
+                    ),
+                    'publisher' => array(
+                        '@id' => 'https://reightgoodbikes.co.uk/#organization'
+                    )
+                ),
+                array(
+                    '@type' => 'FAQPage',
+                    '@id' => 'https://reightgoodbikes.co.uk/ebike-deals/#faq',
+                    'isPartOf' => array(
+                        '@id' => 'https://reightgoodbikes.co.uk/ebike-deals/#webpage'
+                    ),
+                    'mainEntity' => array(
+                        array(
+                            '@type' => 'Question',
+                            'name' => 'How can I tell if an e-bike deal is genuine?',
+                            'acceptedAnswer' => array(
+                                '@type' => 'Answer',
+                                'text' => 'Compare the exact model and specification, then check its current price against the 30-day low shown on the listing. Include delivery, assembly and any required accessories in the total. A crossed-out RRP alone doesn’t prove the discount is good.'
+                            )
+                        ),
+                        array(
+                            '@type' => 'Question',
+                            'name' => 'What should I compare when looking at e-bike deals?',
+                            'acceptedAnswer' => array(
+                                '@type' => 'Answer',
+                                'text' => 'Compare the exact model, battery and motor specification, final delivered price, availability, warranty and returns. A cheaper bike with a smaller battery or different specification may not be the better deal.'
+                            )
+                        ),
+                        array(
+                            '@type' => 'Question',
+                            'name' => 'When do e-bike deals usually peak?',
+                            'acceptedAnswer' => array(
+                                '@type' => 'Answer',
+                                'text' => 'There isn’t one guaranteed best time for every model. Prices vary with retailer promotions and stock changes, so compare the bike’s recorded price history rather than relying on a sale label or calendar date.'
+                            )
+                        ),
+                        array(
+                            '@type' => 'Question',
+                            'name' => 'How do online deals compare with buying in a shop?',
+                            'acceptedAnswer' => array(
+                                '@type' => 'Answer',
+                                'text' => 'Compare the full delivered price and return terms online with what a local shop includes, such as seeing the bike in person, setup and after-sales support. The lowest sticker price may not be the best overall value.'
+                            )
+                        ),
+                        array(
+                            '@type' => 'Question',
+                            'name' => 'Who compares e-bike prices?',
+                            'acceptedAnswer' => array(
+                                '@type' => 'Answer',
+                                'text' => 'Reight Good Bikes compares and verifies live deals across authorized UK e-bike specialists and direct brand warehouses (including Leisure Lakes Bikes, E-BikeShop UK, Engwe UK, Fiido, Cyrusher, and Pure Electric). Our automated engine audits live retailer inventory twice daily (at 06:00 and 18:00 UTC), records a rolling 30-day price history for every bike to expose artificial markdowns, and calculates an objective Deal Score based on specification quality, cash savings, and percentage discount.'
+                            )
+                        )
+                    )
+                )
+            )
+        );
+        echo "\n<!-- Reight Good Bikes Structured Data Graph (CollectionPage, Organization, WebSite, FAQPage) -->\n";
+        echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) . "</script>\n";
+    }
+}
+add_action('wp_head', 'rgb_output_deals_schema', 5);
+
 
 function rgb_register_deal_finder_shortcode($atts) {
     ob_start();
@@ -713,7 +823,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           rgbApplyFilters();
         };
 
-                                                                                                                                                                                                function rgbGetPriceBand(price) {
+                                                                                                                                                                                                        function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
           if (price <= 1500) return '£1,000 – £1,500';
           if (price <= 3000) return '£1,500 – £3,000';

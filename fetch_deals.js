@@ -545,13 +545,14 @@ function updatePriceHistory(deals) {
   }
 
   const today = new Date().toISOString().slice(0, 10);
-  const cutoffDate = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  // Retain long-term history (365 days) for trend reporting and Black Friday comparisons
+  const cutoffDate = new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 
   deals.forEach(d => {
     const id = d.id;
     if (!history[id]) history[id] = [];
 
-    // Prune history entries older than 30 days
+    // Prune history entries older than 365 days
     history[id] = history[id].filter(h => h.d >= cutoffDate);
 
     // Record today's price if not recorded yet
@@ -563,8 +564,9 @@ function updatePriceHistory(deals) {
     }
 
     // Lowest price in 30 days
-    const prices = history[id].map(h => h.p);
-    const lowest = Math.min(...prices);
+    const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+    const prices30d = history[id].filter(h => h.d >= thirtyDaysAgo).map(h => h.p);
+    const lowest = prices30d.length > 0 ? Math.min(...prices30d) : d.sale_price;
     d.lowest_price_30d = lowest;
     d.is_lowest_price_30d = (d.sale_price <= lowest);
 
@@ -580,16 +582,9 @@ function updatePriceHistory(deals) {
     if (d.is_cached === undefined) d.is_cached = false;
   });
 
-  // Prune inactive products so price-history.json reflects current inventory only
-  const activeIds = new Set(deals.map(d => d.id));
-  for (const id of Object.keys(history)) {
-    if (!activeIds.has(id)) {
-      delete history[id];
-    }
-  }
-
+  // Keep historical records for all bikes even if out-of-stock (preserves trend data)
   fs.writeFileSync(PRICE_HISTORY_FILE, JSON.stringify(history, null, 2), 'utf-8');
-  console.log(`[PRICE HISTORY] Tracked rolling 30-day price history for ${Object.keys(history).length} unique deals`);
+  console.log(`[PRICE HISTORY] Preserved price history for ${Object.keys(history).length} unique deals (365-day retention)`);
 }
 
 async function runAggregator() {

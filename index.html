@@ -935,6 +935,18 @@
       return result;
     }
 
+    function getCalcRange(batteryStr) {
+      if (!batteryStr || batteryStr === 'Specification not confirmed') return '<span style="color:#94a3b8;">Check listing</span>';
+      const match = batteryStr.match(/(\d+)\s*Wh/i);
+      if (!match) return '<span style="color:#94a3b8;">Check listing</span>';
+      const wh = parseInt(match[1], 10);
+      if (wh < 100 || wh > 3000) return '<span style="color:#94a3b8;">Check listing</span>';
+      // Benchmarked to Reight Good Bikes Range Calculator (Tour: ~13 Wh/mi, Eco: ~8 Wh/mi)
+      const low = Math.round(wh / 13);
+      const high = Math.round(wh / 8);
+      return `${low} – ${high} mi`;
+    }
+
     function renderDealCard(d) {
       const symbol = d.symbol || '£';
       const savingsFormatted = Math.round(d.savings_amount).toLocaleString();
@@ -956,16 +968,16 @@
 
           <div class="card-body">
             <div class="retailer-row">
-              <span class="retailer-tag">${d.retailer}</span>
+              <span class="retailer-name">${d.retailer}</span>
               <span class="score-tag">⭐ Value: ${score}</span>
             </div>
 
             <h3 class="card-title">${d.title}</h3>
 
             <div class="specs-grid">
-              <div><span class="spec-lbl">Category</span><div class="spec-val">${d.category}</div></div>
               <div><span class="spec-lbl">Motor</span><div class="spec-val" title="${d.motor_power}">${d.motor_power === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.motor_power}</div></div>
               <div><span class="spec-lbl">Battery</span><div class="spec-val" title="${d.battery}">${d.battery === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.battery}</div></div>
+              <div><span class="spec-lbl">Est. Range</span><div class="spec-val" title="Real-world range from Reight Good Bikes Range Calculator">${getCalcRange(d.battery)}</div></div>
               <div><span class="spec-lbl">UK Status</span><div class="spec-val">${d.is_uk_legal ? '<span style="color:#10b981;">✅ Road Legal</span>' : (d.motor_power === 'Specification not confirmed' ? '<span style="color:#f59e0b;">⚠️ Check Retailer</span>' : '<span style="color:#ef4444;">⚠️ Off-Road</span>')}</div></div>
             </div>
 

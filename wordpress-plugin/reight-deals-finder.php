@@ -892,6 +892,18 @@ function rgb_register_deal_finder_shortcode($atts) {
           return selected;
         }
 
+        function rgbGetCalcRange(batteryStr) {
+          if (!batteryStr || batteryStr === 'Specification not confirmed') return '<span style="color:#94a3b8;">Check listing</span>';
+          const match = batteryStr.match(/(\d+)\s*Wh/i);
+          if (!match) return '<span style="color:#94a3b8;">Check listing</span>';
+          const wh = parseInt(match[1], 10);
+          if (wh < 100 || wh > 3000) return '<span style="color:#94a3b8;">Check listing</span>';
+          // Directly benchmarked to Reight Good Bikes Range Calculator (Tour: ~13 Wh/mi, Eco: ~8 Wh/mi)
+          const low = Math.round(wh / 13);
+          const high = Math.round(wh / 8);
+          return `${low} – ${high} mi`;
+        }
+
         function rgbRenderDealCard(d) {
           const sym = d.symbol || '£';
           const savings = Math.round(d.savings_amount).toLocaleString();
@@ -912,9 +924,9 @@ function rgb_register_deal_finder_shortcode($atts) {
                 </div>
                 <h3 class="rgb-card-title">${d.title}</h3>
                 <div class="rgb-specs">
-                  <div><span class="rgb-spec-lbl">Category</span><div class="rgb-spec-val">${d.category}</div></div>
                   <div><span class="rgb-spec-lbl">Motor</span><div class="rgb-spec-val" title="${d.motor_power}">${d.motor_power === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.motor_power}</div></div>
                   <div><span class="rgb-spec-lbl">Battery</span><div class="rgb-spec-val" title="${d.battery}">${d.battery === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.battery}</div></div>
+                  <div><span class="rgb-spec-lbl">Est. Range</span><div class="rgb-spec-val" title="Real-world range from Reight Good Bikes Range Calculator">${rgbGetCalcRange(d.battery)}</div></div>
                   <div><span class="rgb-spec-lbl">UK Status</span><div class="rgb-spec-val">${d.is_uk_legal ? '<span style="color:#10b981;">✅ Road Legal</span>' : (d.motor_power === 'Specification not confirmed' ? '<span style="color:#f59e0b;">⚠️ Check Retailer</span>' : '<span style="color:#ef4444;">⚠️ Off-Road</span>')}</div></div>
                 </div>
                 <div class="rgb-price-row">

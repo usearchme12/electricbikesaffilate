@@ -177,7 +177,7 @@ if (php.includes(oldSortBlock)) {
 // 5c. Ensure deals container has no hardcoded rgb-grid so it can house sections
 php = php.replace('<div class="rgb-grid" id="rgbDealsContainer">', '<div id="rgbDealsContainer">');
 
-// 6. Add Justin's Picks and Road Legal Only Pills if not present
+// 6. Add Justin's Picks, Road Legal, Mid-Drive, and Step-Through Pills if not present
 if (!php.includes('data-cat="justin"')) {
   php = php.replace(
     '<button class="rgb-pill active" data-cat="all" onclick="rgbFilter(\'all\', this)">All Deals</button>',
@@ -188,6 +188,12 @@ if (!php.includes('data-cat="legal"')) {
   php = php.replace(
     '<button class="rgb-pill active" data-cat="all" onclick="rgbFilter(\'all\', this)">All Deals</button>',
     '<button class="rgb-pill active" data-cat="all" onclick="rgbFilter(\'all\', this)">All Deals</button>\n          <button class="rgb-pill legal" data-cat="legal" onclick="rgbFilter(\'legal\', this)">✅ Road Legal Only</button>'
+  );
+}
+if (!php.includes('data-cat="middrive"')) {
+  php = php.replace(
+    '<button class="rgb-pill" data-cat="budget" onclick="rgbFilter(\'budget\', this)">⚡ Under £1,000</button>',
+    '<button class="rgb-pill" data-cat="budget" onclick="rgbFilter(\'budget\', this)">⚡ Under £1,000</button>\n          <button class="rgb-pill" data-cat="middrive" onclick="rgbFilter(\'middrive\', this)">🏔️ Mid-Drive</button>\n          <button class="rgb-pill" data-cat="stepthrough" onclick="rgbFilter(\'stepthrough\', this)">🛋️ Step-Through</button>'
   );
 }
 
@@ -354,6 +360,16 @@ const cleanLogic = `        function rgbGetPriceBand(price) {
               return d.is_justin_choice === true ||
                      ['cyrusher_uk_9006660387029', 'cyrusher_uk_9343680282837', 'fiido_uk_8646547767597'].includes(d.id) ||
                      t.includes('roam all-terrain') || t.includes('kommoda pro') || t.includes('fiido x');
+            }
+            if (curCat === 'middrive') {
+              const t = (d.title + ' ' + (d.motor_power || '') + ' ' + (d.brand || '')).toLowerCase();
+              const midKws = ['mid-drive', 'mid drive', 'bosch', 'shimano ep', 'shimano steps', 'brose', 'yamaha', 'fazua', 'bafang m', 'm600', 'm500', 'm820', 'cues'];
+              return midKws.some(k => t.includes(k));
+            }
+            if (curCat === 'stepthrough') {
+              const t = (d.title + ' ' + (d.category || '')).toLowerCase();
+              const stKws = ['step-through', 'step through', 'step-thru', 'step thru', 'low step', 'easy entry', 'open frame', 'kommoda', 'l20', 'p275', 'c6', 'wave', 'trax'];
+              return stKws.some(k => t.includes(k));
             }
             if (curCat === 'legal') return d.is_uk_legal === true;
             if (curCat === 'new') return d.is_new === true;

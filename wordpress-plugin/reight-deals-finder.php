@@ -705,6 +705,8 @@ function rgb_register_deal_finder_shortcode($atts) {
           <button class="rgb-pill new" data-cat="new" onclick="rgbFilter('new', this)">✨ Just Added</button>
           <button class="rgb-pill mega" data-cat="mega" onclick="rgbFilter('mega', this)">🔥 Mega Deals (30%+)</button>
           <button class="rgb-pill" data-cat="budget" onclick="rgbFilter('budget', this)">⚡ Under £1,000</button>
+          <button class="rgb-pill" data-cat="middrive" onclick="rgbFilter('middrive', this)">🏔️ Mid-Drive</button>
+          <button class="rgb-pill" data-cat="stepthrough" onclick="rgbFilter('stepthrough', this)">🛋️ Step-Through</button>
           <button class="rgb-pill" data-cat="Fat Tyre" onclick="rgbFilter('Fat Tyre', this)">🛞 Fat Tyre</button>
           <button class="rgb-pill" data-cat="Mountain" onclick="rgbFilter('Mountain', this)">Mountain</button>
           <button class="rgb-pill" data-cat="Commuter" onclick="rgbFilter('Commuter', this)">Commuter</button>
@@ -824,7 +826,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           rgbApplyFilters();
         };
 
-                                                                                                                                                                                                                                                                                                                                                                        function rgbGetPriceBand(price) {
+                                                                                                                                                                                                                                                                                                                                                                                function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
           if (price <= 1500) return '£1,000 – £1,500';
           if (price <= 3000) return '£1,500 – £3,000';
@@ -975,6 +977,16 @@ function rgb_register_deal_finder_shortcode($atts) {
               return d.is_justin_choice === true ||
                      ['cyrusher_uk_9006660387029', 'cyrusher_uk_9343680282837', 'fiido_uk_8646547767597'].includes(d.id) ||
                      t.includes('roam all-terrain') || t.includes('kommoda pro') || t.includes('fiido x');
+            }
+            if (curCat === 'middrive') {
+              const t = (d.title + ' ' + (d.motor_power || '') + ' ' + (d.brand || '')).toLowerCase();
+              const midKws = ['mid-drive', 'mid drive', 'bosch', 'shimano ep', 'shimano steps', 'brose', 'yamaha', 'fazua', 'bafang m', 'm600', 'm500', 'm820', 'cues'];
+              return midKws.some(k => t.includes(k));
+            }
+            if (curCat === 'stepthrough') {
+              const t = (d.title + ' ' + (d.category || '')).toLowerCase();
+              const stKws = ['step-through', 'step through', 'step-thru', 'step thru', 'low step', 'easy entry', 'open frame', 'kommoda', 'l20', 'p275', 'c6', 'wave', 'trax'];
+              return stKws.some(k => t.includes(k));
             }
             if (curCat === 'legal') return d.is_uk_legal === true;
             if (curCat === 'new') return d.is_new === true;

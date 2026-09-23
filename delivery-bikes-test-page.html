@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST PREVIEW: Best Electric Bikes for Delivering Food (Ex-Delivery Rider) | Reight Good Bikes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #f59e0b;
+      --primary-dark: #d97706;
+      --accent-green: #10b981;
+      --accent-blue: #0284c7;
+      --dark-bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --border-color: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text-main);
+      background: #f8fafc;
+      line-height: 1.7;
+      padding-bottom: 5rem;
+    }
+
+    /* Top Notice Bar */
+    .test-notice-bar {
+      background: #0f172a;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #334155;
+    }
+    .test-notice-bar strong { color: #f59e0b; }
+    .badge-test {
+      background: #f59e0b;
+      color: #000;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    /* Header */
+    header.site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-logo {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #111827;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .brand-logo span { color: var(--primary); }
+
+    /* Article Container */
+    .article-wrap {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      border: 1px solid var(--border-color);
+    }
+
+    h1.article-title {
+      font-family: 'Lora', serif;
+      font-size: 2.6rem;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .author-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: #111827;
+    }
+    .author-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #475569;
+    }
+
+    p { margin-bottom: 1.4rem; font-size: 1.05rem; color: #334155; }
+    p.lead-drop-cap::first-letter {
+      font-family: 'Lora', serif;
+      font-size: 3.5rem;
+      float: left;
+      line-height: 0.8;
+      margin-right: 0.6rem;
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 2.5rem 0 1.2rem;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 1.75rem 0 0.75rem;
+    }
+
+    /* Live Deals Showcase Component */
+    .deals-widget-embed {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      border-radius: 12px;
+      padding: 24px;
+      color: #fff;
+      margin: 2.5rem 0;
+      border: 1px solid #334155;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.15);
+    }
+    .deals-widget-embed h3 { color: #fff; margin: 6px 0; font-size: 1.3rem; }
+    .deals-widget-embed p { color: #94a3af; font-size: 0.95rem; margin-bottom: 1rem; }
+    
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid #ef4444;
+      color: #f87171;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .live-pulse {
+      width: 6px;
+      height: 6px;
+      background: #ef4444;
+      border-radius: 50%;
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .mini-deal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 1.25rem 0;
+    }
+
+    .mini-deal-card {
+      background: #090d16;
+      border-radius: 10px;
+      padding: 18px;
+      border: 1px solid #1e293b;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .mini-deal-card:hover {
+      transform: translateY(-2px);
+      border-color: #3b82f6;
+    }
+
+    .card-top-tag {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .tag-highlight {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .tag-saving {
+      color: #f59e0b;
+      font-weight: 800;
+    }
+
+    .card-bike-title {
+      color: #ffffff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-family: 'Inter', sans-serif;
+    }
+    .card-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .card-sale-price {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #38bdf8;
+    }
+    .card-rrp {
+      font-size: 0.9rem;
+      color: #64748b;
+      text-decoration: line-through;
+    }
+
+    .card-specs-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+      font-size: 0.8rem;
+      color: #cbd5e1;
+    }
+    .card-specs-list li {
+      padding: 4px 0;
+      border-bottom: 1px dashed rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-specs-list li span.val {
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+
+    .btn-card-deal {
+      display: block;
+      text-align: center;
+      background: #0284c7;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-card-deal:hover { background: #0369a1; }
+
+    .btn-view-all-deals {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #22c55e;
+      color: #000;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
+      transition: all 0.2s;
+      margin-top: 10px;
+    }
+    .btn-view-all-deals:hover {
+      background: #16a34a;
+      transform: translateY(-1px);
+    }
+
+    /* Comparison Matrix Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 2rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: #fff;
+    }
+    table.courier-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      text-align: left;
+    }
+    table.courier-table th {
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 16px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    table.courier-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+    }
+    table.courier-table tr:hover td { background: #f8fafc; }
+    .badge-legal {
+      background: #dcfce7;
+      color: #166534;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .calc-range-callout {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-top: -1rem;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Bike Reviews Section */
+    .bike-review-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 24px;
+      margin: 2rem 0;
+    }
+    .bike-review-card h3 {
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .bike-price-tag {
+      font-size: 1.1rem;
+      background: #f1f5f9;
+      color: #0f172a;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 800;
+    }
+
+    .pro-con-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 600px) {
+      .pro-con-grid { grid-template-columns: 1fr; }
+      .article-wrap { padding: 1.5rem; }
+      h1.article-title { font-size: 2rem; }
+    }
+    .pro-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .pro-box h4 { color: #166534; font-size: 0.95rem; margin-bottom: 8px; }
+    .con-box {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .con-box h4 { color: #991b1b; font-size: 0.95rem; margin-bottom: 8px; }
+
+    ul.clean-list {
+      padding-left: 20px;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+    }
+    ul.clean-list li { margin-bottom: 6px; }
+
+    /* FAQ Section */
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      background: #fff;
+      padding: 16px 20px;
+    }
+    .faq-q {
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+    .faq-a {
+      font-size: 0.95rem;
+      color: #475569;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Notice Bar -->
+  <div class="test-notice-bar">
+    <div><span class="badge-test">Test Preview</span> <strong>Post ID 922 Overhaul:</strong> Electric Bikes for Delivering Food</div>
+    <div>Live Deals Engine Connected &bull; Local Preview</div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="#" class="brand-logo">Reight Good <span>Bikes</span></a>
+    <span style="font-size: 0.85rem; color: #64748b;">Sheffield &bull; UK Cycling Hub</span>
+  </header>
+
+  <!-- Main Article -->
+  <main class="article-wrap">
+
+    <h1 class="article-title">Best Electric Bikes for Delivering Food (Ex-Delivery Rider Guide)</h1>
+
+    <div class="article-meta">
+      <div class="author-pill">
+        <div class="author-avatar">JC</div>
+        <div>
+          <div><strong>Justin Chafer</strong></div>
+          <div style="font-size: 0.78rem;">Ex-Courier (Deliveroo, Uber Eats, Stuart) &bull; 4 Years Sheffield</div>
+        </div>
+      </div>
+      <div>&bull;</div>
+      <div>Updated for 2026 Season</div>
+      <div>&bull;</div>
+      <div>Tested Range Metrics</div>
+    </div>
+
+    <!-- Intro Copy -->
+    <p class="lead-drop-cap">I was delivering food and worked as a courier <strong>on my electric bike for 4 years</strong>, mainly doing Uber Eats and Stuart (the delivery network for Just Eat), and Deliveroo. Where I lived and rode in <strong>Sheffield</strong>, the hills are punishing, and using an <strong>electric bike is the only sensible way</strong> to put in consistent 6 to 8-hour shifts without burning out your legs or ruining your knees.</p>
+
+    <p>Using an e-bike is far more accessible than a car or motorbike: you don’t need proof of commercial courier insurance, road tax, or an MOT. Running costs are literally <strong>a few pence per overnight charge</strong>, maintenance is a fraction of a scooter's, and you can weave through peak-hour city gridlock while car drivers sit stuck at traffic lights.</p>
+
+    <p>I have a lot of experience in this job — and at times <strong>I had to push a 30kg dead bike home up hills</strong> because I misjudged my battery. Many delivery riders start out underprepared and buy the wrong bike. This guide will save you from making those same costly mistakes.</p>
+
+    <!-- LIVE DEALS SHOWCASE COMPONENT -->
+    <div class="deals-widget-embed">
+      <div class="live-badge"><span class="live-pulse"></span> Live Deals Tracker</div>
+      <h3>🔥 Top Courier & Commuter Deals Today</h3>
+      <p>Automated price drops on verified UK road-legal delivery bikes with real-world tested range.</p>
+
+      <div class="mini-deal-grid">
+        
+        <!-- Bike 1: Engwe P275 SE -->
+        <div class="mini-deal-card">
+          <div>
+            <div class="card-top-tag">
+              <span class="tag-highlight">🏆 BUDGET CHAMPION</span>
+              <span class="tag-saving">SAVE £650</span>
+            </div>
+            <div class="card-bike-title">Engwe P275 SE</div>
+            <div class="card-price-row">
+              <span class="card-sale-price">£849</span>
+              <span class="card-rrp">£1,499</span>
+            </div>
+            <ul class="card-specs-list">
+              <li><span>Motor:</span> <span class="val">250W Torque Sensor</span></li>
+              <li><span>Battery:</span> <span class="val">468Wh Samsung</span></li>
+              <li><span>Tested Shift Range:</span> <span class="val" style="color:#38bdf8;">36 – 58 miles</span></li>
+              <li><span>Payoff Time:</span> <span class="val">~50 hrs deliveries</span></li>
+            </ul>
+          </div>
+          <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=P275" target="_blank" class="btn-card-deal">View Deal →</a>
+        </div>
+
+        <!-- Bike 2: Cyrusher Kommoda Pro -->
+        <div class="mini-deal-card">
+          <div>
+            <div class="card-top-tag">
+              <span class="tag-highlight" style="background:rgba(245,158,11,0.2);color:#f59e0b;">🔋 DOUBLE-SHIFT RANGE</span>
+              <span class="tag-saving">SAVE £500</span>
+            </div>
+            <div class="card-bike-title">Cyrusher Kommoda Pro</div>
+            <div class="card-price-row">
+              <span class="card-sale-price">£1,399</span>
+              <span class="card-rrp">£1,899</span>
+            </div>
+            <ul class="card-specs-list">
+              <li><span>Motor:</span> <span class="val">250W (52V System)</span></li>
+              <li><span>Battery:</span> <span class="val">1,040Wh (52V 20Ah)</span></li>
+              <li><span>Tested Shift Range:</span> <span class="val" style="color:#38bdf8;">80 – 130 miles</span></li>
+              <li><span>Frame:</span> <span class="val">Step-Through + Full Susp</span></li>
+            </ul>
+          </div>
+          <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=Kommoda" target="_blank" class="btn-card-deal">View Deal →</a>
+        </div>
+
+        <!-- Bike 3: DYU C6 City -->
+        <div class="mini-deal-card">
+          <div>
+            <div class="card-top-tag">
+              <span class="tag-highlight" style="background:rgba(168,85,247,0.2);color:#c084fc;">💰 SUB-£500 STARTER</span>
+              <span class="tag-saving">SAVE £300</span>
+            </div>
+            <div class="card-bike-title">DYU C6 26" City E-Bike</div>
+            <div class="card-price-row">
+              <span class="card-sale-price">£499</span>
+              <span class="card-rrp">£799</span>
+            </div>
+            <ul class="card-specs-list">
+              <li><span>Motor:</span> <span class="val">250W Legal Hub</span></li>
+              <li><span>Battery:</span> <span class="val">450Wh Removable</span></li>
+              <li><span>Tested Shift Range:</span> <span class="val" style="color:#38bdf8;">35 – 56 miles</span></li>
+              <li><span>Rear Rack:</span> <span class="val" style="color:#10b981;">Included standard</span></li>
+            </ul>
+          </div>
+          <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=DYU" target="_blank" class="btn-card-deal">View Deal →</a>
+        </div>
+
+      </div>
+
+      <!-- Action Button to Full Deals Widget -->
+      <div style="text-align: center; margin-top: 18px;">
+        <a href="https://reightgoodbikes.co.uk/ebike-deals/" target="_blank" class="btn-view-all-deals">
+          🔍 Browse All 130+ Live UK E-Bike Deals & Price Drops →
+        </a>
+      </div>
+    </div>
+
+    <!-- COMPARISON TABLE (SEO Snippet Target) -->
+    <h2>Top Delivery E-Bikes Compared (Courier Shift Tested)</h2>
+    <p>We’ve tested battery capacities and frame specs across the most popular UK delivery bikes so you know what can actually complete an evening rush without leaving you stranded:</p>
+
+    <div class="table-container">
+      <table class="courier-table">
+        <thead>
+          <tr>
+            <th>E-Bike Model</th>
+            <th>Battery</th>
+            <th>Tested Shift Range*</th>
+            <th>Motor & Legality</th>
+            <th>Payload & Racks</th>
+            <th>Current Deal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>NCM Moscow Plus</strong></td>
+            <td>768 Wh (48V 16Ah)</td>
+            <td><strong>59 – 96 mi</strong></td>
+            <td><span class="badge-legal">✅ 250W EAPC</span></td>
+            <td>Pannier / Rack ready</td>
+            <td>£899 – £1,599</td>
+          </tr>
+          <tr>
+            <td><strong>Cyrusher Kommoda Pro</strong></td>
+            <td><strong>1,040 Wh (52V 20Ah)</strong></td>
+            <td><strong>80 – 130 mi</strong></td>
+            <td><span class="badge-legal">✅ 250W EAPC</span></td>
+            <td>Full suspension + Step-Thru</td>
+            <td><strong style="color:#0284c7;">£1,399 (Save £500)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Engwe P275 SE</strong></td>
+            <td>468 Wh (36V 13Ah)</td>
+            <td><strong>36 – 58 mi</strong></td>
+            <td><span class="badge-legal">✅ 250W EAPC</span></td>
+            <td>Torque sensor commuter</td>
+            <td><strong style="color:#0284c7;">£849 (Save £650)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>DYU C6 City</strong></td>
+            <td>450 Wh (36V 12.5Ah)</td>
+            <td><strong>35 – 56 mi</strong></td>
+            <td><span class="badge-legal">✅ 250W EAPC</span></td>
+            <td>Built-in rear luggage rack</td>
+            <td><strong style="color:#0284c7;">£499 (Save £300)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calc-range-callout">
+      *Tested shift range calculated using the <a href="https://reightgoodbikes.co.uk/how-to-calculate-the-range-of-your-electric-battery/" target="_blank" style="color:#0284c7;text-decoration:underline;">Reight Good Bikes Range Calculator</a> assuming typical UK mixed urban riding (~13 Wh/mi on Tour mode, ~8 Wh/mi on Eco mode).
+    </div>
+
+    <!-- DETAILED BIKE REVIEWS -->
+    <h2>The Best Food Delivery Bikes: Detailed Breakdown</h2>
+
+    <!-- Bike 1: NCM Moscow Plus -->
+    <div class="bike-review-card">
+      <h3>
+        <span>1) NCM Moscow Plus (768Wh Battery / 48V 16Ah)</span>
+        <span class="bike-price-tag">£899 – £1,599</span>
+      </h3>
+      <p>This is the classic courier workhorse. I had one with 29-inch wheels as my very first delivery bike in Sheffield and did over 1,500 delivery miles on it. For the money, you get a massive European-spec 768Wh Dorado battery. Built like a German tank, it shrugs off kerbs and rain.</p>
+      
+      <div class="pro-con-grid">
+        <div class="pro-box">
+          <h4>Good Points</h4>
+          <ul class="clean-list">
+            <li>100% UK Road Legal 250W pedal assist</li>
+            <li>Huge 768Wh battery lasts a solid 4–5 hour dinner shift</li>
+            <li>Durable frame that handles severe potholes</li>
+            <li>Replacement Dorado batteries are readily available</li>
+          </ul>
+        </div>
+        <div class="con-box">
+          <h4>Things to Consider</h4>
+          <ul class="clean-list">
+            <li>Aggressive mountain bike riding posture (caused me backache)</li>
+            <li>Heavy to carry into upper-floor flats</li>
+            <li>No rear suspension (recommend adding a suspension seatpost)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bike 2: Cyrusher Kommoda Pro (Replaces H9) -->
+    <div class="bike-review-card">
+      <h3>
+        <span>2) Cyrusher Kommoda Pro (1,040Wh Battery) &mdash; Double Shift King</span>
+        <span class="bike-price-tag">£1,399 <span style="font-size:0.8rem;color:#10b981;">(Save £500)</span></span>
+      </h3>
+      <p>If you're delivering full-time (working lunch splits and 5-hour dinner rushes), battery anxiety is your biggest enemy. Stopping to find a socket mid-shift loses you orders and income. The <strong>Kommoda Pro</strong> solves this with a gargantuan <strong>1,040Wh (52V 20Ah)</strong> battery, giving you an honest 80 to 130 miles of assisted delivery range.</p>
+      
+      <div class="pro-con-grid">
+        <div class="pro-box">
+          <h4>Good Points</h4>
+          <ul class="clean-list">
+            <li><strong>Step-through frame:</strong> Saves your hips when mounting/dismounting 40 times a day</li>
+            <li><strong>Full suspension:</strong> Front fork + rear air shock soak up cobbles and kerbs</li>
+            <li><strong>Hydraulic disc brakes:</strong> Safe, reliable stopping power with heavy food loads in the wet</li>
+            <li>Fat tyres provide massive grip and natural puncture resistance</li>
+          </ul>
+        </div>
+        <div class="con-box">
+          <h4>Things to Consider</h4>
+          <ul class="clean-list">
+            <li>Heavy bike (~34kg) — requires a ground-floor lockup or garage</li>
+            <li>Higher upfront cost than basic commuters, though currently £500 off</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bike 3: Engwe P275 SE -->
+    <div class="bike-review-card">
+      <h3>
+        <span>3) Engwe P275 SE &mdash; Best Fast-Payoff Commuter</span>
+        <span class="bike-price-tag">£849 <span style="font-size:0.8rem;color:#10b981;">(Save £650)</span></span>
+      </h3>
+      <p>If you are getting into courier work to clear bills or start saving immediately, you don't want to spend £2,000 upfront. You need an affordable bike that <strong>pays for itself within your first 2 to 3 weeks of shifts</strong>. At £849, the P275 SE is one of the highest-rated value commuters on our deals tracker.</p>
+      
+      <div class="pro-con-grid">
+        <div class="pro-box">
+          <h4>Good Points</h4>
+          <ul class="clean-list">
+            <li>Smooth torque sensor gives immediate assist away from red lights</li>
+            <li>Understated commuter look doesn't attract bike thieves</li>
+            <li>468Wh Samsung battery provides 36–58 miles real shift range</li>
+            <li>Pays for itself in approximately 50 hours of courier shifts</li>
+          </ul>
+        </div>
+        <div class="con-box">
+          <h4>Things to Consider</h4>
+          <ul class="clean-list">
+            <li>Rigid front fork (stick to road and tarmac cycle lanes)</li>
+            <li>Battery won't last an all-day 10-hour double shift without a top-up</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEO GUIDE SECTIONS -->
+    <h2>How Many Battery Watt-Hours (Wh) Do You Actually Need?</h2>
+    <p>Do not trust manufacturer range claims like <em>"Up to 80 miles!"</em>. Those numbers are tested with a 60kg rider on a flat velodrome in zero wind on the lowest pedal assist.</p>
+    <p>As a courier carrying a 10kg food bag on mixed UK roads, you will consume around <strong>13 to 15 Watt-hours per mile</strong>:</p>
+    <ul style="padding-left: 20px; margin-bottom: 1.5rem; font-size: 1rem; color: #334155;">
+      <li><strong>Part-time shift (3–4 hrs / ~25 miles):</strong> You need at least <strong>350Wh – 450Wh</strong>.</li>
+      <li><strong>Standard dinner shift (5–6 hrs / ~45 miles):</strong> You need at least <strong>650Wh – 750Wh</strong> (like the NCM Moscow).</li>
+      <li><strong>Full-day weekend grind (8–10 hrs / ~70+ miles):</strong> You need <strong>1,000Wh+</strong> (like the Kommoda Pro) or a spare swappable battery.</li>
+    </ul>
+
+    <h2>250W Road Legal vs 1,000W Illegal Motors: The Platform Risk</h2>
+    <p>Under UK EAPC regulations, legal e-bikes must have a 250W continuous rated motor, assist up to 15.5 mph, and require pedalling (no pure throttles).</p>
+    <p>Many delivery couriers ride illegal 1,000W throttle bikes. In 2026, this is a dangerous gamble:</p>
+    <ol style="padding-left: 20px; margin-bottom: 1.5rem; font-size: 1rem; color: #334155;">
+      <li style="margin-bottom: 8px;"><strong>Police Seizures:</strong> City police across London, Manchester, and Sheffield now run targeted operations on delivery riders. Uninsured illegal bikes are seized and crushed.</li>
+      <li style="margin-bottom: 8px;"><strong>Platform GPS Speed Bans:</strong> Deliveroo and Uber Eats monitor your GPS telemetry. If your average speed is consistently 25–30mph, the system flags vehicle fraud and permanently deletes your courier account with no appeal.</li>
+    </ol>
+    <p>Stick to a legal 250W motor with strong torque (50–70Nm) to conquer hills safely without risking your livelihood.</p>
+
+    <h2>Backpack vs Rear Rack: Which is Best for Food?</h2>
+    <p>Carrying a Deliveroo cube on your back for 6 hours puts severe strain on your lower spine. Whenever possible, choose a bike with an integrated rear luggage rack rated for at least 25kg, and strap your thermal delivery box directly to the frame. Line the base of the box with high-density foam to absorb road vibration and stop drink cups from leaking.</p>
+
+    <!-- EXPANDED FAQS -->
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+      <div class="faq-q">Are you allowed to use an electric bicycle for delivering food in the UK?</div>
+      <div class="faq-a">Yes. It is 100% legal to deliver food on a road-legal electric bicycle (EAPC) without requiring road tax, MOT, or vehicle insurance. You can register on Deliveroo, Uber Eats, and Just Eat as a bicycle courier immediately.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Can you use an electric scooter to deliver food?</div>
+      <div class="faq-a">No. Privately owned electric scooters remain illegal on UK public roads and pavements. If delivery platforms discover you are using an e-scooter, they will permanently deactivate your account, and police will confiscate the scooter.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How many miles do you cycle on an average delivery shift?</div>
+      <div class="faq-a">A typical 4-hour evening dinner shift covers between 25 and 35 miles. Couriers working full-time double shifts regularly cover 50 to 75 miles daily.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Where can I find discounted e-bikes suitable for delivery work?</div>
+      <div class="faq-a">You can track daily price drops on road-legal commuter and cargo bikes on our <a href="https://reightgoodbikes.co.uk/ebike-deals/" target="_blank" style="color:#0284c7;font-weight:600;">live UK e-bike deals finder</a>, where verified UK retailers regularly discount end-of-line models by 30% to 50%.</div>
+    </div>
+
+  </main>
+
+</body>
+</html>

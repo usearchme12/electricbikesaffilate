@@ -145,7 +145,16 @@ Version 2.5.0 brings editorial curation, realistic battery range calculations, a
    - Removed automatic pruning of out-of-stock items from `price-history.json` to ensure continuous multi-season price-drop history and tracking.
 
 5. **WordPress Page 7687 Cleanup**:
-   - Removed the duplicate 5-question FAQ block.
-   - Replaced erroneous "no longer sells this product" disclaimer with compliant Editorial Disclosure.
-   - Removed the external standalone `justin-picks-wrapper` showcase block from above `[ebike_deals]`, unifying all curation inside the app.
+---
+
+## 9. Version 2.5.1: Food Delivery Guide SEO Overhaul (Post ID 922)
+
+- **Target Keyword**: `electric bikes for delivering food` / `best electric bike for food delivery`
+- **URL**: `https://reightgoodbikes.co.uk/electric-bikes-for-delivering-food/`
+- **Upgrades Deployed**:
+  1. **Discontinued Bike Replaced**: Removed obsolete H9 fat bike; added **Cyrusher Kommoda Pro** (1,040Wh monster battery, 80–130 mi range) and **Engwe P275 SE** (fast-payoff budget commuter).
+  2. **Gutenberg Courier Comparison Matrix**: Integrated responsive `wp-block-table` comparing battery capacity, tested shift range, legal status, cargo readiness, and current prices.
+  3. **Live Courier Deals Showcase**: Embedded compact in-content deal cards for top active workhorses with direct links to pre-filtered deal searches and the main `/ebike-deals/` engine.
+  4. **Courier Practical Guides**: Added practical guidance on Watt-hour battery shift calculations, 250W EAPC vs 1000W illegal motor platform speed bans, and food delivery bag setup.
+  5. **Expanded Rank Math FAQs**: Added courier-specific questions and structured FAQ answers.
 

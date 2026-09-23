@@ -58,19 +58,19 @@ const content = `
     <div style="background:#1e293b; border-radius:8px; padding:16px; border:1px solid #334155; display:flex; flex-direction:column; justify-content:space-between;">
       <div>
         <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:700; margin-bottom:6px;">
-          <span style="background:rgba(168,85,247,0.2); color:#c084fc; padding:2px 6px; border-radius:4px;">💰 SUB-£500 STARTER</span>
-          <span style="color:#f59e0b;">SAVE £300</span>
+          <span style="background:rgba(168,85,247,0.2); color:#c084fc; padding:2px 6px; border-radius:4px;">📦 UTILITY CARGO PICK</span>
+          <span style="color:#f59e0b;">SAVE £250</span>
         </div>
-        <h4 style="color:#ffffff; font-size:1rem; margin:0 0 8px 0; font-weight:700;">DYU C6 26" City E-Bike</h4>
-        <div style="font-size:1.3rem; font-weight:800; color:#38bdf8; margin-bottom:10px;">£499 <span style="font-size:0.85rem; color:#64748b; text-decoration:line-through; font-weight:400;">£799</span></div>
+        <h4 style="color:#ffffff; font-size:1rem; margin:0 0 8px 0; font-weight:700;">Engwe L20 3.0 Boost</h4>
+        <div style="font-size:1.3rem; font-weight:800; color:#38bdf8; margin-bottom:10px;">£1,049 <span style="font-size:0.85rem; color:#64748b; text-decoration:line-through; font-weight:400;">£1,299</span></div>
         <ul style="font-size:0.82rem; color:#cbd5e1; padding-left:16px; margin:0 0 14px 0; line-height:1.5;">
-          <li>Rear Luggage Rack Included</li>
-          <li>450Wh Removable Battery</li>
-          <li><strong>Tested Shift Range: 35 – 56 mi</strong></li>
-          <li>Step-through upright city posture</li>
+          <li>Heavy-Duty Integrated Cargo Rack</li>
+          <li>648Wh Long-Range Battery</li>
+          <li><strong>Tested Shift Range: 50 – 81 mi</strong></li>
+          <li>Step-through low-step utility frame</li>
         </ul>
       </div>
-      <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=DYU" target="_blank" rel="noopener" style="display:block; text-align:center; background:#0284c7; color:#ffffff; padding:9px 12px; border-radius:6px; font-size:0.82rem; font-weight:700; text-decoration:none;">View Deal →</a>
+      <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=L20" target="_blank" rel="noopener" style="display:block; text-align:center; background:#0284c7; color:#ffffff; padding:9px 12px; border-radius:6px; font-size:0.82rem; font-weight:700; text-decoration:none;">View Deal →</a>
     </div>
 
   </div>
@@ -125,12 +125,12 @@ const content = `
 <td><strong>£849 (Save £650)</strong></td>
 </tr>
 <tr>
-<td><strong>DYU C6 City</strong></td>
-<td>450 Wh (36V 12.5Ah)</td>
-<td><strong>35 – 56 mi</strong></td>
+<td><strong>Engwe L20 3.0 Boost</strong></td>
+<td>648 Wh (48V 13.5Ah)</td>
+<td><strong>50 – 81 mi</strong></td>
 <td>✅ 250W EAPC Road Legal</td>
-<td>Built-in rear luggage rack</td>
-<td><strong>£499 (Save £300)</strong></td>
+<td>Built-in heavy rear rack</td>
+<td><strong>£1,049 (Save £250)</strong></td>
 </tr>
 </tbody>
 </table>

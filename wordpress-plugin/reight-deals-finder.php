@@ -824,7 +824,7 @@ function rgb_register_deal_finder_shortcode($atts) {
           rgbApplyFilters();
         };
 
-                                                                                                                                                                                                                                                                                                                                                                function rgbGetPriceBand(price) {
+                                                                                                                                                                                                                                                                                                                                                                        function rgbGetPriceBand(price) {
           if (price <= 1000) return 'Under £1,000';
           if (price <= 1500) return '£1,000 – £1,500';
           if (price <= 3000) return '£1,500 – £3,000';
@@ -893,14 +893,32 @@ function rgb_register_deal_finder_shortcode($atts) {
           return selected;
         }
 
+        function rgbGetCalcRange(batteryStr) {
+          if (!batteryStr || batteryStr === 'Specification not confirmed') return '<span style="color:#94a3b8;">Check listing</span>';
+          const match = batteryStr.match(/(d+)s*Wh/i);
+          if (!match) return '<span style="color:#94a3b8;">Check listing</span>';
+          const wh = parseInt(match[1], 10);
+          if (wh < 100 || wh > 3000) return '<span style="color:#94a3b8;">Check listing</span>';
+          // Directly benchmarked to Reight Good Bikes Range Calculator (Tour: ~13 Wh/mi, Eco: ~8 Wh/mi)
+          const low = Math.round(wh / 13);
+          const high = Math.round(wh / 8);
+          return low + ' – ' + high + ' mi';
+        }
+
         function rgbRenderDealCard(d) {
           const sym = d.symbol || '£';
           const savings = Math.round(d.savings_amount).toLocaleString();
           const score = Math.round(d.valueScore || d.dealScore || 85);
           const safeTitle = (d.title || '').replace(/'/g, "\\'");
+          const isJustinPick = d.is_justin_choice === true ||
+                               ['cyrusher_uk_9006660387029', 'cyrusher_uk_9343680282837', 'fiido_uk_8646547767597'].includes(d.id) ||
+                               (d.title || '').toLowerCase().includes('roam all-terrain') || 
+                               (d.title || '').toLowerCase().includes('kommoda pro') || 
+                               (d.title || '').toLowerCase().includes('fiido x');
           return `
             <article class="rgb-card">
-              <div class="rgb-badge-discount">SAVE ${sym}${savings} (${d.discount_percentage}% OFF)</div>
+              ${isJustinPick ? '<div class="rgb-badge-justin" style="position:absolute;top:0.75rem;left:0.75rem;background:#f59e0b;color:#000;font-size:0.72rem;font-weight:800;padding:0.25rem 0.55rem;border-radius:4px;text-transform:uppercase;z-index:3;box-shadow:0 0 10px rgba(245,158,11,0.5);">⭐ Justin\'s Choice</div>' : ''}
+              <div class="rgb-badge-discount">${isJustinPick ? '' : 'SAVE ' + sym + savings + ' (' + d.discount_percentage + '% OFF)'}</div>
               ${d.is_lowest_price_30d ? '<div class="rgb-badge-low30">🔥 30-Day Low</div>' : (d.is_new ? '<div class="rgb-badge-new">✨ Just Added</div>' : '')}
               ${d.price_drop_amount > 0 ? `<div class="rgb-badge-drop">📉 Dropped ${sym}${d.price_drop_amount}</div>` : ''}
               <div class="rgb-card-img-wrap">
@@ -913,9 +931,9 @@ function rgb_register_deal_finder_shortcode($atts) {
                 </div>
                 <h3 class="rgb-card-title">${d.title}</h3>
                 <div class="rgb-specs">
-                  <div><span class="rgb-spec-lbl">Category</span><div class="rgb-spec-val">${d.category}</div></div>
                   <div><span class="rgb-spec-lbl">Motor</span><div class="rgb-spec-val" title="${d.motor_power}">${d.motor_power === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.motor_power}</div></div>
                   <div><span class="rgb-spec-lbl">Battery</span><div class="rgb-spec-val" title="${d.battery}">${d.battery === 'Specification not confirmed' ? '<span style="color:#94a3b8;">Not confirmed</span>' : d.battery}</div></div>
+                  <div><span class="rgb-spec-lbl">Est. Range</span><div class="rgb-spec-val" title="Real-world range from Reight Good Bikes Range Calculator">${rgbGetCalcRange(d.battery)}</div></div>
                   <div><span class="rgb-spec-lbl">UK Status</span><div class="rgb-spec-val">${d.is_uk_legal ? '<span style="color:#10b981;">✅ Road Legal</span>' : (d.motor_power === 'Specification not confirmed' ? '<span style="color:#f59e0b;">⚠️ Check Retailer</span>' : '<span style="color:#ef4444;">⚠️ Off-Road</span>')}</div></div>
                 </div>
                 <div class="rgb-price-row">
@@ -952,6 +970,12 @@ function rgb_register_deal_finder_shortcode($atts) {
             if (priceFilter === '2500-5000' && (d.sale_price < 2500 || d.sale_price > 5000)) return false;
             if (priceFilter === 'over5000' && d.sale_price < 5000) return false;
 
+            if (curCat === 'justin') {
+              const t = (d.title || '').toLowerCase();
+              return d.is_justin_choice === true ||
+                     ['cyrusher_uk_9006660387029', 'cyrusher_uk_9343680282837', 'fiido_uk_8646547767597'].includes(d.id) ||
+                     t.includes('roam all-terrain') || t.includes('kommoda pro') || t.includes('fiido x');
+            }
             if (curCat === 'legal') return d.is_uk_legal === true;
             if (curCat === 'new') return d.is_new === true;
             if (curCat === 'mega') return d.discount_percentage >= 30 || d.savings_amount >= 400;

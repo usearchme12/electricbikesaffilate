@@ -106,10 +106,46 @@ Both `index.html` and the WordPress plugin share identical tracking behavior:
 
 ---
 
-## 7. Build Artifacts & Verification
+## 7. Version 2.4.2: Build Artifacts & Automation
 
-- **WordPress Plugin**: Updated to version **2.4.1** in `wordpress-plugin/reight-deals-finder.php`.
+- **WordPress Plugin**: Updated to version **2.4.2** in `wordpress-plugin/reight-deals-finder.php`.
 - **Pre-commit Syntax Validation**: Evaluated embedded JavaScript with Node.js parser (`new Function()`) — passed with 0 errors.
 - **Distribution Packages**: Re-packaged into `reight-deals-finder.zip` and `wordpress-plugin.zip`.
 - **Automation**: Updated `.github/workflows/daily_deals.yml` to automatically execute `update_plugin.js` and commit updated plugin archives during twice-daily scrapes.
+
+---
+
+## 8. Version 2.5.0: Justin's Picks, Range Estimator & Advanced Selectors
+
+Version 2.5.0 brings editorial curation, realistic battery range calculations, and enhanced filtering directly into the deals app interface, while cleaning up legacy page content on the live site.
+
+### Key Additions & Refinements:
+1. **Integrated "⭐ Justin's Picks"**:
+   - Featured directly as a top-level filter pill inside the deals widget (avoiding clutter above the app).
+   - Filters exclusively to Justin's hand-picked recommendations:
+     - **Cyrusher Roam** (All-terrain folding commuter)
+     - **Cyrusher Kommoda Pro** (Full suspension step-through)
+     - **Fiido X** (Ultra-sleek torque-sensor magnesium folding bike)
+   - Visual highlighting: Displays a prominent gold **`⭐ Justin's Choice`** badge on matching cards.
+   - Resolved the blank screen bug in category switching logic so deals load immediately upon clicking.
+
+2. **Real-World Range Estimates (Reight Good Bikes Calculator Integration)**:
+   - Evaluated using the official formula from the [Reight Good Bikes Range Calculator](https://reightgoodbikes.co.uk/how-to-calculate-the-range-of-your-electric-battery/):
+     - Typical Tour mode: ~13 Wh/mi (conservative real-world lower bound).
+     - Eco assistance mode: ~8 Wh/mi (extended range upper bound).
+   - `rgbGetCalcRange(batteryStr)` dynamically extracts Watt-hours from battery capacity strings (e.g. `48V 20Ah` = 960 Wh $\rightarrow$ `74 – 120 mi`).
+   - Every deal card now features an **`Est. Range`** row in its 2x2 spec grid, giving buyers instant, honest battery range expectations.
+
+3. **New Filter Selectors**:
+   - **🏔️ Mid-Drive**: Surfaces bikes powered by mid-drive crank motors (Bosch, Shimano Steps, Yamaha, Brose, Bafang M-series) for mountain, climbing, and serious commuter cyclists (73+ bikes matched).
+   - **🛋️ Step-Through**: Isolates low-step and easy-mount frames (10+ bikes matched).
+
+4. **365-Day Price Retention**:
+   - Extended price history retention in `fetch_deals.js` from 90 days to 365 days.
+   - Removed automatic pruning of out-of-stock items from `price-history.json` to ensure continuous multi-season price-drop history and tracking.
+
+5. **WordPress Page 7687 Cleanup**:
+   - Removed the duplicate 5-question FAQ block.
+   - Replaced erroneous "no longer sells this product" disclaimer with compliant Editorial Disclosure.
+   - Removed the external standalone `justin-picks-wrapper` showcase block from above `[ebike_deals]`, unifying all curation inside the app.
 

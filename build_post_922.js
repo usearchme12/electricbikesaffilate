@@ -171,49 +171,55 @@ const content = `
 
 <figure class="wp-block-image aligncenter size-full"><img decoding="async" width="700" height="525" src="https://cdn.shopify.com/s/files/1/0627/5861/7301/files/Cyrusher-E-Bike-Kommoda3.0-Main-Green-1.jpg?v=1774320844" alt="Cyrusher Kommoda Pro step through electric bike with fat tyres and full suspension"/></figure>
 
-<p class="wp-block-paragraph">If you deliver full-time (working lunch and dinner splits, or doing 8 to 10-hour weekend shifts), battery anxiety is your biggest problem. Stopping to find a café socket mid-shift loses you orders and income. The <strong>Cyrusher Kommoda Pro</strong> solves this with a gargantuan <strong>1,040Wh (52V 20Ah) battery</strong> — providing an honest 80 to 130 miles of assisted range on a single charge.</p>
+<p class="wp-block-paragraph">The main reason I recommend this bike over something like the Moscow is the <strong>upright riding position</strong>. On a mountain bike you lean forward, and after 4 or 5 hours carrying orders, your neck and lower back really start to ache. With the Kommoda Pro, you sit upright with swept-back handlebars, so all the pressure stays off your back and wrists.</p>
 
-<p class="wp-block-paragraph">Fat bikes are fantastic for food delivery because their wide tyres absorb pothole impacts, resist road debris punctures, and provide superior traction in wet British weather. Plus, the step-through frame means you don't have to swing your leg over a high bar 40 times a day with a loaded delivery bag on your back.</p>
+<p class="wp-block-paragraph">It also has a <strong>sturdy rear rack fitted as standard</strong>. Having a proper rack on the back is essential for delivery work — you can strap your Deliveroo or Just Eat thermal box straight to the bike instead of wearing a 10kg cube on your shoulders all night. The step-through frame also means you aren't awkwardly swinging your leg over a high bar 40 times a shift when dropping off food.</p>
+
+<p class="wp-block-paragraph">The battery is 1,040Wh (52V 20Ah), which is roughly double the size of typical budget e-bike batteries. That means you can do a lunch shift, take a break, and go straight back out for the evening rush without having to worry about finding a charger or running out of juice miles from home.</p>
 
 <h4 class="wp-block-heading"><strong>Good points</strong></h4>
 
 <ul class="wp-block-list">
-<li><strong>Step-through frame:</strong> Saves your hips and knees when hopping on and off for deliveries</li>
-<li><strong>Monster 1,040Wh battery:</strong> Easily powers through double shifts without mid-shift charging</li>
-<li><strong>Full suspension:</strong> Front fork and rear air shock soak up cobbles, speed bumps, and kerbs</li>
-<li><strong>Hydraulic disc brakes:</strong> Smooth, confident stopping power in wet UK conditions with heavy cargo</li>
-<li>Fat tyres provide natural cushioning and puncture protection</li>
+<li><strong>Upright riding position:</strong> Great for anyone who gets neck or lower back pain from leaning forward.</li>
+<li><strong>Solid rear rack included:</strong> Lets you bolt or strap a food delivery box straight to the frame.</li>
+<li><strong>Step-through frame:</strong> Easy to hop on and off at customer doorsteps without pulling a muscle.</li>
+<li><strong>Huge 1,040Wh battery:</strong> Easily lasts through double shifts without mid-shift charging.</li>
+<li>Full suspension and fat tyres take the harsh edge off potholes, cobbles, and dropped kerbs.</li>
+<li>Hydraulic disc brakes give reliable stopping power when carrying heavy food orders in the rain.</li>
 </ul>
 
 <h4 class="wp-block-heading"><strong>Things to consider</strong></h4>
 
 <ul class="wp-block-list">
-<li>Heavy bike (~34kg) — best suited if you have a ground-floor lockup, garage, or hallway storage</li>
-<li>Higher upfront cost than basic commuters, though currently discounted by £500 on our <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=Kommoda">deals tracker</a></li>
+<li>It is heavy (around 34kg). If you live in an upstairs flat with no lift, you will struggle to carry this up the stairs — you need ground-floor access or a secure shed.</li>
+<li>Higher upfront cost than basic commuters, though currently discounted by £500 on our <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=Kommoda">deals tracker</a>.</li>
 </ul>
 
 <h3 class="wp-block-heading">3) <a href="https://reightgoodbikes.co.uk/ebike-deals/?search=P275" target="_blank" rel="noopener"><strong>Engwe P275 SE Commuter (468Wh Samsung Battery / Torque Sensor) £849 (Save £650)</strong></a></h3>
 
 <figure class="wp-block-image aligncenter size-full"><img decoding="async" width="700" height="467" src="https://cdn.shopify.com/s/files/1/0627/1385/6182/files/P275SE_01_7f24b64d-face-433f-9bcc-1f87be91b8c3.jpg?v=1767074661" alt="Engwe P275 SE city commuter electric bike"/></figure>
 
-<p class="wp-block-paragraph">If you're starting delivery work to generate extra income or clear bills, you don't want to spend £2,000 upfront. You need an affordable, reliable workhorse that <strong>pays for itself within your first 2 to 3 weeks of shifts</strong>. At £849 (down from £1,499), the Engwe P275 SE is one of the highest value-for-money road-legal commuters available.</p>
+<p class="wp-block-paragraph">If you don't want a heavy 34kg fat bike and want something that rides more like a normal bicycle, this is a very practical choice. Like the Kommoda, it has an <strong>upright Dutch-style riding position</strong> so you aren't hunched over handlebars, making it much kinder on your back and neck during long evening shifts.</p>
 
-<p class="wp-block-paragraph">It features a smooth torque sensor that responds instantly when pulling away from traffic lights, plus an understated commuter design that doesn't draw unwanted attention when locked outside restaurants.</p>
+<p class="wp-block-paragraph">It has mounting points on the frame for fitting a standard rear pannier rack so you can get the food bag off your spine. It also uses a <strong>torque sensor</strong> rather than a basic cadence sensor — so the second you push on the pedals at a junction, the motor gives you smooth, instant assist without jolting or wasting battery power.</p>
+
+<p class="wp-block-paragraph">At £849, it's about half the price of bigger delivery bikes. If you're doing part-time courier work (3 to 4 hours an evening) to pay off debts or earn extra cash, you will make the purchase price back in about 50 hours of deliveries.</p>
 
 <h4 class="wp-block-heading"><strong>Good points</strong></h4>
 
 <ul class="wp-block-list">
-<li><strong>Fast Payoff:</strong> At typical UK courier rates (£12–£18/hour on Stuart/Uber), you pay off this entire bike in ~50 hours of riding</li>
-<li>Torque sensor motor provides smooth, natural assist that stretches battery efficiency</li>
-<li>468Wh Samsung cell battery gives 36–58 real-world shift miles</li>
-<li>Clean urban commuter look that doesn't attract bike thieves</li>
+<li><strong>Comfortable upright position:</strong> Keeps your head up in city traffic and prevents back strain.</li>
+<li><strong>Rear rack compatible:</strong> Frame has eyelets ready to bolt on a delivery rack for your thermal bag.</li>
+<li><strong>Torque sensor motor:</strong> Delivers natural pedal power that doesn't burn through battery quickly.</li>
+<li><strong>Quick payoff time:</strong> At typical courier earnings (£12–£18/hr), it pays for itself in roughly 2 to 3 weeks of shifts.</li>
+<li>Much lighter and easier to lift into a hallway or van than a bulky fat bike.</li>
 </ul>
 
 <h4 class="wp-block-heading"><strong>Things to consider</strong></h4>
 
 <ul class="wp-block-list">
-<li>Rigid front fork — stick to roads and tarmac cycleways</li>
-<li>Battery capacity won't cover an all-day 10-hour shift without an afternoon top-up</li>
+<li>The 468Wh battery is designed for single shifts (around 35–45 real miles). If you plan to work 8-hour double shifts, you will need a 2-hour recharge between lunch and dinner.</li>
+<li>Rigid front fork, so you'll feel road bumps more than on a bike with suspension.</li>
 </ul>
 
 <h2 class="wp-block-heading">How Many Battery Watt-Hours (Wh) Do You Actually Need for a Delivery Shift?</h2>

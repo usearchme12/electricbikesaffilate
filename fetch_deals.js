@@ -130,11 +130,11 @@ const SOURCES = [
   {
     name: 'Tenways',
     retailer: 'Tenways Direct',
-    country: 'UK/EU',
+    country: 'UK',
     currency: 'GBP',
     symbol: '£',
-    endpoint: 'https://www.tenways.com/products.json',
-    baseUrl: 'https://www.tenways.com/products/',
+    endpoint: 'https://uk.tenways.com/products.json',
+    baseUrl: 'https://uk.tenways.com/products/',
     maxPages: 2
   }
 ];
@@ -587,6 +587,66 @@ function updatePriceHistory(deals) {
   console.log(`[PRICE HISTORY] Preserved price history for ${Object.keys(history).length} unique deals (365-day retention)`);
 }
 
+/**
+ * Verify whether a retailer product page is live and not returning a 404,
+ * soft 404, or discontinued/not found message.
+ */
+async function verifyLiveProductUrl(url) {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 7000);
+    const res = await fetch(url, {
+      method: 'GET',
+      redirect: 'follow',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-GB,en;q=0.9'
+      },
+      signal: controller.signal
+    });
+    clearTimeout(timer);
+
+    // Explicit 404 or 410 Gone
+    if (!res.ok) {
+      if (res.status === 404 || res.status === 410) {
+        return { live: false, reason: `HTTP status ${res.status}` };
+      }
+      // If 429 (rate limited) or 403 (Cloudflare scraper block), do not falsely drop
+      return { live: true, status: res.status };
+    }
+
+    // Check if redirected to 404, collection root, or home
+    const finalPath = new URL(res.url).pathname;
+    let origPath = '/';
+    try {
+      origPath = new URL(url).pathname;
+    } catch(e) {}
+    if (finalPath.includes('/404') || (origPath !== '/' && (finalPath === '/' || finalPath.includes('/collections') || finalPath.includes('/404')))) {
+      return { live: false, reason: `Redirected to ${finalPath}` };
+    }
+
+    // Check HTML content for missing bike / 404 text
+    const html = await res.text();
+    const lower = html.toLowerCase();
+    if (
+      lower.includes('<title>404') ||
+      lower.includes('page not found') ||
+      lower.includes('bike not found') ||
+      lower.includes('product not found') ||
+      lower.includes("sorry, we couldn't find that page") ||
+      lower.includes("the page you were looking for doesn't exist")
+    ) {
+      return { live: false, reason: 'Detected 404 / not found content in page body' };
+    }
+
+    return { live: true, status: res.status };
+  } catch (err) {
+    console.warn(`[URL CHECK TIMEOUT] ${url}: ${err.message}`);
+    return { live: true, status: 'timeout' };
+  }
+}
+
 async function runAggregator() {
   console.log('--- Starting Multi-Source E-Bike Deals Aggregation ---');
   
@@ -670,6 +730,31 @@ async function runAggregator() {
     }
     d.is_new = (d.first_seen >= twoDaysAgo);
   });
+
+  // Live page verification guard: Confirm all newly discovered deals have a live, non-404 page before publishing
+  const verifiedDeals = [];
+  for (const deal of allDeals) {
+    const isNew = !prevDealsMap[deal.id];
+    if (isNew) {
+      let checkUrl = deal.url;
+      if (checkUrl.includes('ued=')) {
+        try {
+          const ued = new URL(checkUrl).searchParams.get('ued');
+          if (ued) checkUrl = decodeURIComponent(ued);
+        } catch (e) {}
+      }
+
+      console.log(`[VERIFY NEW DEAL] Checking live page for new deal: ${deal.title} (${deal.retailer})...`);
+      const check = await verifyLiveProductUrl(checkUrl);
+      if (!check.live) {
+        console.warn(`[REJECT 404 DEAL] Discarded ${deal.title} - destination page is not live (${check.reason}): ${checkUrl}`);
+        continue;
+      }
+      console.log(`[VERIFIED LIVE] ${deal.title} is confirmed live!`);
+    }
+    verifiedDeals.push(deal);
+  }
+  allDeals = verifiedDeals;
 
   // Update 30-day Price History and compute price drop / 30-day low metrics
   updatePriceHistory(allDeals);

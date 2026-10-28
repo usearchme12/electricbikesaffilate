@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Reight Good Bikes - Multi-Source E-Bike Deals Hub",
-    "last_updated": "2026-10-28 12:06:36",
-    "total_deals": 125,
+    "last_updated": "2026-10-28 22:10:18",
+    "total_deals": 126,
     "sources_scanned": [
       "E-BikeShop.co.uk",
       "Engwe UK",
@@ -57,11 +57,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.116Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "dyu_cycle_uk_15244701237616",
@@ -91,11 +91,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:30.793Z",
+      "last_verified": "2026-10-28T22:10:12.404Z",
       "lowest_price_30d": 799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "fiido_uk_9812103627053",
@@ -125,11 +125,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:32.991Z",
+      "last_verified": "2026-10-28T22:10:15.255Z",
       "lowest_price_30d": 999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "fiido_uk_8646545178925",
@@ -159,11 +159,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:33.282Z",
+      "last_verified": "2026-10-28T22:10:15.648Z",
       "lowest_price_30d": 999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8391383548086",
@@ -193,11 +193,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.116Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 1548,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_8970135240917",
@@ -227,11 +227,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "dyu_cycle_uk_15437145866608",
@@ -261,11 +261,11 @@
       "first_seen": "2026-10-20",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:30.793Z",
+      "last_verified": "2026-10-28T22:10:12.404Z",
       "lowest_price_30d": 678,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15205986697600",
@@ -295,11 +295,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8142661452014",
@@ -329,11 +329,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:28.266Z",
+      "last_verified": "2026-10-28T22:10:10.098Z",
       "lowest_price_30d": 1849,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_9237707325653",
@@ -363,11 +363,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_8972121047253",
@@ -397,11 +397,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_8796910616789",
@@ -431,11 +431,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "fiido_uk_9391047573805",
@@ -465,11 +465,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:32.991Z",
+      "last_verified": "2026-10-28T22:10:15.255Z",
       "lowest_price_30d": 1636,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "dyu_cycle_uk_8271012069540",
@@ -499,11 +499,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:30.793Z",
+      "last_verified": "2026-10-28T22:10:12.404Z",
       "lowest_price_30d": 359,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8142670495982",
@@ -533,11 +533,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 2299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8169071608046",
@@ -567,11 +567,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 3399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "pedalgo_uk_10304863633672",
@@ -601,11 +601,11 @@
       "first_seen": "2026-10-23",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:31.864Z",
+      "last_verified": "2026-10-28T22:10:13.597Z",
       "lowest_price_30d": 2000,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "fiido_uk_8646528860461",
@@ -635,11 +635,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:32.991Z",
+      "last_verified": "2026-10-28T22:10:15.255Z",
       "lowest_price_30d": 999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_8905427812565",
@@ -669,11 +669,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8640443187438",
@@ -703,11 +703,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 3199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8169063448814",
@@ -737,11 +737,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 5599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_9445342740693",
@@ -771,11 +771,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "tenways_15008551371137",
@@ -805,11 +805,11 @@
       "first_seen": "2026-10-01",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:36.349Z",
+      "last_verified": "2026-10-28T22:10:18.466Z",
       "lowest_price_30d": 1149,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "cyrusher_uk_9343680282837",
@@ -839,11 +839,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "leisure_lakes_merida_eone_sixty_7000",
@@ -871,11 +871,11 @@
       "badge_text": "SAVE £2401 (38% OFF)",
       "first_seen": "2026-09-09",
       "is_new": false,
-      "last_verified": "2026-10-28T12:06:36.349Z",
+      "last_verified": "2026-10-28T22:10:18.466Z",
       "lowest_price_30d": 3999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z",
+      "last_checked": "2026-10-28T22:10:18.898Z",
       "is_cached": false
     },
     {
@@ -906,11 +906,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.811Z",
+      "last_verified": "2026-10-28T22:10:06.232Z",
       "lowest_price_30d": 5499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351325852032",
@@ -940,11 +940,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.811Z",
+      "last_verified": "2026-10-28T22:10:06.232Z",
       "lowest_price_30d": 3999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_8137729704174",
@@ -974,11 +974,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:28.266Z",
+      "last_verified": "2026-10-28T22:10:10.098Z",
       "lowest_price_30d": 5299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8140451643630",
@@ -1008,11 +1008,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:28.266Z",
+      "last_verified": "2026-10-28T22:10:10.098Z",
       "lowest_price_30d": 5599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8140434374894",
@@ -1042,11 +1042,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:28.266Z",
+      "last_verified": "2026-10-28T22:10:10.098Z",
       "lowest_price_30d": 5999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8132004741358",
@@ -1076,11 +1076,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:28.266Z",
+      "last_verified": "2026-10-28T22:10:10.098Z",
       "lowest_price_30d": 3699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_9006660419797",
@@ -1110,11 +1110,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_9006660387029",
@@ -1144,11 +1144,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_8832694321365",
@@ -1178,11 +1178,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "e_bikeshop_co_uk_8641040187630",
@@ -1212,11 +1212,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 3999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "tenways_15002055803265",
@@ -1246,11 +1246,11 @@
       "first_seen": "2026-10-01",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:36.349Z",
+      "last_verified": "2026-10-28T22:10:18.466Z",
       "lowest_price_30d": 1349,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "e_bikeshop_co_uk_14989695353216",
@@ -1280,11 +1280,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.737Z",
       "lowest_price_30d": 5499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428162941166",
@@ -1314,11 +1314,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 6599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274220552576",
@@ -1348,11 +1348,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 3399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_8278238429422",
@@ -1382,11 +1382,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 3899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274346316160",
@@ -1416,11 +1416,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 4549,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428171329774",
@@ -1450,11 +1450,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 5299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428174934254",
@@ -1484,11 +1484,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 4999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273308094848",
@@ -1518,11 +1518,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 3499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273253011840",
@@ -1552,11 +1552,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 6249,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_14962267423104",
@@ -1586,11 +1586,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.737Z",
       "lowest_price_30d": 3699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_14962260509056",
@@ -1620,11 +1620,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.010Z",
+      "last_verified": "2026-10-28T22:10:07.737Z",
       "lowest_price_30d": 3899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8164313268406",
@@ -1654,11 +1654,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.117Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 1049,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "fiido_uk_8646532071725",
@@ -1688,11 +1688,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:33.282Z",
+      "last_verified": "2026-10-28T22:10:15.648Z",
       "lowest_price_30d": 449,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351321559424",
@@ -1722,11 +1722,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.812Z",
+      "last_verified": "2026-10-28T22:10:06.232Z",
       "lowest_price_30d": 4599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274417947008",
@@ -1756,11 +1756,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 5399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274277765504",
@@ -1790,11 +1790,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 5749,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273307439488",
@@ -1824,11 +1824,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 3949,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8278235676910",
@@ -1858,11 +1858,45 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 5299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
+    },
+    {
+      "id": "e_bikeshop_co_uk_8278230860014",
+      "title": "Cube AMS Hybrid ONE44 C:68X SUPER TM 400X 29 (L 42cm)",
+      "brand": "Cube Electric Bikes",
+      "retailer": "E-BikeShop UK",
+      "country": "UK",
+      "currency": "GBP",
+      "symbol": "£",
+      "category": "Mountain",
+      "dealBucket": "🔥 Mega Deal",
+      "dealScore": 49,
+      "valueScore": 49,
+      "motor_power": "250W Mid-Drive (EAPC)",
+      "battery": "400Wh Lithium-Ion",
+      "range_miles": "30 - 120 Miles",
+      "max_speed": "15.5 mph (EAPC)",
+      "is_uk_legal": true,
+      "rrp": 7999,
+      "sale_price": 5699,
+      "price_from": false,
+      "savings_amount": 2300,
+      "discount_percentage": 29,
+      "image": "https://cdn.shopify.com/s/files/1/0609/4838/1934/files/Cube-AMS-Hybrid-ONE44-C68X-SUPERTM-2025-Electric-Bike.jpg?v=1725623174",
+      "url": "https://www.e-bikeshop.co.uk/products/electric-bike-cube-ams-hybrid-one44-super-tm-2025?variant=44767192416494",
+      "badge_text": "SAVE £2300 (29% OFF)",
+      "first_seen": "2026-10-28",
+      "is_new": true,
+      "is_cached": false,
+      "last_verified": "2026-10-28T22:10:09.030Z",
+      "lowest_price_30d": 5699,
+      "is_lowest_price_30d": true,
+      "price_drop_amount": 0,
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8169600778422",
@@ -1892,11 +1926,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.117Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 2048,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274196468096",
@@ -1926,11 +1960,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 4099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_8640524845294",
@@ -1960,11 +1994,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 4699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "leisure_lakes_mondraker_level_r",
@@ -1992,11 +2026,11 @@
       "badge_text": "SAVE £1700 (28% OFF)",
       "first_seen": "2026-09-09",
       "is_new": false,
-      "last_verified": "2026-10-28T12:06:36.349Z",
+      "last_verified": "2026-10-28T22:10:18.466Z",
       "lowest_price_30d": 4299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z",
+      "last_checked": "2026-10-28T22:10:18.898Z",
       "is_cached": false
     },
     {
@@ -2027,11 +2061,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 5399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_7986263949525",
@@ -2061,11 +2095,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 2299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "cyrusher_uk_7934768644309",
@@ -2095,11 +2129,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 2299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351333126528",
@@ -2129,11 +2163,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.812Z",
+      "last_verified": "2026-10-28T22:10:06.232Z",
       "lowest_price_30d": 3699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273284239744",
@@ -2163,11 +2197,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 4649,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_14779054162304",
@@ -2197,11 +2231,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 5999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "cyrusher_uk_8992605634773",
@@ -2231,11 +2265,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:34.705Z",
+      "last_verified": "2026-10-28T22:10:17.173Z",
       "lowest_price_30d": 699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8269327138998",
@@ -2265,11 +2299,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.116Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 1099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "fiido_uk_8646547767597",
@@ -2299,11 +2333,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:33.282Z",
+      "last_verified": "2026-10-28T22:10:15.648Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_14962264473984",
@@ -2333,11 +2367,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.010Z",
+      "last_verified": "2026-10-28T22:10:07.737Z",
       "lowest_price_30d": 4499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8428177096942",
@@ -2367,11 +2401,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 8399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8164311990454",
@@ -2401,11 +2435,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.117Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 1399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15329443742080",
@@ -2435,11 +2469,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 2349,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15329404125568",
@@ -2469,11 +2503,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 2349,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274240082304",
@@ -2503,11 +2537,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 7899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_14989703905664",
@@ -2537,11 +2571,11 @@
       "first_seen": "2026-09-17",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.736Z",
       "lowest_price_30d": 5499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "fiido_uk_9292643336493",
@@ -2571,11 +2605,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:32.991Z",
+      "last_verified": "2026-10-28T22:10:15.255Z",
       "lowest_price_30d": 1454,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15363973841280",
@@ -2605,11 +2639,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.811Z",
+      "last_verified": "2026-10-28T22:10:06.231Z",
       "lowest_price_30d": 2199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15364002873728",
@@ -2639,11 +2673,11 @@
       "first_seen": "2026-10-26",
       "is_new": true,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.812Z",
+      "last_verified": "2026-10-28T22:10:06.232Z",
       "lowest_price_30d": 2199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273325592960",
@@ -2673,11 +2707,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 4149,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_8673291698414",
@@ -2707,11 +2741,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 6799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15213392429440",
@@ -2741,11 +2775,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 3699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15453855973760",
@@ -2775,11 +2809,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.812Z",
+      "last_verified": "2026-10-28T22:10:06.233Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351339581824",
@@ -2809,11 +2843,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.811Z",
+      "last_verified": "2026-10-28T22:10:06.231Z",
       "lowest_price_30d": 3599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274492166528",
@@ -2843,11 +2877,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 3099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "engwe_uk_8183413309622",
@@ -2877,11 +2911,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.116Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273346105728",
@@ -2911,11 +2945,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 4449,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670962221294",
@@ -2945,11 +2979,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670959993070",
@@ -2979,11 +3013,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8800587808950",
@@ -3013,11 +3047,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.116Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 1099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "tenways_15088966173057",
@@ -3047,11 +3081,11 @@
       "first_seen": "2026-10-01",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:36.349Z",
+      "last_verified": "2026-10-28T22:10:18.466Z",
       "lowest_price_30d": 1099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "tenways_14847189975425",
@@ -3081,11 +3115,11 @@
       "first_seen": "2026-10-01",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:36.349Z",
+      "last_verified": "2026-10-28T22:10:18.466Z",
       "lowest_price_30d": 2199,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "fiido_uk_10053672927533",
@@ -3115,11 +3149,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:32.991Z",
+      "last_verified": "2026-10-28T22:10:15.255Z",
       "lowest_price_30d": 1271,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351290003840",
@@ -3149,11 +3183,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 2499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15262659051904",
@@ -3183,11 +3217,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2399,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351351247232",
@@ -3217,11 +3251,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.811Z",
+      "last_verified": "2026-10-28T22:10:06.231Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670953701614",
@@ -3251,11 +3285,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670948983022",
@@ -3285,11 +3319,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15274380263808",
@@ -3319,11 +3353,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 8999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265359036800",
@@ -3353,11 +3387,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 3499,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265394164096",
@@ -3387,11 +3421,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 6699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_8670930403566",
@@ -3421,11 +3455,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:27.209Z",
+      "last_verified": "2026-10-28T22:10:09.030Z",
       "lowest_price_30d": 2699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "fiido_uk_9981279502637",
@@ -3455,11 +3489,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:32.991Z",
+      "last_verified": "2026-10-28T22:10:15.255Z",
       "lowest_price_30d": 1545,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265362837888",
@@ -3489,11 +3523,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 5799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265357070720",
@@ -3523,11 +3557,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 5799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265360544128",
@@ -3557,11 +3591,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 3999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8815718695094",
@@ -3591,11 +3625,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.116Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 2148,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "engwe_uk_8169596223670",
@@ -3625,11 +3659,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:29.117Z",
+      "last_verified": "2026-10-28T22:10:10.884Z",
       "lowest_price_30d": 2748,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "pedalgo_uk_10154801561864",
@@ -3659,11 +3693,11 @@
       "first_seen": "2026-09-09",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:31.864Z",
+      "last_verified": "2026-10-28T22:10:13.597Z",
       "lowest_price_30d": 2699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15262688575872",
@@ -3693,11 +3727,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265378500992",
@@ -3727,11 +3761,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 4899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265361953152",
@@ -3761,11 +3795,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 4899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251699401088",
@@ -3795,11 +3829,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251693142400",
@@ -3829,11 +3863,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 3299,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251665092992",
@@ -3863,11 +3897,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 3099,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251731317120",
@@ -3897,11 +3931,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2649,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251712704896",
@@ -3931,11 +3965,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2649,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15351285612928",
@@ -3965,11 +3999,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251744522624",
@@ -3999,11 +4033,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15251739410816",
@@ -4033,11 +4067,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.009Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2999,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15453830316416",
@@ -4067,11 +4101,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:24.812Z",
+      "last_verified": "2026-10-28T22:10:06.233Z",
       "lowest_price_30d": 4899,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.351Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273358164352",
@@ -4101,11 +4135,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 5599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265363788160",
@@ -4135,11 +4169,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 3749,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265429913984",
@@ -4169,11 +4203,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.734Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "e_bikeshop_co_uk_15265414840704",
@@ -4203,11 +4237,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.008Z",
+      "last_verified": "2026-10-28T22:10:07.735Z",
       "lowest_price_30d": 2599,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.897Z"
     },
     {
       "id": "tenways_15410364449153",
@@ -4237,11 +4271,11 @@
       "first_seen": "2026-10-01",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:36.349Z",
+      "last_verified": "2026-10-28T22:10:18.466Z",
       "lowest_price_30d": 2799,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.898Z"
     },
     {
       "id": "e_bikeshop_co_uk_15273444376960",
@@ -4271,11 +4305,11 @@
       "first_seen": "2026-09-10",
       "is_new": false,
       "is_cached": false,
-      "last_verified": "2026-10-28T12:06:26.007Z",
+      "last_verified": "2026-10-28T22:10:07.733Z",
       "lowest_price_30d": 4699,
       "is_lowest_price_30d": true,
       "price_drop_amount": 0,
-      "last_checked": "2026-10-28T12:06:36.352Z"
+      "last_checked": "2026-10-28T22:10:18.896Z"
     }
   ]
 }
